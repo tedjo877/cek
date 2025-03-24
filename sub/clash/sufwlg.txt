@@ -1,0 +1,357 @@
+#### BY : FREE CF PROXY #### 
+
+[General]
+dns-server = system, 108.137.44.39, 108.137.44.9, puredns.org:853
+
+[Proxy]
+
+🇸🇬-[SG]1 = trojan, ava.game.naver.com, 443, password = Free-CF-Proxy-SG1 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG1, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]2 = trojan, bbsdata.df.game.naver.com, 443, password = Free-CF-Proxy-SG2 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG2, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]3 = trojan, care.pmang.game.naver.com, 443, password = Free-CF-Proxy-SG3 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG3, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]4 = trojan, df.game.naver.com, 443, password = Free-CF-Proxy-SG4 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG4, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]5 = trojan, gamebulletin.nexon.game.naver.com, 443, password = Free-CF-Proxy-SG5 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG5, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]6 = trojan, plus-store.naver.com, 443, password = Free-CF-Proxy-SG6 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG6, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]7 = trojan, z9star.game.naver.com, 443, password = Free-CF-Proxy-SG7 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG7, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]8 = trojan, account.pmang.game.naver.com, 443, password = Free-CF-Proxy-SG8 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG8, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]9 = trojan, 162.159.140.159, 443, password = Free-CF-Proxy-SG9 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG9, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]10 = trojan, 162.159.140.178, 443, password = Free-CF-Proxy-SG10 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG10, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]11 = trojan, 104.18.42.238, 443, password = Free-CF-Proxy-SG11 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG11, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]12 = trojan, 104.16.125.59, 443, password = Free-CF-Proxy-SG12 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG12, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]13 = trojan, 104.18.213.235, 443, password = Free-CF-Proxy-SG13 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG13, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]14 = trojan, 172.64.145.18, 443, password = Free-CF-Proxy-SG14 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG14, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+🇸🇬-[SG]15 = trojan, 172.65.167.108, 443, password = Free-CF-Proxy-SG15 udp-relay = true, skip-cert-verify = true, sni = ava.game.naver.com.web.bmkg.xyz, ws = true, ws-path = /Free-CF-Proxy-SG15, ws-headers = Host:"ava.game.naver.com.web.bmkg.xyz"
+
+
+[Proxy Group]
+Select Group = select,Load Balance,Best Ping,FallbackGroup,🇸🇬-[SG]1,🇸🇬-[SG]2,🇸🇬-[SG]3,🇸🇬-[SG]4,🇸🇬-[SG]5,🇸🇬-[SG]6,🇸🇬-[SG]7,🇸🇬-[SG]8,🇸🇬-[SG]9,🇸🇬-[SG]10,🇸🇬-[SG]11,🇸🇬-[SG]12,🇸🇬-[SG]13,🇸🇬-[SG]14,🇸🇬-[SG]15,
+Load Balance = load-balance,🇸🇬-[SG]1,🇸🇬-[SG]2,🇸🇬-[SG]3,🇸🇬-[SG]4,🇸🇬-[SG]5,🇸🇬-[SG]6,🇸🇬-[SG]7,🇸🇬-[SG]8,🇸🇬-[SG]9,🇸🇬-[SG]10,🇸🇬-[SG]11,🇸🇬-[SG]12,🇸🇬-[SG]13,🇸🇬-[SG]14,🇸🇬-[SG]15,
+Best Ping = url-test,🇸🇬-[SG]1,🇸🇬-[SG]2,🇸🇬-[SG]3,🇸🇬-[SG]4,🇸🇬-[SG]5,🇸🇬-[SG]6,🇸🇬-[SG]7,🇸🇬-[SG]8,🇸🇬-[SG]9,🇸🇬-[SG]10,🇸🇬-[SG]11,🇸🇬-[SG]12,🇸🇬-[SG]13,🇸🇬-[SG]14,🇸🇬-[SG]15, url=http://www.gstatic.com/generate_204, interval=600, tolerance=100, timeout=5
+FallbackGroup = fallback,🇸🇬-[SG]1,🇸🇬-[SG]2,🇸🇬-[SG]3,🇸🇬-[SG]4,🇸🇬-[SG]5,🇸🇬-[SG]6,🇸🇬-[SG]7,🇸🇬-[SG]8,🇸🇬-[SG]9,🇸🇬-[SG]10,🇸🇬-[SG]11,🇸🇬-[SG]12,🇸🇬-[SG]13,🇸🇬-[SG]14,🇸🇬-[SG]15, url=http://www.gstatic.com/generate_204, interval=600, timeout=5
+AdBlock = select,REJECT,Select Group
+
+[Rule]
+MATCH,Select Group
+DOMAIN-SUFFIX,pagead2.googlesyndication.com, AdBlock
+DOMAIN-SUFFIX,pagead2.googleadservices.com, AdBlock
+DOMAIN-SUFFIX,afs.googlesyndication.com, AdBlock
+DOMAIN-SUFFIX,ads.google.com, AdBlock
+DOMAIN-SUFFIX,adservice.google.com, AdBlock
+DOMAIN-SUFFIX,googleadservices.com, AdBlock
+DOMAIN-SUFFIX,static.media.net, AdBlock
+DOMAIN-SUFFIX,media.net, AdBlock
+DOMAIN-SUFFIX,adservetx.media.net, AdBlock
+DOMAIN-SUFFIX,mediavisor.doubleclick.net, AdBlock
+DOMAIN-SUFFIX,m.doubleclick.net, AdBlock
+DOMAIN-SUFFIX,static.doubleclick.net, AdBlock
+DOMAIN-SUFFIX,doubleclick.net, AdBlock
+DOMAIN-SUFFIX,ad.doubleclick.net, AdBlock
+DOMAIN-SUFFIX,fastclick.com, AdBlock
+DOMAIN-SUFFIX,fastclick.net, AdBlock
+DOMAIN-SUFFIX,media.fastclick.net, AdBlock
+DOMAIN-SUFFIX,cdn.fastclick.net, AdBlock
+DOMAIN-SUFFIX,adtago.s3.amazonaws.com, AdBlock
+DOMAIN-SUFFIX,analyticsengine.s3.amazonaws.com, AdBlock
+DOMAIN-SUFFIX,advice-ads.s3.amazonaws.com, AdBlock
+DOMAIN-SUFFIX,affiliationjs.s3.amazonaws.com, AdBlock
+DOMAIN-SUFFIX,advertising-api-eu.amazon.com, AdBlock
+DOMAIN-SUFFIX,amazonclix.com, AdBlock, AdBlock
+DOMAIN-SUFFIX,assoc-amazon.com, AdBlock
+DOMAIN-SUFFIX,ads.yahoo.com, AdBlock
+DOMAIN-SUFFIX,adserver.yahoo.com, AdBlock
+DOMAIN-SUFFIX,global.adserver.yahoo.com, AdBlock
+DOMAIN-SUFFIX,us.adserver.yahoo.com, AdBlock
+DOMAIN-SUFFIX,adspecs.yahoo.com, AdBlock
+DOMAIN-SUFFIX,br.adspecs.yahoo.com, AdBlock
+DOMAIN-SUFFIX,latam.adspecs.yahoo.com, AdBlock
+DOMAIN-SUFFIX,ush.adspecs.yahoo.com, AdBlock
+DOMAIN-SUFFIX,advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,de.advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,es.advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,fr.advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,in.advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,it.advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,sea.advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,uk.advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,analytics.yahoo.com, AdBlock
+DOMAIN-SUFFIX,cms.analytics.yahoo.com, AdBlock
+DOMAIN-SUFFIX,opus.analytics.yahoo.com, AdBlock
+DOMAIN-SUFFIX,sp.analytics.yahoo.com, AdBlock
+DOMAIN-SUFFIX,comet.yahoo.com, AdBlock
+DOMAIN-SUFFIX,log.fc.yahoo.com, AdBlock
+DOMAIN-SUFFIX,ganon.yahoo.com, AdBlock
+DOMAIN-SUFFIX,gemini.yahoo.com, AdBlock
+DOMAIN-SUFFIX,beap.gemini.yahoo.com, AdBlock
+DOMAIN-SUFFIX,geo.yahoo.com, AdBlock
+DOMAIN-SUFFIX,marketingsolutions.yahoo.com, AdBlock
+DOMAIN-SUFFIX,pclick.yahoo.com, AdBlock
+DOMAIN-SUFFIX,analytics.query.yahoo.com, AdBlock
+DOMAIN-SUFFIX,geo.query.yahoo.com, AdBlock
+DOMAIN-SUFFIX,onepush.query.yahoo.com, AdBlock
+DOMAIN-SUFFIX,bats.video.yahoo.com, AdBlock
+DOMAIN-SUFFIX,visit.webhosting.yahoo.com, AdBlock
+DOMAIN-SUFFIX,ads.yap.yahoo.com, AdBlock
+DOMAIN-SUFFIX,m.yap.yahoo.com, AdBlock
+DOMAIN-SUFFIX,partnerads.ysm.yahoo.com, AdBlock
+DOMAIN-SUFFIX,appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,19534.redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,3.redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,30488.redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,4.redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,report.appmetrica.yandex.net, AdBlock
+DOMAIN-SUFFIX,extmaps-api.yandex.net, AdBlock
+DOMAIN-SUFFIX,analytics.mobile.yandex.net, AdBlock
+DOMAIN-SUFFIX,banners.mobile.yandex.net, AdBlock
+DOMAIN-SUFFIX,banners-slb.mobile.yandex.net, AdBlock
+DOMAIN-SUFFIX,startup.mobile.yandex.net, AdBlock
+DOMAIN-SUFFIX,offerwall.yandex.net, AdBlock
+DOMAIN-SUFFIX,adfox.yandex.ru, AdBlock
+DOMAIN-SUFFIX,matchid.adfox.yandex.ru, AdBlock
+DOMAIN-SUFFIX,adsdk.yandex.ru, AdBlock
+DOMAIN-SUFFIX,an.yandex.ru, AdBlock
+DOMAIN-SUFFIX,redirect.appmetrica.yandex.ru, AdBlock
+DOMAIN-SUFFIX,awaps.yandex.ru, AdBlock
+DOMAIN-SUFFIX,awsync.yandex.ru, AdBlock
+DOMAIN-SUFFIX,bs.yandex.ru, AdBlock
+DOMAIN-SUFFIX,bs-meta.yandex.ru, AdBlock
+DOMAIN-SUFFIX,clck.yandex.ru, AdBlock
+DOMAIN-SUFFIX,informer.yandex.ru, AdBlock
+DOMAIN-SUFFIX,kiks.yandex.ru, AdBlock
+DOMAIN-SUFFIX,grade.market.yandex.ru, AdBlock
+DOMAIN-SUFFIX,mc.yandex.ru, AdBlock
+DOMAIN-SUFFIX,metrika.yandex.ru, AdBlock
+DOMAIN-SUFFIX,click.sender.yandex.ru, AdBlock
+DOMAIN-SUFFIX,share.yandex.ru, AdBlock
+DOMAIN-SUFFIX,yandexadexchange.net, AdBlock
+DOMAIN-SUFFIX,mobile.yandexadexchange.net, AdBlock
+DOMAIN-SUFFIX,google-analytics.com, AdBlock
+DOMAIN-SUFFIX,ssl.google-analytics.com, AdBlock
+DOMAIN-SUFFIX,api-hotjar.com, AdBlock
+DOMAIN-SUFFIX,hotjar-analytics.com, AdBlock
+DOMAIN-SUFFIX,hotjar.com, AdBlock
+DOMAIN-SUFFIX,static.hotjar.com, AdBlock
+DOMAIN-SUFFIX,mouseflow.com, AdBlock
+DOMAIN-SUFFIX,a.mouseflow.com, AdBlock
+DOMAIN-SUFFIX,freshmarketer.com, AdBlock
+DOMAIN-SUFFIX,luckyorange.com, AdBlock
+DOMAIN-SUFFIX,luckyorange.net, AdBlock
+DOMAIN-SUFFIX,cdn.luckyorange.com, AdBlock
+DOMAIN-SUFFIX,w1.luckyorange.com, AdBlock
+DOMAIN-SUFFIX,upload.luckyorange.net, AdBlock
+DOMAIN-SUFFIX,cs.luckyorange.net, AdBlock
+DOMAIN-SUFFIX,settings.luckyorange.net, AdBlock
+DOMAIN-SUFFIX,stats.wp.com, AdBlock
+DOMAIN-SUFFIX,notify.bugsnag.com, AdBlock
+DOMAIN-SUFFIX,sessions.bugsnag.com, AdBlock
+DOMAIN-SUFFIX,api.bugsnag.com, AdBlock
+DOMAIN-SUFFIX,app.bugsnag.com, AdBlock
+DOMAIN-SUFFIX,browser.sentry-cdn.com, AdBlock
+DOMAIN-SUFFIX,app.getsentry.com, AdBlock
+DOMAIN-SUFFIX,pixel.facebook.com, AdBlock
+DOMAIN-SUFFIX,analytics.facebook.com, AdBlock
+DOMAIN-SUFFIX,ads.facebook.com, AdBlock
+DOMAIN-SUFFIX,an.facebook.com, AdBlock
+DOMAIN-SUFFIX,ads-api.twitter.com, AdBlock
+DOMAIN-SUFFIX,advertising.twitter.com, AdBlock
+DOMAIN-SUFFIX,ads-twitter.com, AdBlock
+DOMAIN-SUFFIX,static.ads-twitter.com, AdBlock
+DOMAIN-SUFFIX,ads.linkedin.com, AdBlock
+DOMAIN-SUFFIX,analytics.pointdrive.linkedin.com, AdBlock
+DOMAIN-SUFFIX,ads.pinterest.com, AdBlock
+DOMAIN-SUFFIX,log.pinterest.com, AdBlock
+DOMAIN-SUFFIX,ads-dev.pinterest.com, AdBlock
+DOMAIN-SUFFIX,analytics.pinterest.com, AdBlock
+DOMAIN-SUFFIX,trk.pinterest.com, AdBlock
+DOMAIN-SUFFIX,trk2.pinterest.com, AdBlock
+DOMAIN-SUFFIX,widgets.pinterest.com, AdBlock
+DOMAIN-SUFFIX,ads.reddit.com, AdBlock
+DOMAIN-SUFFIX,rereddit.com, AdBlock
+DOMAIN-SUFFIX,events.redditmedia.com, AdBlock
+DOMAIN-SUFFIX,d.reddit.com, AdBlock
+DOMAIN-SUFFIX,ads-sg.tiktok.com, AdBlock
+DOMAIN-SUFFIX,analytics-sg.tiktok.com, AdBlock
+DOMAIN-SUFFIX,ads.tiktok.com, AdBlock
+DOMAIN-SUFFIX,analytics.tiktok.com, AdBlock
+DOMAIN-SUFFIX,ads.youtube.com, AdBlock
+DOMAIN-SUFFIX,youtube.cleverads.vn, AdBlock
+DOMAIN-SUFFIX,ads.yahoo.com, AdBlock
+DOMAIN-SUFFIX,adserver.yahoo.com, AdBlock
+DOMAIN-SUFFIX,global.adserver.yahoo.com, AdBlock
+DOMAIN-SUFFIX,us.adserver.yahoo.com, AdBlock
+DOMAIN-SUFFIX,adspecs.yahoo.com, AdBlock
+DOMAIN-SUFFIX,advertising.yahoo.com, AdBlock
+DOMAIN-SUFFIX,analytics.yahoo.com, AdBlock
+DOMAIN-SUFFIX,analytics.query.yahoo.com, AdBlock
+DOMAIN-SUFFIX,ads.yap.yahoo.com, AdBlock
+DOMAIN-SUFFIX,m.yap.yahoo.com, AdBlock
+DOMAIN-SUFFIX,partnerads.ysm.yahoo.com, AdBlock
+DOMAIN-SUFFIX,appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,19534.redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,3.redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,30488.redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,4.redirect.appmetrica.yandex.com, AdBlock
+DOMAIN-SUFFIX,report.appmetrica.yandex.net, AdBlock
+DOMAIN-SUFFIX,extmaps-api.yandex.net, AdBlock
+DOMAIN-SUFFIX,analytics.mobile.yandex.net, AdBlock
+DOMAIN-SUFFIX,banners.mobile.yandex.net, AdBlock
+DOMAIN-SUFFIX,banners-slb.mobile.yandex.net, AdBlock
+DOMAIN-SUFFIX,startup.mobile.yandex.net, AdBlock
+DOMAIN-SUFFIX,offerwall.yandex.net, AdBlock
+DOMAIN-SUFFIX,adfox.yandex.ru, AdBlock
+DOMAIN-SUFFIX,matchid.adfox.yandex.ru, AdBlock
+DOMAIN-SUFFIX,adsdk.yandex.ru, AdBlock
+DOMAIN-SUFFIX,an.yandex.ru, AdBlock
+DOMAIN-SUFFIX,redirect.appmetrica.yandex.ru, AdBlock
+DOMAIN-SUFFIX,awaps.yandex.ru, AdBlock
+DOMAIN-SUFFIX,awsync.yandex.ru, AdBlock
+DOMAIN-SUFFIX,bs.yandex.ru, AdBlock
+DOMAIN-SUFFIX,bs-meta.yandex.ru, AdBlock
+DOMAIN-SUFFIX,clck.yandex.ru, AdBlock
+DOMAIN-SUFFIX,informer.yandex.ru, AdBlock
+DOMAIN-SUFFIX,kiks.yandex.ru, AdBlock
+DOMAIN-SUFFIX,grade.market.yandex.ru, AdBlock
+DOMAIN-SUFFIX,mc.yandex.ru, AdBlock
+DOMAIN-SUFFIX,metrika.yandex.ru, AdBlock
+DOMAIN-SUFFIX,click.sender.yandex.ru, AdBlock
+DOMAIN-SUFFIX,share.yandex.ru, AdBlock
+DOMAIN-SUFFIX,yandexadexchange.net, AdBlock
+DOMAIN-SUFFIX,mobile.yandexadexchange.net, AdBlock
+DOMAIN-SUFFIX,bdapi-in-ads.realmemobile.com, AdBlock
+DOMAIN-SUFFIX,adsfs.oppomobile.com, AdBlock
+DOMAIN-SUFFIX,adx.ads.oppomobile.com, AdBlock
+DOMAIN-SUFFIX,bdapi.ads.oppomobile.com, AdBlock
+DOMAIN-SUFFIX,ck.ads.oppomobile.com, AdBlock
+DOMAIN-SUFFIX,data.ads.oppomobile.com, AdBlock
+DOMAIN-SUFFIX,g1.ads.oppomobile.com, AdBlock
+DOMAIN-SUFFIX,api.ad.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,app.chat.xiaomi.net, AdBlock
+DOMAIN-SUFFIX,data.mistat.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,data.mistat.intl.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,data.mistat.india.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,data.mistat.rus.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,sdkconfig.ad.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,sdkconfig.ad.intl.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,globalapi.ad.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,www.cdn.ad.xiaomi.com, AdBlock
+DOMAIN-SUFFIX,tracking.miui.com, AdBlock
+DOMAIN-SUFFIX,sa.api.intl.miui.com, AdBlock
+DOMAIN-SUFFIX,tracking.miui.com, AdBlock
+DOMAIN-SUFFIX,tracking.intl.miui.com, AdBlock
+DOMAIN-SUFFIX,tracking.india.miui.com, AdBlock
+DOMAIN-SUFFIX,tracking.rus.miui.com, AdBlock
+DOMAIN-SUFFIX,analytics.oneplus.cn, AdBlock
+DOMAIN-SUFFIX,click.oneplus.cn, AdBlock
+DOMAIN-SUFFIX,click.oneplus.com, AdBlock
+DOMAIN-SUFFIX,open.oneplus.net, AdBlock
+DOMAIN-SUFFIX,metrics.data.hicloud.com, AdBlock
+DOMAIN-SUFFIX,metrics1.data.hicloud.com, AdBlock
+DOMAIN-SUFFIX,metrics2.data.hicloud.com, AdBlock
+DOMAIN-SUFFIX,metrics3.data.hicloud.com, AdBlock
+DOMAIN-SUFFIX,metrics4.data.hicloud.com, AdBlock
+DOMAIN-SUFFIX,metrics5.data.hicloud.com, AdBlock
+DOMAIN-SUFFIX,logservice.hicloud.com, AdBlock
+DOMAIN-SUFFIX,logservice1.hicloud.com, AdBlock
+DOMAIN-SUFFIX,metrics-dra.dt.hicloud.com, AdBlock
+DOMAIN-SUFFIX,logbak.hicloud.com, AdBlock
+DOMAIN-SUFFIX,ad.samsungadhub.com, AdBlock
+DOMAIN-SUFFIX,samsungadhub.com, AdBlock
+DOMAIN-SUFFIX,samsungads.com, AdBlock
+DOMAIN-SUFFIX,smetrics.samsung.com, AdBlock
+DOMAIN-SUFFIX,nmetrics.samsung.com, AdBlock
+DOMAIN-SUFFIX,samsung-com.112.2o7.net, AdBlock
+DOMAIN-SUFFIX,business.samsungusa.com, AdBlock
+DOMAIN-SUFFIX,analytics.samsungknox.com, AdBlock
+DOMAIN-SUFFIX,bigdata.ssp.samsung.com, AdBlock
+DOMAIN-SUFFIX,analytics-api.samsunghealthcn.com, AdBlock
+DOMAIN-SUFFIX,config.samsungads.com, AdBlock
+DOMAIN-SUFFIX,metrics.apple.com, AdBlock
+DOMAIN-SUFFIX,securemetrics.apple.com, AdBlock
+DOMAIN-SUFFIX,supportmetrics.apple.com, AdBlock
+DOMAIN-SUFFIX,metrics.icloud.com, AdBlock
+DOMAIN-SUFFIX,metrics.mzstatic.com, AdBlock
+DOMAIN-SUFFIX,dzc-metrics.mzstatic.com, AdBlock
+DOMAIN-SUFFIX,books-analytics-events.news.apple-dns.net, AdBlock
+DOMAIN-SUFFIX,books-analytics-events.apple.com, AdBlock
+DOMAIN-SUFFIX,stocks-analytics-events.apple.com, AdBlock
+DOMAIN-SUFFIX,stocks-analytics-events.news.apple-dns.net, AdBlock
+DOMAIN-KEYWORD,pagead2, AdBlock
+DOMAIN-KEYWORD,adservice, AdBlock
+DOMAIN-KEYWORD,.ads, AdBlock
+DOMAIN-KEYWORD,.ad, AdBlock
+DOMAIN-KEYWORD,adservetx, AdBlock
+DOMAIN-KEYWORD,mediavisor, AdBlock
+DOMAIN-KEYWORD,adtago, AdBlock
+DOMAIN-KEYWORD,analyticsengine, AdBlock
+DOMAIN-KEYWORD,advice-ads, AdBlock
+DOMAIN-KEYWORD,affiliationjs, AdBlock
+DOMAIN-KEYWORD,advertising, AdBlock
+DOMAIN-KEYWORD,adserver, AdBlock
+DOMAIN-KEYWORD,pclick, AdBlock
+DOMAIN-KEYWORD,partnerads, AdBlock
+DOMAIN-KEYWORD,appmetrica, AdBlock
+DOMAIN-KEYWORD,adfox, AdBlock
+DOMAIN-KEYWORD,adsdk, AdBlock
+DOMAIN-KEYWORD,clck, AdBlock
+DOMAIN-KEYWORD,metrika, AdBlock
+DOMAIN-KEYWORD,api-hotjar, AdBlock
+DOMAIN-KEYWORD,hotjar-analytics, AdBlock
+DOMAIN-KEYWORD,hotjar, AdBlock
+DOMAIN-KEYWORD,luckyorange, AdBlock
+DOMAIN-KEYWORD,bugsnag, AdBlock
+DOMAIN-KEYWORD,sentry-cdn, AdBlock
+DOMAIN-KEYWORD,getsentry, AdBlock
+DOMAIN-KEYWORD,ads-api, AdBlock
+DOMAIN-KEYWORD,ads-twitter, AdBlock
+DOMAIN-KEYWORD,pointdrive, AdBlock
+DOMAIN-KEYWORD,ads-dev, AdBlock
+DOMAIN-KEYWORD,trk, AdBlock
+DOMAIN-KEYWORD,cleverads, AdBlock
+DOMAIN-KEYWORD,ads-sg, AdBlock
+DOMAIN-KEYWORD,analytics-sg, AdBlock
+DOMAIN-KEYWORD,adspecs, AdBlock
+DOMAIN-KEYWORD,adsfs, AdBlock
+DOMAIN-KEYWORD,adx, AdBlock
+DOMAIN-KEYWORD,tracking, AdBlock
+DOMAIN-KEYWORD,logservice, AdBlock
+DOMAIN-KEYWORD,logbak, AdBlock
+DOMAIN-KEYWORD,smetrics, AdBlock
+DOMAIN-KEYWORD,nmetrics, AdBlock
+DOMAIN-KEYWORD,securemetrics, AdBlock
+DOMAIN-KEYWORD,supportmetrics, AdBlock
+DOMAIN-KEYWORD,books-analytics, AdBlock
+DOMAIN-KEYWORD,stocks-analytics, AdBlock
+DOMAIN-SUFFIX,analytics.s3.amazonaws.com, AdBlock
+DOMAIN-SUFFIX,analytics.google.com, AdBlock
+DOMAIN-SUFFIX,click.googleanalytics.com, AdBlock
+DOMAIN-SUFFIX,events.reddit.com, AdBlock
+DOMAIN-SUFFIX,business-api.tiktok.com, AdBlock
+DOMAIN-SUFFIX,log.byteoversea.com, AdBlock
+DOMAIN-SUFFIX,udc.yahoo.com, AdBlock
+DOMAIN-SUFFIX,udcm.yahoo.com, AdBlock
+DOMAIN-SUFFIX,auction.unityads.unity3d.com, AdBlock
+DOMAIN-SUFFIX,webview.unityads.unity3d.com, AdBlock
+DOMAIN-SUFFIX,config.unityads.unity3d.com, AdBlock
+DOMAIN-SUFFIX,adfstat.yandex.ru, AdBlock
+DOMAIN-SUFFIX,iot-eu-logser.realme.com, AdBlock
+DOMAIN-SUFFIX,iot-logser.realme.com, AdBlock
+DOMAIN-SUFFIX,bdapi-ads.realmemobile.com, AdBlock
+DOMAIN-SUFFIX,grs.hicloud.com, AdBlock
+DOMAIN-SUFFIX,weather-analytics-events.apple.com, AdBlock
+DOMAIN-SUFFIX,notes-analytics-events.apple.com, AdBlock
+FINAL,Select Group
+

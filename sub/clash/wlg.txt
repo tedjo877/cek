@@ -1,0 +1,994 @@
+#### BY : FREE CF PROXY #### 
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  enable: true
+  ipv6: false
+  use-host: true
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - +.nflxvideo.net
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
+proxies:
+- name: 🇸🇬-[SG]1🦊
+  server: ava.game.naver.com
+  port: 443
+  type: vless
+  uuid: e64f6156-5df6-4999-8a72-b5ec0ec9c8ee
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG1
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]1🔐
+  server: ava.game.naver.com
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG1
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG1
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]1🛡️
+  type: ss
+  server: ava.game.naver.com
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG1
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG1
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]2🦊
+  server: account.pmang.game.naver.com
+  port: 443
+  type: vless
+  uuid: 92854e18-6702-4c1c-a4ec-20b4231507f4
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG2
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]2🔐
+  server: account.pmang.game.naver.com
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG2
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG2
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]2🛡️
+  type: ss
+  server: account.pmang.game.naver.com
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG2
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG2
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]3🦊
+  server: bbsdata.df.game.naver.com
+  port: 443
+  type: vless
+  uuid: 5dec94db-f501-45b8-a749-8143e8cd169f
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG3
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]3🔐
+  server: bbsdata.df.game.naver.com
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG3
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG3
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]3🛡️
+  type: ss
+  server: bbsdata.df.game.naver.com
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG3
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG3
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]4🦊
+  server: care.pmang.game.naver.com
+  port: 443
+  type: vless
+  uuid: 3ca1ba6b-e70f-4fee-b485-f35650c3eceb
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG4
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]4🔐
+  server: care.pmang.game.naver.com
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG4
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG4
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]4🛡️
+  type: ss
+  server: care.pmang.game.naver.com
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG4
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG4
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]5🦊
+  server: df.game.naver.com
+  port: 443
+  type: vless
+  uuid: 5541c7ab-1345-467f-bce3-1275ccd584ab
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG5
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]5🔐
+  server: df.game.naver.com
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG5
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG5
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]5🛡️
+  type: ss
+  server: df.game.naver.com
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG5
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG5
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]6🦊
+  server: gamebulletin.nexon.game.naver.com
+  port: 443
+  type: vless
+  uuid: 8963f506-4293-4d37-b1d6-5f5cfc781c3c
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG6
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]6🔐
+  server: gamebulletin.nexon.game.naver.com
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG6
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG6
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]6🛡️
+  type: ss
+  server: gamebulletin.nexon.game.naver.com
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG6
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG6
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]7🦊
+  server: plus-store.naver.com
+  port: 443
+  type: vless
+  uuid: 09422804-c4b4-4c0a-b8ae-73c8387568f7
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG7
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]7🔐
+  server: plus-store.naver.com
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG7
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG7
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]7🛡️
+  type: ss
+  server: plus-store.naver.com
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG7
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG7
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]8🦊
+  server: z9star.game.naver.com
+  port: 443
+  type: vless
+  uuid: 5ac23e9c-2f99-45c2-94e8-867d75d593d3
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG8
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]8🔐
+  server: z9star.game.naver.com
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG8
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG8
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]8🛡️
+  type: ss
+  server: z9star.game.naver.com
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG8
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG8
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]9🦊
+  server: 172.65.167.108
+  port: 443
+  type: vless
+  uuid: 16774984-47e5-4116-9d0e-11c45e568c61
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG9
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]9🔐
+  server: 172.65.167.108
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG9
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG9
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]9🛡️
+  type: ss
+  server: 172.65.167.108
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG9
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG9
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]10🦊
+  server: 162.159.140.159
+  port: 443
+  type: vless
+  uuid: d60524d8-c622-4c5c-b998-32c66f48eef8
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG10
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]10🔐
+  server: 162.159.140.159
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG10
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG10
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]10🛡️
+  type: ss
+  server: 162.159.140.159
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG10
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG10
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]11🦊
+  server: 162.159.140.178
+  port: 443
+  type: vless
+  uuid: ab2fc107-12dc-4608-b2f5-5ca0a79dc74e
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG11
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]11🔐
+  server: 162.159.140.178
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG11
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG11
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]11🛡️
+  type: ss
+  server: 162.159.140.178
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG11
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG11
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]12🦊
+  server: 104.18.42.238
+  port: 443
+  type: vless
+  uuid: bcc0ba82-5a93-4678-b983-8c44109ca363
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG12
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]12🔐
+  server: 104.18.42.238
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG12
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG12
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]12🛡️
+  type: ss
+  server: 104.18.42.238
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG12
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG12
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]13🦊
+  server: 104.16.125.59
+  port: 443
+  type: vless
+  uuid: 98315baf-ec0c-45a9-ada4-ee88c046dfbc
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG13
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]13🔐
+  server: 104.16.125.59
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG13
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG13
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]13🛡️
+  type: ss
+  server: 104.16.125.59
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG13
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG13
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]14🦊
+  server: 104.18.213.235
+  port: 443
+  type: vless
+  uuid: 558e9a15-c5b6-4179-8b8a-f6c44cf13ef6
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG14
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]14🔐
+  server: 104.18.213.235
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG14
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG14
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]14🛡️
+  type: ss
+  server: 104.18.213.235
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG14
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG14
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]15🦊
+  server: 172.64.145.18
+  port: 443
+  type: vless
+  uuid: a991cbcc-26c2-4925-ad6d-51150cbabb3f
+  cipher: auto
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG15
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]15🔐
+  server: 172.64.145.18
+  port: 443
+  type: trojan
+  password: Free-CF-Proxy-SG15
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: ava.game.naver.com.web.bmkg.xyz
+  ws-opts:
+    path: /Free-CF-Proxy-SG15
+    headers:
+      Host: ava.game.naver.com.web.bmkg.xyz
+- name: 🇸🇬-[SG]15🛡️
+  type: ss
+  server: 172.64.145.18
+  port: 443
+  cipher: none
+  password: Free-CF-Proxy-SG15
+  udp: true
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    tls: true
+    skip-cert-verify: true
+    host: ava.game.naver.com.web.bmkg.xyz
+    path: /Free-CF-Proxy-SG15
+    mux: false
+    headers:
+      custom: ava.game.naver.com.web.bmkg.xyz
+proxy-groups:
+- name: INTERNET
+  type: select
+  disable-udp: true
+  proxies:
+  - BEST-PING
+  - LOAD-BALANCE
+  - 🇸🇬-[SG]1🦊
+  - 🇸🇬-[SG]1🔐
+  - 🇸🇬-[SG]1🛡️
+  - 🇸🇬-[SG]2🦊
+  - 🇸🇬-[SG]2🔐
+  - 🇸🇬-[SG]2🛡️
+  - 🇸🇬-[SG]3🦊
+  - 🇸🇬-[SG]3🔐
+  - 🇸🇬-[SG]3🛡️
+  - 🇸🇬-[SG]4🦊
+  - 🇸🇬-[SG]4🔐
+  - 🇸🇬-[SG]4🛡️
+  - 🇸🇬-[SG]5🦊
+  - 🇸🇬-[SG]5🔐
+  - 🇸🇬-[SG]5🛡️
+  - 🇸🇬-[SG]6🦊
+  - 🇸🇬-[SG]6🔐
+  - 🇸🇬-[SG]6🛡️
+  - 🇸🇬-[SG]7🦊
+  - 🇸🇬-[SG]7🔐
+  - 🇸🇬-[SG]7🛡️
+  - 🇸🇬-[SG]8🦊
+  - 🇸🇬-[SG]8🔐
+  - 🇸🇬-[SG]8🛡️
+  - 🇸🇬-[SG]9🦊
+  - 🇸🇬-[SG]9🔐
+  - 🇸🇬-[SG]9🛡️
+  - 🇸🇬-[SG]10🦊
+  - 🇸🇬-[SG]10🔐
+  - 🇸🇬-[SG]10🛡️
+  - 🇸🇬-[SG]11🦊
+  - 🇸🇬-[SG]11🔐
+  - 🇸🇬-[SG]11🛡️
+  - 🇸🇬-[SG]12🦊
+  - 🇸🇬-[SG]12🔐
+  - 🇸🇬-[SG]12🛡️
+  - 🇸🇬-[SG]13🦊
+  - 🇸🇬-[SG]13🔐
+  - 🇸🇬-[SG]13🛡️
+  - 🇸🇬-[SG]14🦊
+  - 🇸🇬-[SG]14🔐
+  - 🇸🇬-[SG]14🛡️
+  - 🇸🇬-[SG]15🦊
+  - 🇸🇬-[SG]15🔐
+  - 🇸🇬-[SG]15🛡️
+- name: ADS
+  type: select
+  disable-udp: false
+  proxies:
+  - REJECT
+  - INTERNET
+- name: LOAD-BALANCE
+  type: load-balance
+  url: https://detectportal.firefox.com/success.txt
+  interval: 60
+  proxies:
+  - 🇸🇬-[SG]1🦊
+  - 🇸🇬-[SG]1🔐
+  - 🇸🇬-[SG]1🛡️
+  - 🇸🇬-[SG]2🦊
+  - 🇸🇬-[SG]2🔐
+  - 🇸🇬-[SG]2🛡️
+  - 🇸🇬-[SG]3🦊
+  - 🇸🇬-[SG]3🔐
+  - 🇸🇬-[SG]3🛡️
+  - 🇸🇬-[SG]4🦊
+  - 🇸🇬-[SG]4🔐
+  - 🇸🇬-[SG]4🛡️
+  - 🇸🇬-[SG]5🦊
+  - 🇸🇬-[SG]5🔐
+  - 🇸🇬-[SG]5🛡️
+  - 🇸🇬-[SG]6🦊
+  - 🇸🇬-[SG]6🔐
+  - 🇸🇬-[SG]6🛡️
+  - 🇸🇬-[SG]7🦊
+  - 🇸🇬-[SG]7🔐
+  - 🇸🇬-[SG]7🛡️
+  - 🇸🇬-[SG]8🦊
+  - 🇸🇬-[SG]8🔐
+  - 🇸🇬-[SG]8🛡️
+  - 🇸🇬-[SG]9🦊
+  - 🇸🇬-[SG]9🔐
+  - 🇸🇬-[SG]9🛡️
+  - 🇸🇬-[SG]10🦊
+  - 🇸🇬-[SG]10🔐
+  - 🇸🇬-[SG]10🛡️
+  - 🇸🇬-[SG]11🦊
+  - 🇸🇬-[SG]11🔐
+  - 🇸🇬-[SG]11🛡️
+  - 🇸🇬-[SG]12🦊
+  - 🇸🇬-[SG]12🔐
+  - 🇸🇬-[SG]12🛡️
+  - 🇸🇬-[SG]13🦊
+  - 🇸🇬-[SG]13🔐
+  - 🇸🇬-[SG]13🛡️
+  - 🇸🇬-[SG]14🦊
+  - 🇸🇬-[SG]14🔐
+  - 🇸🇬-[SG]14🛡️
+  - 🇸🇬-[SG]15🦊
+  - 🇸🇬-[SG]15🔐
+  - 🇸🇬-[SG]15🛡️
+
+- name: BEST-PING
+  type: url-test
+  url: https://detectportal.firefox.com/success.txt
+  interval: 60
+  proxies:
+  - 🇸🇬-[SG]1🦊
+  - 🇸🇬-[SG]1🔐
+  - 🇸🇬-[SG]1🛡️
+  - 🇸🇬-[SG]2🦊
+  - 🇸🇬-[SG]2🔐
+  - 🇸🇬-[SG]2🛡️
+  - 🇸🇬-[SG]3🦊
+  - 🇸🇬-[SG]3🔐
+  - 🇸🇬-[SG]3🛡️
+  - 🇸🇬-[SG]4🦊
+  - 🇸🇬-[SG]4🔐
+  - 🇸🇬-[SG]4🛡️
+  - 🇸🇬-[SG]5🦊
+  - 🇸🇬-[SG]5🔐
+  - 🇸🇬-[SG]5🛡️
+  - 🇸🇬-[SG]6🦊
+  - 🇸🇬-[SG]6🔐
+  - 🇸🇬-[SG]6🛡️
+  - 🇸🇬-[SG]7🦊
+  - 🇸🇬-[SG]7🔐
+  - 🇸🇬-[SG]7🛡️
+  - 🇸🇬-[SG]8🦊
+  - 🇸🇬-[SG]8🔐
+  - 🇸🇬-[SG]8🛡️
+  - 🇸🇬-[SG]9🦊
+  - 🇸🇬-[SG]9🔐
+  - 🇸🇬-[SG]9🛡️
+  - 🇸🇬-[SG]10🦊
+  - 🇸🇬-[SG]10🔐
+  - 🇸🇬-[SG]10🛡️
+  - 🇸🇬-[SG]11🦊
+  - 🇸🇬-[SG]11🔐
+  - 🇸🇬-[SG]11🛡️
+  - 🇸🇬-[SG]12🦊
+  - 🇸🇬-[SG]12🔐
+  - 🇸🇬-[SG]12🛡️
+  - 🇸🇬-[SG]13🦊
+  - 🇸🇬-[SG]13🔐
+  - 🇸🇬-[SG]13🛡️
+  - 🇸🇬-[SG]14🦊
+  - 🇸🇬-[SG]14🔐
+  - 🇸🇬-[SG]14🛡️
+  - 🇸🇬-[SG]15🦊
+  - 🇸🇬-[SG]15🔐
+  - 🇸🇬-[SG]15🛡️
+rule-providers:
+  rule_hijacking:
+    type: file
+    behavior: classical
+    path: "./rule_provider/rule_hijacking.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_hijacking.yaml
+  rule_privacy:
+    type: file
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_privacy.yaml
+    path: "./rule_provider/rule_privacy.yaml"
+  rule_basicads:
+    type: file
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
+    path: "./rule_provider/rule_basicads.yaml"
+  rule_personalads:
+    type: file
+    behavior: classical
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_personalads.yaml
+    path: "./rule_provider/rule_personalads.yaml"
+rules:
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- RULE-SET,rule_personalads,ADS
+- RULE-SET,rule_basicads,ADS
+- RULE-SET,rule_hijacking,ADS
+- RULE-SET,rule_privacy,ADS
+- MATCH,INTERNET
