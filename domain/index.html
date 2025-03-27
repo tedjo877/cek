@@ -159,8 +159,8 @@
 
             if (totalPages <= 1) return;
 
-            addPaginationButton('Awal', () => changePage(1));
-            if (currentPage > 1) addPaginationButton('Prev', () => changePage(currentPage - 1));
+            addPaginationButton('<<<', () => changePage(1));
+            if (currentPage > 1) addPaginationButton('<<', () => changePage(currentPage - 1));
 
             let startPage = Math.max(1, currentPage - 2);
             let endPage = Math.min(totalPages, currentPage + 2);
@@ -171,8 +171,8 @@
                 addPaginationButton(i, () => changePage(i), i === currentPage);
             }
 
-            if (currentPage < totalPages) addPaginationButton('Next', () => changePage(currentPage + 1));
-            addPaginationButton('Akhir', () => changePage(totalPages));
+            if (currentPage < totalPages) addPaginationButton('>>', () => changePage(currentPage + 1));
+            addPaginationButton('>>>', () => changePage(totalPages));
         }
 
         function addPaginationButton(label, onClick, isActive = false) {
@@ -187,21 +187,34 @@
             displayPage(page);
         }
 
-        function checkProxies() {
-            filteredData.forEach((item, index) => {
-                fetch(`https://api.ndeso.xyz/check?ip=${item.ip}:${item.port}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        item.status = data.message.includes(" ACTIVE ✅") ? " ACTIVE ✅" : "DEAD ❌";
-                        updateTableStatus(index, item.status);
-                    })
-                    .catch(() => updateTableStatus(index, "DEAD ❌"));
-            });
-        }
+    
+    async function checkProxies() {
+        for (let i = 0; i < filteredData.length; i++) {
+            let item = filteredData[i];
 
-        function updateTableStatus(index, status) {
-            document.querySelectorAll('.status')[index].textContent = status;
+            try {
+                let response = await fetch(`https://api.ndeso.xyz/check?ip=${item.ip}:${item.port}`);
+                let data = await response.json();
+
+                item.status = data.message.includes(" ACTIVE ✅") ? "✅ ACTIVE" : "❌ DEAD";
+            } catch (error) {
+                item.status = "❌ DEAD"; // Jika gagal ambil data, anggap proxy mati
+            }
+
+            updateTableStatus(i, item.status);
+
+            // Tambahkan delay 500ms untuk menghindari pembatasan API
+            await new Promise(resolve => setTimeout(resolve, 500));
         }
+    }
+
+    function updateTableStatus(index, status) {
+        let rows = document.querySelectorAll('.status');
+        if (rows[index]) {
+            rows[index].textContent = status;
+        }
+    }
+
     </script>
 </body>
 </html>
