@@ -47,10 +47,18 @@
             color: white;
             font-weight: bold;
         }
+        #searchInput {
+            padding: 8px;
+            margin-bottom: 20px;
+            width: 300px;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
     <h1>Daftar Proxy</h1>
+    
+    <input type="text" id="searchInput" placeholder="Cari berdasarkan IP, Port, ID, ISP..." oninput="searchData()">
     
     <div class="filter-container" id="filterButtons">
         <!-- Tombol filter ID negara akan ditambahkan di sini -->
@@ -121,6 +129,7 @@
 
         // Fungsi untuk memfilter data berdasarkan ID negara
         function filterByID(id) {
+            currentFilter = id;
             filteredData = proxyData.filter(item => item[2] === id);
             currentPage = 1; // Reset ke halaman pertama
 
@@ -176,14 +185,14 @@
 
             // Tombol "Awal"
             const firstButton = document.createElement('button');
-            firstButton.textContent = '<<<';
+            firstButton.textContent = 'Awal';
             firstButton.onclick = () => changePage(1);
             paginationContainer.appendChild(firstButton);
 
             // Tombol "Previous"
             if (currentPage > 1) {
                 const prevButton = document.createElement('button');
-                prevButton.textContent = '<<';
+                prevButton.textContent = 'Previous';
                 prevButton.onclick = () => changePage(currentPage - 1);
                 paginationContainer.appendChild(prevButton);
             }
@@ -202,14 +211,14 @@
             // Tombol "Next"
             if (currentPage < totalPages) {
                 const nextButton = document.createElement('button');
-                nextButton.textContent = '>>';
+                nextButton.textContent = 'Next';
                 nextButton.onclick = () => changePage(currentPage + 1);
                 paginationContainer.appendChild(nextButton);
             }
 
             // Tombol "Akhir"
             const lastButton = document.createElement('button');
-            lastButton.textContent = '>>>';
+            lastButton.textContent = 'Akhir';
             lastButton.onclick = () => changePage(totalPages);
             paginationContainer.appendChild(lastButton);
         }
@@ -218,6 +227,18 @@
         function changePage(page) {
             if (page < 1 || page > Math.ceil(filteredData.length / itemsPerPage)) return;
             currentPage = page;
+            displayPage(currentPage);
+            createPagination();
+        }
+
+        // Fungsi pencarian untuk filter data
+        function searchData() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            filteredData = proxyData.filter(item => {
+                return item.some(col => col.toLowerCase().includes(query));
+            });
+
+            currentPage = 1; // Reset ke halaman pertama setelah pencarian
             displayPage(currentPage);
             createPagination();
         }
