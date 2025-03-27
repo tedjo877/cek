@@ -64,11 +64,10 @@
     <table id="proxyTable">
         <thead>
             <tr>
-                <th>IP</th>
-                <th>Port</th>
-                <th>ID</th>
-                <th>ISP</th>
-                <th>Status</th>
+                <th>IP:Port</th>
+                <th>Status</th
+                <th>ISP || ID</th>                
+                >
             </tr>
         </thead>
         <tbody></tbody>
@@ -142,12 +141,11 @@
             data.slice(startIndex, endIndex).forEach(item => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${item.ip}</td>
-                    <td>${item.port}</td>
-                    <td>${item.id}</td>
-                    <td>${item.isp}</td>
-                    <td class="status">${item.status}</td>
-                `;
+                    <td>${item.ip}:${item.port}</td>
+                    <td class="status">${item.status}</td>      
+                    <td>${item.isp} || ${item.id}</td>
+                    
+                     `;
                 tableBody.appendChild(row);
             });
 
@@ -194,10 +192,10 @@
                 fetch(`https://api.ndeso.xyz/check?ip=${item.ip}:${item.port}`)
                     .then(response => response.json())
                     .then(data => {
-                        item.status = data.message.includes("ACTIVE") ? "✅ ACTIVE" : "❌ INACTIVE";
+                        item.status = data.message.includes("ACTIVE ✅") ? "✅ ACTIVE" : "❌ DEAD";
                         updateTableStatus(index, item.status);
                     })
-                    .catch(() => updateTableStatus(index, "❌ INACTIVE"));
+                    .catch(() => updateTableStatus(index, "❌ DEAD"));
             });
         }
 
