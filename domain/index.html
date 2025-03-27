@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Proxy</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .filter-buttons {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .filter-buttons button {
+            padding: 5px 10px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Proxy</h1>
+    
+    <div class="filter-buttons" id="filterButtons">
+        <!-- Tombol filter ID negara akan ditambahkan di sini -->
+    </div>
+
+    <table id="proxyTable">
+        <thead>
+            <tr>
+                <th>IP</th>
+                <th>Port</th>
+                <th>ID</th>
+                <th>ISP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan ditambahkan di sini -->
+        </tbody>
+    </table>
+
+    <div class="pagination" id="pagination">
+        <!-- Pagination akan ditambahkan di sini -->
+    </div>
+
+    <script>
+        const itemsPerPage = 10; // Jumlah data per halaman
+        let currentPage = 1;
+        let proxyData = [];
+        let filteredData = [];
+
+        // Ambil data dari file
+        fetch('https://bmkg.xyz/update_proxyip.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Pisahkan data per baris
+                const lines = data.split('\n');
+                proxyData = lines.map(line => line.split(',').map(col => col.trim()));
+
+                // Ambil ID unik (negara) untuk filter hanya ID yang ada di dalam data
+                const ids = [...new Set(proxyData.map(item => item[2]))];
+                createFilterButtons(ids);
+
+                // Tampilkan data pertama kali
+                displayPage(currentPage);
+                createPagination();
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+
+        // Fungsi untuk membuat tombol filter ID negara
+        function createFilterButtons(ids) {
+            const filterContainer = document.getElementById('filterButtons');
+            filterContainer.innerHTML = ''; // Hapus tombol sebelumnya
+
+            const allButton = document.createElement('button');
+            allButton.textContent = 'Semua';
+            allButton.onclick = () => filterByID(null);
+            filterContainer.appendChild(allButton);
+
+            ids.forEach(id => {
+                const button = document.createElement('button');
+                button.textContent = id;
+                button.onclick = () => filterByID(id);
+                filterContainer.appendChild(button);
+            });
+        }
+
+        // Fungsi untuk memfilter data berdasarkan ID negara
+        function filterByID(id) {
+            if (id) {
+                filteredData = proxyData.filter(item => item[2] === id);
+            } else {
+                filteredData = [...proxyData]; // Kembalikan ke data semula jika "Semua" dipilih
+            }
+            currentPage = 1; // Reset ke halaman pertama
+            displayPage(currentPage);
+            createPagination();
+        }
+
+        // Fungsi untuk menampilkan data per halaman
+        function displayPage(page) {
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const tableBody = document.querySelector('#proxyTable tbody');
+            tableBody.innerHTML = ''; // Hapus tabel sebelumnya
+
+            // Loop untuk menampilkan data di halaman yang dipilih
+            const currentData = filteredData.slice(startIndex, endIndex);
+            currentData.forEach(cols => {
+                const row = document.createElement('tr');
+                cols.forEach(col => {
+                    const cell = document.createElement('td');
+                    cell.textContent = col;
+                    row.appendChild(cell);
+                });
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Fungsi untuk membuat pagination
+        function createPagination() {
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+            const paginationContainer = document.getElementById('pagination');
+            paginationContainer.innerHTML = '';
+
+            // Tombol untuk halaman sebelumnya
+            if (currentPage > 1) {
+                const prevButton = document.createElement('button');
+                prevButton.textContent = 'Previous';
+                prevButton.onclick = () => changePage(currentPage - 1);
+                paginationContainer.appendChild(prevButton);
+            }
+
+            // Tombol untuk halaman-halaman
+            for (let i = 1; i <= totalPages; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.textContent = i;
+                pageButton.onclick = () => changePage(i);
+                if (i === currentPage) {
+                    pageButton.style.fontWeight = 'bold';
+                }
+                paginationContainer.appendChild(pageButton);
+            }
+
+            // Tombol untuk halaman selanjutnya
+            if (currentPage < totalPages) {
+                const nextButton = document.createElement('button');
+                nextButton.textContent = 'Next';
+                nextButton.onclick = () => changePage(currentPage + 1);
+                paginationContainer.appendChild(nextButton);
+            }
+        }
+
+        // Fungsi untuk mengubah halaman
+        function changePage(page) {
+            if (page < 1 || page > Math.ceil(filteredData.length / itemsPerPage)) return;
+            currentPage = page;
+            displayPage(currentPage);
+            createPagination();
+        }
+    </script>
+</body>
+</html>
