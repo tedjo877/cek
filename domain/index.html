@@ -76,13 +76,12 @@
                 const lines = data.split('\n');
                 proxyData = lines.map(line => line.split(',').map(col => col.trim()));
 
-                // Ambil ID unik (negara) untuk filter hanya ID yang ada di dalam data
-                const ids = [...new Set(proxyData.map(item => item[2]))];
+                // Ambil ID unik (negara), pastikan ID tidak kosong
+                const ids = [...new Set(proxyData.map(item => item[2]).filter(id => id))];
                 createFilterButtons(ids);
 
                 // Tampilkan data pertama kali
-                displayPage(currentPage);
-                createPagination();
+                filterByID(null);
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
@@ -108,11 +107,7 @@
 
         // Fungsi untuk memfilter data berdasarkan ID negara
         function filterByID(id) {
-            if (id) {
-                filteredData = proxyData.filter(item => item[2] === id);
-            } else {
-                filteredData = [...proxyData]; // Kembalikan ke data semula jika "Semua" dipilih
-            }
+            filteredData = id ? proxyData.filter(item => item[2] === id) : [...proxyData];
             currentPage = 1; // Reset ke halaman pertama
             displayPage(currentPage);
             createPagination();
@@ -126,8 +121,7 @@
             tableBody.innerHTML = ''; // Hapus tabel sebelumnya
 
             // Loop untuk menampilkan data di halaman yang dipilih
-            const currentData = filteredData.slice(startIndex, endIndex);
-            currentData.forEach(cols => {
+            filteredData.slice(startIndex, endIndex).forEach(cols => {
                 const row = document.createElement('tr');
                 cols.forEach(col => {
                     const cell = document.createElement('td');
@@ -138,13 +132,24 @@
             });
         }
 
-        // Fungsi untuk membuat pagination
+        // Fungsi untuk membuat pagination dengan maksimal 5 tombol
         function createPagination() {
             const totalPages = Math.ceil(filteredData.length / itemsPerPage);
             const paginationContainer = document.getElementById('pagination');
             paginationContainer.innerHTML = '';
 
-            // Tombol untuk halaman sebelumnya
+            if (totalPages <= 1) return; // Jika hanya 1 halaman, tidak perlu pagination
+
+            let startPage = Math.max(1, currentPage - 2);
+            let endPage = Math.min(totalPages, currentPage + 2);
+
+            if (startPage === 1) {
+                endPage = Math.min(5, totalPages);
+            } else if (endPage === totalPages) {
+                startPage = Math.max(1, totalPages - 4);
+            }
+
+            // Tombol "Previous"
             if (currentPage > 1) {
                 const prevButton = document.createElement('button');
                 prevButton.textContent = 'Previous';
@@ -152,8 +157,8 @@
                 paginationContainer.appendChild(prevButton);
             }
 
-            // Tombol untuk halaman-halaman
-            for (let i = 1; i <= totalPages; i++) {
+            // Tombol halaman dengan batas 5 tombol
+            for (let i = startPage; i <= endPage; i++) {
                 const pageButton = document.createElement('button');
                 pageButton.textContent = i;
                 pageButton.onclick = () => changePage(i);
@@ -163,7 +168,7 @@
                 paginationContainer.appendChild(pageButton);
             }
 
-            // Tombol untuk halaman selanjutnya
+            // Tombol "Next"
             if (currentPage < totalPages) {
                 const nextButton = document.createElement('button');
                 nextButton.textContent = 'Next';
