@@ -187,32 +187,32 @@
             displayPage(page);
         }
 
-    
-    function checkProxies() {
-        for (let i = 0; i < filteredData.length; i++) {
-            let item = filteredData[i];
+    function checkProxiesSequentially(index = 0) {
+        if (index >= filteredData.length) return; // Jika sudah selesai, hentikan proses
 
-            try {
-                let response = await fetch(`https://api.ndeso.xyz/check?ip=${item.ip}:${item.port}`);
-                let data = await response.json();
+        let item = filteredData[index];
+        let row = document.querySelector(`#row-${index} .status`);
 
-                item.status = data.message.includes(" ACTIVE ✅") ? "✅ ACTIVE" : "❌ DEAD";
-            } catch (error) {
-                item.status = "❌ DEAD"; // Jika gagal ambil data, anggap proxy mati
-            }
-
-            updateTableStatus(i, item.status);
-
-            // Tambahkan delay 500ms untuk menghindari pembatasan API
-            await new Promise(resolve => setTimeout(resolve, 500));
+        if (!row) {
+            checkProxiesSequentially(index + 1); // Lanjut ke proxy berikutnya jika tidak ditemukan
+            return;
         }
-    }
 
-    function updateTableStatus(index, status) {
-        let rows = document.querySelectorAll('.status');
-        if (rows[index]) {
-            rows[index].textContent = status;
-        }
+        row.textContent = "⏳ Checking...";
+
+        fetch(`https://api.ndeso.xyz/check?ip=${item.ip}:${item.port}`)
+            .then(response => response.json())
+            .then(data => {
+                item.status = (data.message && data.message.includes("ACTIVE ✅")) ? "✅ ACTIVE" : "❌ DEAD";
+                row.textContent = item.status;
+            })
+            .catch(() => {
+                item.status = "❌ DEAD";
+                row.textContent = item.status;
+            })
+            .finally(() => {
+                setTimeout(() => checkProxiesSequentially(index + 1), 300); // Lanjut ke proxy berikutnya dengan delay 300ms
+            });
     }
 
     </script>
