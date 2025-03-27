@@ -31,16 +31,16 @@
             flex-wrap: nowrap;
             gap: 10px;
             margin-bottom: 20px;
-            overflow-x: auto;  /* Menambahkan scroll horizontal */
+            overflow-x: auto;
             padding: 10px 0;
-            white-space: nowrap; /* Agar tombol tetap dalam satu baris */
+            white-space: nowrap;
         }
         .filter-container button {
             padding: 5px 10px;
             cursor: pointer;
             border: 1px solid #000;
             background-color: #f0f0f0;
-            white-space: nowrap; /* Menjaga tombol tetap dalam satu baris */
+            white-space: nowrap;
         }
         .filter-container button.active {
             background-color: #007bff;
@@ -157,7 +157,7 @@
             });
         }
 
-        // Fungsi untuk membuat pagination dengan maksimal 5 tombol
+        // Fungsi untuk membuat pagination dengan maksimal 5 tombol di awal
         function createPagination() {
             const totalPages = Math.ceil(filteredData.length / itemsPerPage);
             const paginationContainer = document.getElementById('pagination');
@@ -173,6 +173,12 @@
             } else if (endPage === totalPages) {
                 startPage = Math.max(1, totalPages - 4);
             }
+
+            // Tombol "Awal"
+            const firstButton = document.createElement('button');
+            firstButton.textContent = 'Awal';
+            firstButton.onclick = () => changePage(1);
+            paginationContainer.appendChild(firstButton);
 
             // Tombol "Previous"
             if (currentPage > 1) {
@@ -200,6 +206,12 @@
                 nextButton.onclick = () => changePage(currentPage + 1);
                 paginationContainer.appendChild(nextButton);
             }
+
+            // Tombol "Akhir"
+            const lastButton = document.createElement('button');
+            lastButton.textContent = 'Akhir';
+            lastButton.onclick = () => changePage(totalPages);
+            paginationContainer.appendChild(lastButton);
         }
 
         // Fungsi untuk mengubah halaman
