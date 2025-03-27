@@ -28,9 +28,6 @@
         }
         .filter-container {
             display: flex;
-            flex-wrap: nowrap;
-            gap: 10px;
-            margin-bottom: 20px;
             overflow-x: auto;
             padding: 10px 0;
             white-space: nowrap;
@@ -40,7 +37,6 @@
             cursor: pointer;
             border: 1px solid #000;
             background-color: #f0f0f0;
-            white-space: nowrap;
         }
         .filter-container button.active {
             background-color: #007bff;
@@ -53,6 +49,10 @@
             width: 300px;
             border: 1px solid #ccc;
         }
+        #itemsPerPageSelect {
+            padding: 8px;
+            margin-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -60,9 +60,18 @@
     
     <input type="text" id="searchInput" placeholder="Cari berdasarkan IP, Port, ID, ISP..." oninput="searchData()">
     
-    <div class="filter-container" id="filterButtons">
-        <!-- Tombol filter ID negara akan ditambahkan di sini -->
+    <div>
+        <label for="itemsPerPageSelect">Items per page: </label>
+        <select id="itemsPerPageSelect" onchange="updateItemsPerPage()">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="75">75</option>
+            <option value="100">100</option>
+        </select>
     </div>
+
+    <div class="filter-container" id="filterButtons"></div>
 
     <table id="proxyTable">
         <thead>
@@ -73,88 +82,64 @@
                 <th>ISP</th>
             </tr>
         </thead>
-        <tbody>
-            <!-- Data akan ditambahkan di sini -->
-        </tbody>
+        <tbody></tbody>
     </table>
 
-    <div class="pagination" id="pagination">
-        <!-- Pagination akan ditambahkan di sini -->
-    </div>
+    <div class="pagination" id="pagination"></div>
 
     <script>
-        const itemsPerPage = 10; // Jumlah data per halaman
+        let itemsPerPage = 10;
         let currentPage = 1;
         let proxyData = [];
         let filteredData = [];
         let currentFilter = null;
 
-        // Ambil data dari file
         fetch('https://bmkg.xyz/update_proxyip.txt')
             .then(response => response.text())
             .then(data => {
-                // Pisahkan data per baris
                 const lines = data.split('\n');
                 proxyData = lines.map(line => line.split(',').map(col => col.trim()));
 
-                // Ambil ID unik (negara), pastikan ID tidak kosong
                 const ids = [...new Set(proxyData.map(item => item[2]).filter(id => id))];
                 createFilterButtons(ids);
-
-                // Tampilkan data pertama kali dengan filter pertama (default ke ID pertama)
-                if (ids.length > 0) {
-                    filterByID(ids[0]); // Pilih ID pertama sebagai default
-                }
+                if (ids.length > 0) filterByID(ids[0]);
             })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
+            .catch(error => console.error('Error fetching data:', error));
 
-        // Fungsi untuk membuat tombol filter ID negara
         function createFilterButtons(ids) {
             const filterContainer = document.getElementById('filterButtons');
-            filterContainer.innerHTML = ''; // Hapus tombol sebelumnya
+            filterContainer.innerHTML = '';
 
             ids.forEach((id, index) => {
                 const button = document.createElement('button');
                 button.textContent = id;
                 button.onclick = () => filterByID(id);
-                if (index === 0) {
-                    button.classList.add('active'); // Jadikan tombol pertama aktif
-                    currentFilter = id;
-                }
+                if (index === 0) button.classList.add('active');
                 filterContainer.appendChild(button);
             });
         }
 
-        // Fungsi untuk memfilter data berdasarkan ID negara
         function filterByID(id) {
             currentFilter = id;
             filteredData = proxyData.filter(item => item[2] === id);
-            currentPage = 1; // Reset ke halaman pertama
-
-            // Update tombol aktif
-            const buttons = document.querySelectorAll('.filter-container button');
-            buttons.forEach(button => {
-                if (button.textContent === id) {
-                    button.classList.add('active');
-                } else {
-                    button.classList.remove('active');
-                }
-            });
-
+            currentPage = 1;
+            updateActiveFilter(id);
             displayPage(currentPage);
             createPagination();
         }
 
-        // Fungsi untuk menampilkan data per halaman
+        function updateActiveFilter(id) {
+            document.querySelectorAll('.filter-container button').forEach(button => {
+                button.classList.toggle('active', button.textContent === id);
+            });
+        }
+
         function displayPage(page) {
             const startIndex = (page - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
             const tableBody = document.querySelector('#proxyTable tbody');
-            tableBody.innerHTML = ''; // Hapus tabel sebelumnya
+            tableBody.innerHTML = '';
 
-            // Loop untuk menampilkan data di halaman yang dipilih
             filteredData.slice(startIndex, endIndex).forEach(cols => {
                 const row = document.createElement('tr');
                 cols.forEach(col => {
@@ -166,64 +151,37 @@
             });
         }
 
-        // Fungsi untuk membuat pagination dengan maksimal 5 tombol di awal
         function createPagination() {
             const totalPages = Math.ceil(filteredData.length / itemsPerPage);
             const paginationContainer = document.getElementById('pagination');
             paginationContainer.innerHTML = '';
 
-            if (totalPages <= 1) return; // Jika hanya 1 halaman, tidak perlu pagination
+            if (totalPages <= 1) return;
 
             let startPage = Math.max(1, currentPage - 2);
             let endPage = Math.min(totalPages, currentPage + 2);
+            if (startPage === 1) endPage = Math.min(5, totalPages);
+            if (endPage === totalPages) startPage = Math.max(1, totalPages - 4);
 
-            if (startPage === 1) {
-                endPage = Math.min(5, totalPages);
-            } else if (endPage === totalPages) {
-                startPage = Math.max(1, totalPages - 4);
-            }
+            addPaginationButton('Awal', () => changePage(1));
+            if (currentPage > 1) addPaginationButton('Prev', () => changePage(currentPage - 1));
 
-            // Tombol "Awal"
-            const firstButton = document.createElement('button');
-            firstButton.textContent = 'Awal';
-            firstButton.onclick = () => changePage(1);
-            paginationContainer.appendChild(firstButton);
-
-            // Tombol "Previous"
-            if (currentPage > 1) {
-                const prevButton = document.createElement('button');
-                prevButton.textContent = 'Previous';
-                prevButton.onclick = () => changePage(currentPage - 1);
-                paginationContainer.appendChild(prevButton);
-            }
-
-            // Tombol halaman dengan batas 5 tombol
             for (let i = startPage; i <= endPage; i++) {
-                const pageButton = document.createElement('button');
-                pageButton.textContent = i;
-                pageButton.onclick = () => changePage(i);
-                if (i === currentPage) {
-                    pageButton.style.fontWeight = 'bold';
-                }
-                paginationContainer.appendChild(pageButton);
+                addPaginationButton(i, () => changePage(i), i === currentPage);
             }
 
-            // Tombol "Next"
-            if (currentPage < totalPages) {
-                const nextButton = document.createElement('button');
-                nextButton.textContent = 'Next';
-                nextButton.onclick = () => changePage(currentPage + 1);
-                paginationContainer.appendChild(nextButton);
-            }
-
-            // Tombol "Akhir"
-            const lastButton = document.createElement('button');
-            lastButton.textContent = 'Akhir';
-            lastButton.onclick = () => changePage(totalPages);
-            paginationContainer.appendChild(lastButton);
+            if (currentPage < totalPages) addPaginationButton('Next', () => changePage(currentPage + 1));
+            addPaginationButton('Akhir', () => changePage(totalPages));
         }
 
-        // Fungsi untuk mengubah halaman
+        function addPaginationButton(label, onClick, isActive = false) {
+            const button = document.createElement('button');
+            button.textContent = label;
+            button.onclick = onClick;
+            if (isActive) button.style.fontWeight = 'bold';
+            document.getElementById('pagination').appendChild(button);
+        }
+
         function changePage(page) {
             if (page < 1 || page > Math.ceil(filteredData.length / itemsPerPage)) return;
             currentPage = page;
@@ -231,14 +189,17 @@
             createPagination();
         }
 
-        // Fungsi pencarian untuk filter data
         function searchData() {
             const query = document.getElementById('searchInput').value.toLowerCase();
-            filteredData = proxyData.filter(item => {
-                return item.some(col => col.toLowerCase().includes(query));
-            });
+            filteredData = proxyData.filter(item => item.some(col => col.toLowerCase().includes(query)));
+            currentPage = 1;
+            displayPage(currentPage);
+            createPagination();
+        }
 
-            currentPage = 1; // Reset ke halaman pertama setelah pencarian
+        function updateItemsPerPage() {
+            itemsPerPage = parseInt(document.getElementById('itemsPerPageSelect').value, 10);
+            currentPage = 1;
             displayPage(currentPage);
             createPagination();
         }
