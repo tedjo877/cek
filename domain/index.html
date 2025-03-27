@@ -43,33 +43,14 @@
             color: white;
             font-weight: bold;
         }
-        #searchInput {
-            padding: 8px;
-            margin-bottom: 20px;
-            width: 300px;
-            border: 1px solid #ccc;
-        }
-        #itemsPerPageSelect {
-            padding: 8px;
-            margin-left: 20px;
+        .loading {
+            font-size: 12px;
+            color: gray;
         }
     </style>
 </head>
 <body>
     <h1>Daftar Proxy</h1>
-    
-    <input type="text" id="searchInput" placeholder="Cari berdasarkan IP, Port, ID, ISP..." oninput="searchData()">
-    
-    <div>
-        <label for="itemsPerPageSelect">Items per page: </label>
-        <select id="itemsPerPageSelect" onchange="updateItemsPerPage()">
-            <option value="10">10</option>
-            <option value="25">25</option>
-            <option value="50">50</option>
-            <option value="75">75</option>
-            <option value="100">100</option>
-        </select>
-    </div>
 
     <div class="filter-container" id="filterButtons"></div>
 
@@ -80,6 +61,7 @@
                 <th>Port</th>
                 <th>ID</th>
                 <th>ISP</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -88,19 +70,22 @@
     <div class="pagination" id="pagination"></div>
 
     <script>
-        let itemsPerPage = 10;
-        let currentPage = 1;
         let proxyData = [];
         let filteredData = [];
+        let currentPage = 1;
+        let itemsPerPage = 10;
         let currentFilter = null;
 
         fetch('https://bmkg.xyz/update_proxyip.txt')
             .then(response => response.text())
             .then(data => {
                 const lines = data.split('\n');
-                proxyData = lines.map(line => line.split(',').map(col => col.trim()));
+                proxyData = lines.map(line => {
+                    const cols = line.split(',').map(col => col.trim());
+                    return { ip: cols[0], port: cols[1], id: cols[2], isp: cols[3], status: "Checking..." };
+                });
 
-                const ids = [...new Set(proxyData.map(item => item[2]).filter(id => id))];
+                const ids = [...new Set(proxyData.map(item => item.id).filter(id => id))];
                 createFilterButtons(ids);
                 if (ids.length > 0) filterByID(ids[0]);
             })
@@ -121,9 +106,10 @@
 
         function filterByID(id) {
             currentFilter = id;
-            filteredData = proxyData.filter(item => item[2] === id);
+            filteredData = proxyData.filter(item => item.id === id);
             currentPage = 1;
             updateActiveFilter(id);
+            checkProxies();
             displayPage(currentPage);
             createPagination();
         }
@@ -140,15 +126,39 @@
             const tableBody = document.querySelector('#proxyTable tbody');
             tableBody.innerHTML = '';
 
-            filteredData.slice(startIndex, endIndex).forEach(cols => {
+            filteredData.slice(startIndex, endIndex).forEach(item => {
                 const row = document.createElement('tr');
-                cols.forEach(col => {
-                    const cell = document.createElement('td');
-                    cell.textContent = col;
-                    row.appendChild(cell);
-                });
+                row.innerHTML = `
+                    <td>${item.ip}</td>
+                    <td>${item.port}</td>
+                    <td>${item.id}</td>
+                    <td>${item.isp}</td>
+                    <td class="status">${item.status}</td>
+                `;
                 tableBody.appendChild(row);
             });
+        }
+
+        function checkProxies() {
+            filteredData.forEach((item, index) => {
+                fetch(`https://api.ndeso.xyz/check?ip=${item.ip}:${item.port}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        item.status = data.message.includes("ACTIVE") ? "✅ ACTIVE" : "❌ INACTIVE";
+                        updateTableStatus(index, item.status);
+                    })
+                    .catch(() => {
+                        item.status = "❌ INACTIVE";
+                        updateTableStatus(index, item.status);
+                    });
+            });
+        }
+
+        function updateTableStatus(index, status) {
+            const statusCells = document.querySelectorAll('.status');
+            if (statusCells[index]) {
+                statusCells[index].textContent = status;
+            }
         }
 
         function createPagination() {
@@ -158,13 +168,13 @@
 
             if (totalPages <= 1) return;
 
+            addPaginationButton('Awal', () => changePage(1));
+            if (currentPage > 1) addPaginationButton('Prev', () => changePage(currentPage - 1));
+
             let startPage = Math.max(1, currentPage - 2);
             let endPage = Math.min(totalPages, currentPage + 2);
             if (startPage === 1) endPage = Math.min(5, totalPages);
             if (endPage === totalPages) startPage = Math.max(1, totalPages - 4);
-
-            addPaginationButton('Awal', () => changePage(1));
-            if (currentPage > 1) addPaginationButton('Prev', () => changePage(currentPage - 1));
 
             for (let i = startPage; i <= endPage; i++) {
                 addPaginationButton(i, () => changePage(i), i === currentPage);
@@ -185,21 +195,6 @@
         function changePage(page) {
             if (page < 1 || page > Math.ceil(filteredData.length / itemsPerPage)) return;
             currentPage = page;
-            displayPage(currentPage);
-            createPagination();
-        }
-
-        function searchData() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            filteredData = proxyData.filter(item => item.some(col => col.toLowerCase().includes(query)));
-            currentPage = 1;
-            displayPage(currentPage);
-            createPagination();
-        }
-
-        function updateItemsPerPage() {
-            itemsPerPage = parseInt(document.getElementById('itemsPerPageSelect').value, 10);
-            currentPage = 1;
             displayPage(currentPage);
             createPagination();
         }
