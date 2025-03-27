@@ -176,14 +176,14 @@
 
             // Tombol "Awal"
             const firstButton = document.createElement('button');
-            firstButton.textContent = 'Awal';
+            firstButton.textContent = '<<<';
             firstButton.onclick = () => changePage(1);
             paginationContainer.appendChild(firstButton);
 
             // Tombol "Previous"
             if (currentPage > 1) {
                 const prevButton = document.createElement('button');
-                prevButton.textContent = 'Previous';
+                prevButton.textContent = '>>';
                 prevButton.onclick = () => changePage(currentPage - 1);
                 paginationContainer.appendChild(prevButton);
             }
@@ -202,14 +202,14 @@
             // Tombol "Next"
             if (currentPage < totalPages) {
                 const nextButton = document.createElement('button');
-                nextButton.textContent = 'Next';
+                nextButton.textContent = '>>';
                 nextButton.onclick = () => changePage(currentPage + 1);
                 paginationContainer.appendChild(nextButton);
             }
 
             // Tombol "Akhir"
             const lastButton = document.createElement('button');
-            lastButton.textContent = 'Akhir';
+            lastButton.textContent = '>>>';
             lastButton.onclick = () => changePage(totalPages);
             paginationContainer.appendChild(lastButton);
         }
