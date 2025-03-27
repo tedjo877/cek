@@ -65,9 +65,9 @@
         <thead>
             <tr>
                 <th>IP:Port</th>
-                <th>Status</th
+                <th>Status</th>
                 <th>ISP || ID</th>                
-                >
+                
             </tr>
         </thead>
         <tbody></tbody>
@@ -192,10 +192,10 @@
                 fetch(`https://api.ndeso.xyz/check?ip=${item.ip}:${item.port}`)
                     .then(response => response.json())
                     .then(data => {
-                        item.status = data.message.includes("ACTIVE ✅") ? "✅ ACTIVE" : "❌ DEAD";
+                        item.status = data.message.includes(" ACTIVE ✅") ? " ACTIVE ✅" : "DEAD ❌";
                         updateTableStatus(index, item.status);
                     })
-                    .catch(() => updateTableStatus(index, "❌ DEAD"));
+                    .catch(() => updateTableStatus(index, "DEAD ❌"));
             });
         }
 
