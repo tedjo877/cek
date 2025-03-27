@@ -183,7 +183,7 @@
             // Tombol "Previous"
             if (currentPage > 1) {
                 const prevButton = document.createElement('button');
-                prevButton.textContent = '>>';
+                prevButton.textContent = '<<';
                 prevButton.onclick = () => changePage(currentPage - 1);
                 paginationContainer.appendChild(prevButton);
             }
