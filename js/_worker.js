@@ -3379,34 +3379,34 @@ function buildCountryFlag() {
     <span class="menu" style="color: #000; text-decoration: none; display: block; text-align: center;"><center><strong>LIST SERVER DOMAIN
   </strong></center></span>
     <span class="menu">
-                    <a href="https://anonimitas.kere.us.kg" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.kere.us.kg</a>
+                    <a href="https://killswitch.kere.us.kg" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.kere.us.kg</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.ndeso.xyz" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.ndeso.xyz</a>
+                    <a href="https://killswitch.ndeso.xyz" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.ndeso.xyz</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.ndeso.web.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.ndeso.web.id</a>
+                    <a href="https://killswitch.ndeso.web.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.ndeso.web.id</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.xhamster.biz.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.xhamster.biz.id</a>
+                    <a href="https://killswitch.xhamster.biz.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.xhamster.biz.id</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.turah.my.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.turah.my.id</a>
+                    <a href="https://killswitch.turah.my.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.turah.my.id</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.najah.biz.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.najah.biz.id</a>
+                    <a href="https://killswitch.najah.biz.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.najah.biz.id</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.cloudproxyip.my.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.cloudproxyip.my.id</a>
+                    <a href="https://killswitch.cloudproxyip.my.id" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.cloudproxyip.my.id</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg</a>
+                    <a href="https://killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.bmkg.xyz" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.bmkg.xyz</a>
+                    <a href="https://killswitch.bmkg.xyz" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.bmkg.xyz</a>
                 </span> 
                 <span class="menu">
-                    <a href="https://anonimitas.cepu.us.kg" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">anonimitas.cepu.us.kg</a>
+                    <a href="https://killswitch.cepu.us.kg" rel="noopener noreferrer" style="color: #fff; text-decoration: none; display: block; text-align: center;">killswitch.cepu.us.kg</a>
                 </span> <br>
    </div>
    <button class="button7" id="close" onclick="hidePopup('list-domain')">Close</button>
