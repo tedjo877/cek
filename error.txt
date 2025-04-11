@@ -1,7 +1,1 @@
-Error checking 146.103.49.151:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=146.103.49.151:2053
-Error checking 193.36.85.18:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=193.36.85.18:8443
-Error checking 94.228.120.157:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=94.228.120.157:2053
-Error checking 86.110.56.70:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=86.110.56.70:2053
-Error checking 193.123.247.125:50576: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=193.123.247.125:50576
-Error checking 141.147.191.119:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 221.164.238.34:27825: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=221.164.238.34:27825
+Error checking 217.197.97.207:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=217.197.97.207:8443
