@@ -1,8 +1,11 @@
-Error checking 212.83.138.31:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=212.83.138.31:443
-Error checking 86.110.56.17:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=86.110.56.17:2053
-Error checking 87.98.235.90:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=87.98.235.90:2053
-Error checking 188.245.73.74:2086: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=188.245.73.74:2086
-Error checking 62.112.221.60:2087: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 165.22.80.232:8443: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-Error checking 57.129.47.15:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 104.234.50.52:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=104.234.50.52:2053
+Error checking 191.96.153.34:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=191.96.153.34:2053
+Error checking 193.239.160.24:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=193.239.160.24:443
+Error checking 146.59.65.131:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=146.59.65.131:2053
+Error checking 159.100.30.37:29947: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 3.76.179.225:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=3.76.179.225:443
+Error checking 86.38.156.234:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=86.38.156.234:2053
+Error checking 152.228.134.239:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 118.139.221.4:10344: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 142.93.136.199:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=142.93.136.199:443
+Error checking 146.190.27.232:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=146.190.27.232:8443
+Error checking 77.221.136.200:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=77.221.136.200:2053
