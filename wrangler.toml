@@ -4,455 +4,455 @@ workers_dev = true
 compatibility_date = "2024-03-20"
 
 [[routes]]
-pattern = "killswitch.xhamster.biz.id"
+pattern = "multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.xhamster.biz.id"
+pattern = "ava.game.naver.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.xhamster.biz.id"
+pattern = "graph.instagram.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.xhamster.biz.id"
+pattern = "quiz.int.vidio.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.xhamster.biz.id"
+pattern = "live.iflix.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.xhamster.biz.id"
+pattern = "support.zoom.us.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.xhamster.biz.id"
+pattern = "blog.webex.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.xhamster.biz.id"
+pattern = "investors.spotify.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.xhamster.biz.id"
+pattern = "cache.netflix.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.xhamster.biz.id"
+pattern = "zaintest.vuclip.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.xhamster.biz.id"
+pattern = "ads.ruangguru.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.xhamster.biz.id"
+pattern = "io.ruangguru.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.xhamster.biz.id"
+pattern = "api.midtrans.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.xhamster.biz.id"
+pattern = "investor.fb.com.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.xhamster.biz.id"
+pattern = "bakrie.ac.id.multihop.xhamster.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "killswitch.turah.my.id"
+pattern = "multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.turah.my.id"
+pattern = "ava.game.naver.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.turah.my.id"
+pattern = "graph.instagram.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.turah.my.id"
+pattern = "quiz.int.vidio.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.turah.my.id"
+pattern = "live.iflix.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.turah.my.id"
+pattern = "support.zoom.us.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.turah.my.id"
+pattern = "blog.webex.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.turah.my.id"
+pattern = "investors.spotify.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.turah.my.id"
+pattern = "cache.netflix.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.turah.my.id"
+pattern = "zaintest.vuclip.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.turah.my.id"
+pattern = "ads.ruangguru.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.turah.my.id"
+pattern = "io.ruangguru.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.turah.my.id"
+pattern = "api.midtrans.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.turah.my.id"
+pattern = "investor.fb.com.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.turah.my.id"
+pattern = "bakrie.ac.id.multihop.turah.my.id"
 custom_domain = true
 [[routes]]
-pattern = "killswitch.ndeso.xyz"
+pattern = "multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.ndeso.xyz"
+pattern = "ava.game.naver.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.ndeso.xyz"
+pattern = "graph.instagram.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.ndeso.xyz"
+pattern = "quiz.int.vidio.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.ndeso.xyz"
+pattern = "live.iflix.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.ndeso.xyz"
+pattern = "support.zoom.us.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.ndeso.xyz"
+pattern = "blog.webex.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.ndeso.xyz"
+pattern = "investors.spotify.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.ndeso.xyz"
+pattern = "cache.netflix.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.ndeso.xyz"
+pattern = "zaintest.vuclip.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.ndeso.xyz"
+pattern = "ads.ruangguru.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.ndeso.xyz"
+pattern = "io.ruangguru.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.ndeso.xyz"
+pattern = "api.midtrans.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.ndeso.xyz"
+pattern = "investor.fb.com.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.ndeso.xyz"
+pattern = "bakrie.ac.id.multihop.ndeso.xyz"
 custom_domain = true
 [[routes]]
-pattern = "killswitch.ndeso.web.id"
+pattern = "multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.ndeso.web.id"
+pattern = "ava.game.naver.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.ndeso.web.id"
+pattern = "graph.instagram.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.ndeso.web.id"
+pattern = "quiz.int.vidio.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.ndeso.web.id"
+pattern = "live.iflix.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.ndeso.web.id"
+pattern = "support.zoom.us.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.ndeso.web.id"
+pattern = "blog.webex.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.ndeso.web.id"
+pattern = "investors.spotify.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.ndeso.web.id"
+pattern = "cache.netflix.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.ndeso.web.id"
+pattern = "zaintest.vuclip.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.ndeso.web.id"
+pattern = "ads.ruangguru.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.ndeso.web.id"
+pattern = "io.ruangguru.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.ndeso.web.id"
+pattern = "api.midtrans.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.ndeso.web.id"
+pattern = "investor.fb.com.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.ndeso.web.id"
+pattern = "bakrie.ac.id.multihop.ndeso.web.id"
 custom_domain = true
 [[routes]]
-pattern = "killswitch.kere.us.kg"
+pattern = "multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.kere.us.kg"
+pattern = "ava.game.naver.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.kere.us.kg"
+pattern = "graph.instagram.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.kere.us.kg"
+pattern = "quiz.int.vidio.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.kere.us.kg"
+pattern = "live.iflix.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.kere.us.kg"
+pattern = "support.zoom.us.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.kere.us.kg"
+pattern = "blog.webex.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.kere.us.kg"
+pattern = "investors.spotify.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.kere.us.kg"
+pattern = "cache.netflix.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.kere.us.kg"
+pattern = "zaintest.vuclip.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.kere.us.kg"
+pattern = "ads.ruangguru.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.kere.us.kg"
+pattern = "io.ruangguru.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.kere.us.kg"
+pattern = "api.midtrans.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.kere.us.kg"
+pattern = "investor.fb.com.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.kere.us.kg"
+pattern = "bakrie.ac.id.multihop.kere.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "killswitch.cepu.us.kg"
+pattern = "multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.cepu.us.kg"
+pattern = "ava.game.naver.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.cepu.us.kg"
+pattern = "graph.instagram.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.cepu.us.kg"
+pattern = "quiz.int.vidio.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.cepu.us.kg"
+pattern = "live.iflix.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.cepu.us.kg"
+pattern = "support.zoom.us.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.cepu.us.kg"
+pattern = "blog.webex.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.cepu.us.kg"
+pattern = "investors.spotify.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.cepu.us.kg"
+pattern = "cache.netflix.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.cepu.us.kg"
+pattern = "zaintest.vuclip.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.cepu.us.kg"
+pattern = "ads.ruangguru.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.cepu.us.kg"
+pattern = "io.ruangguru.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.cepu.us.kg"
+pattern = "api.midtrans.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.cepu.us.kg"
+pattern = "investor.fb.com.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.cepu.us.kg"
+pattern = "bakrie.ac.id.multihop.cepu.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "killswitch.najah.biz.id"
+pattern = "multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.najah.biz.id"
+pattern = "ava.game.naver.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.najah.biz.id"
+pattern = "graph.instagram.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.najah.biz.id"
+pattern = "quiz.int.vidio.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.najah.biz.id"
+pattern = "live.iflix.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.najah.biz.id"
+pattern = "support.zoom.us.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.najah.biz.id"
+pattern = "blog.webex.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.najah.biz.id"
+pattern = "investors.spotify.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.najah.biz.id"
+pattern = "cache.netflix.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.najah.biz.id"
+pattern = "zaintest.vuclip.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.najah.biz.id"
+pattern = "ads.ruangguru.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.najah.biz.id"
+pattern = "io.ruangguru.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.najah.biz.id"
+pattern = "api.midtrans.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.najah.biz.id"
+pattern = "investor.fb.com.multihop.najah.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.najah.biz.id"
+pattern = "bakrie.ac.id.multihop.najah.biz.id"
 custom_domain = true
 
 [[routes]]
-pattern = "killswitch.bmkg.xyz"
+pattern = "multihop.bmkg.xyz"
 custom_domain = true
 
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.bmkg.xyz"
+pattern = "ava.game.naver.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.bmkg.xyz"
+pattern = "graph.instagram.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.bmkg.xyz"
+pattern = "quiz.int.vidio.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.bmkg.xyz"
+pattern = "live.iflix.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.bmkg.xyz"
+pattern = "support.zoom.us.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.bmkg.xyz"
+pattern = "blog.webex.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.bmkg.xyz"
+pattern = "investors.spotify.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.bmkg.xyz"
+pattern = "cache.netflix.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.bmkg.xyz"
+pattern = "zaintest.vuclip.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.bmkg.xyz"
+pattern = "ads.ruangguru.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.bmkg.xyz"
+pattern = "io.ruangguru.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.bmkg.xyz"
+pattern = "api.midtrans.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.bmkg.xyz"
+pattern = "investor.fb.com.multihop.bmkg.xyz"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.bmkg.xyz"
+pattern = "bakrie.ac.id.multihop.bmkg.xyz"
 custom_domain = true
 
 [[routes]]
-pattern = "killswitch.cloudproxyip.my.id"
+pattern = "multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.cloudproxyip.my.id"
+pattern = "ava.game.naver.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.cloudproxyip.my.id"
+pattern = "graph.instagram.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.cloudproxyip.my.id"
+pattern = "quiz.int.vidio.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.cloudproxyip.my.id"
+pattern = "live.iflix.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.cloudproxyip.my.id"
+pattern = "support.zoom.us.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.cloudproxyip.my.id"
+pattern = "blog.webex.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.cloudproxyip.my.id"
+pattern = "investors.spotify.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.cloudproxyip.my.id"
+pattern = "cache.netflix.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.cloudproxyip.my.id"
+pattern = "zaintest.vuclip.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.cloudproxyip.my.id"
+pattern = "ads.ruangguru.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.cloudproxyip.my.id"
+pattern = "io.ruangguru.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.cloudproxyip.my.id"
+pattern = "api.midtrans.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.cloudproxyip.my.id"
+pattern = "investor.fb.com.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.cloudproxyip.my.id"
+pattern = "bakrie.ac.id.multihop.cloudproxyip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "ava.game.naver.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "graph.instagram.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "quiz.int.vidio.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "live.iflix.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "support.zoom.us.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "blog.webex.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "investors.spotify.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "cache.netflix.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "zaintest.vuclip.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "ads.ruangguru.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "io.ruangguru.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "api.midtrans.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "bakrie.ac.id.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.killswitch.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
+pattern = "investor.fb.com.multihop.zifxoyfpuf0uf0ycphcoyf0684wd.us.kg"
 custom_domain = true
