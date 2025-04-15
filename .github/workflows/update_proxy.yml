@@ -2,7 +2,7 @@ name: 🌍 Update Proxy IP 🌍
 
 on:
   schedule:
-    - cron: "0 */8 * * *"  # Auto run setiap 4 jam sekali
+    - cron: "0 */6 * * *"  # Auto run setiap 4 jam sekali
   workflow_dispatch:  # Bisa dijalankan manual dari GitHub UI
 
 jobs:
@@ -30,7 +30,13 @@ jobs:
       env:
         IP_FILE: 'proxyip.txt'
         API_URL: 'https://proxy.ndeso.xyz/check?ip={ip}:{port}'
-      run: python update_proxy.py
+      run: python update_proxy.py  # Pastikan update_proxy.py menangani update_proxyip8.json
+
+    - name: Debug check update_proxyip.json
+      run: cat update_proxyip.json || echo "update_proxyip.json tidak ditemukan"
+
+    - name: Debug check update_proxyip8.json
+      run: cat update_proxyip8.json || echo "update_proxyip8.json tidak ditemukan"
 
     - name: Ensure update_proxyip.txt exists
       run: |
@@ -45,10 +51,11 @@ jobs:
       run: |
         git config --local user.name "github-actions[bot]"
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git add update_proxyip.txt error.txt
+        git add update_proxyip.txt error.txt update_proxyip.json update_proxyip8.json  # Menambahkan update_proxyip8.json ke commit
         if git diff --cached --exit-code; then
           echo "No changes to commit"
         else
           git commit -m "Update proxy IP status"
+          git pull --rebase
           git push
         fi
