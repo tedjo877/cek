@@ -1,14 +1,2 @@
-Error checking 5.161.176.159:50001: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 57.129.63.158:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 66.151.35.30:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=66.151.35.30:2053
-Error checking 2.57.242.7:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=2.57.242.7:2053
-Error checking 51.75.27.100:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=51.75.27.100:2053
-Error checking 91.199.32.113:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=91.199.32.113:2053
-Error checking 154.12.178.87:14392: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=154.12.178.87:14392
-Error checking 63.32.194.15:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=63.32.194.15:2053
-Error checking 121.183.112.175:50003: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=121.183.112.175:50003
-Error checking 121.187.220.94:50000: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=121.187.220.94:50000
-Error checking 46.17.97.207:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=46.17.97.207:2053
-Error checking 150.241.69.235:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=150.241.69.235:443
-Error checking 86.110.56.16:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=86.110.56.16:2053
-Error checking 146.235.231.239:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=146.235.231.239:443
+Error checking 194.76.173.13:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=194.76.173.13:2053
+Error checking 5.198.177.205:44403: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.198.177.205:44403
