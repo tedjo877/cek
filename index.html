@@ -461,7 +461,7 @@ body {
 }
 
 /* Enhanced Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .container {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
@@ -507,7 +507,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
     .container {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -702,7 +702,7 @@ body {
 </head>
     
 <body class="font-sans">
-<div class="container mx-auto px-2 sm:px-4 py-4 sm:py-6 max-w-xl">
+<div class="container mx-auto px-2 sm:px-4 py-4 sm:py-6 max-w-[900px]">
     <div class="glass-card overflow-hidden">
         <!-- Animated header background -->
         <div class="animated-bg">
@@ -719,7 +719,7 @@ body {
         <div class="p-6">
             <!-- Proxy List Section -->
             <div id="proxy-list-section">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5 mx-2">
                     <div class="flex items-center mb-3 sm:mb-0 justify-between w-full">
     <div class="flex items-center ml-4"> <!-- Menambahkan ml-4 di sini untuk jarak kiri -->
         <i class="fas fa-server mr-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500"></i>
@@ -738,29 +738,34 @@ body {
         </span>
     </div>
 </div>
-
-
-
-                    <div class="flex flex-col sm:flex-row w-full sm:w-auto space-y-2 sm:space-y-0 sm:space-x-3">
-                        <button id="refresh-btn" class="primary-btn py-2 px-4 rounded-lg flex items-center justify-center text-sm">
-                            <i class="fas fa-sync-alt mr-2"></i>Refresh
-                        </button>
-                        <button id="custom-url-btn" class="secondary-btn py-2 px-4 rounded-lg flex items-center justify-center text-sm">
-                            <i class="fas fa-link mr-2"></i>URL
-                        </button>
-                    </div>
+                    <div class="flex justify-between w-full gap-4">
+    <!-- Tombol Kiri -->
+    <div class="flex-1 max-w-[50%]">
+        <button id="refresh-btn" class="primary-btn w-full py-2 px-4 rounded-lg flex items-center justify-center sm:justify-start text-sm truncate">
+            <i class="fas fa-sync-alt mr-2"></i>Refresh
+        </button>
+    </div>
+    
+    <!-- Tombol Kanan -->
+    <div class="flex-1 max-w-[50%] flex justify-end">
+        <button id="custom-url-btn" class="secondary-btn w-full py-2 px-4 rounded-lg flex items-center justify-center sm:justify-start text-sm truncate">
+            <i class="fas fa-link mr-2"></i>URL
+        </button>
+    </div>
+</div>
                 </div>
                 
                 <div id="custom-url-input" class="mb-5 hidden">
-                    <div class="flex">
-                        <input type="text" id="proxy-url" class="flex-1 px-4 py-2.5 glass-input rounded-l-lg text-sm" 
-                            placeholder="Enter custom proxy list URL" 
-                            value="https://cf.cloudproxyip.my.id/update_proxyip.txt">
-                        <button id="load-custom-url" class="primary-btn px-4 py-2.5 rounded-r-lg">
-                            Load
-                        </button>
-                    </div>
-                </div>
+    <div class="flex w-full">
+        <input type="text" id="proxy-url" class="flex-1 min-w-0 px-4 py-2.5 glass-input rounded-l-lg text-sm truncate" 
+            placeholder="Enter custom proxy list URL" 
+            value="https://cf.cloudproxyip.my.id/update_proxyip.txt">
+        
+        <button id="load-custom-url" class="primary-btn px-4 py-2.5 rounded-r-lg whitespace-nowrap min-w-[80px]">
+            <span class="truncate">Load</span>
+        </button>
+    </div>
+</div>
                 
                 <div id="loading-indicator" class="text-center py-10 hidden">
                     <div class="loading-spinner mx-auto mb-4"></div>
@@ -1175,7 +1180,7 @@ body {
             </div>
         </div>
     </div>
-    <footer class="mt-8 pb-6">
+    <footer class="mx-auto px-2 sm:px-4 py-4 sm:py-6 max-w-[900px]">
     <div class="divider mb-6"></div>
     <div class="relative overflow-hidden rounded-xl p-6 bg-slate-800/30 backdrop-blur-sm border border-slate-700/30">
         
@@ -1205,12 +1210,6 @@ body {
 <a href="https://t.me/onefreecfbot" class="flex items-center justify-center text-gray-400 hover:text-transparent hover:bg-slate-700 transition-all">
     <i class="fab fa-telegram text-blue-500 hover:text-blue-600 text-3xl"></i>
 </a>
-
-
-
-
-
-
             </div>
         </div>
         
