@@ -738,13 +738,20 @@ body {
         </span>
     </div>
 </div>
-                    <div class="grid grid-cols-2 gap-2 sm:gap-4 w-full sm:w-auto">
-    <button id="refresh-btn" class="primary-btn py-1 px-2 rounded-lg flex items-center justify-center text-sm w-full">
-        <i class="fas fa-sync-alt mr-2"></i>Refresh
-    </button>
-    <button id="custom-url-btn" class="secondary-btn py-1 px-2 rounded-lg flex items-center justify-center text-sm w-full">
-        <i class="fas fa-link mr-2"></i>URL
-    </button>
+                    <div class="flex justify-between w-full gap-4">
+    <!-- Tombol Kiri -->
+    <div class="flex-1 max-w-[50%]">
+        <button id="refresh-btn" class="primary-btn w-full py-2 px-4 rounded-lg flex items-center justify-center sm:justify-start text-sm truncate">
+            <i class="fas fa-sync-alt mr-2"></i>Refresh
+        </button>
+    </div>
+    
+    <!-- Tombol Kanan -->
+    <div class="flex-1 max-w-[50%] flex justify-end">
+        <button id="custom-url-btn" class="secondary-btn w-full py-2 px-4 rounded-lg flex items-center justify-center sm:justify-start text-sm truncate">
+            <i class="fas fa-link mr-2"></i>URL
+        </button>
+    </div>
 </div>
                 </div>
                 
