@@ -756,15 +756,16 @@ body {
                 </div>
                 
                 <div id="custom-url-input" class="mb-5 hidden">
-                    <div class="flex">
-                        <input type="text" id="proxy-url" class="flex-1 px-4 py-2.5 glass-input rounded-l-lg text-sm" 
-                            placeholder="Enter custom proxy list URL" 
-                            value="https://cf.cloudproxyip.my.id/update_proxyip.txt">
-                        <button id="load-custom-url" class="primary-btn px-4 py-2.5 rounded-r-lg">
-                            Load
-                        </button>
-                    </div>
-                </div>
+    <div class="flex w-full">
+        <input type="text" id="proxy-url" class="flex-1 min-w-0 px-4 py-2.5 glass-input rounded-l-lg text-sm truncate" 
+            placeholder="Enter custom proxy list URL" 
+            value="https://cf.cloudproxyip.my.id/update_proxyip.txt">
+        
+        <button id="load-custom-url" class="primary-btn px-4 py-2.5 rounded-r-lg whitespace-nowrap min-w-[80px]">
+            <span class="truncate">Load</span>
+        </button>
+    </div>
+</div>
                 
                 <div id="loading-indicator" class="text-center py-10 hidden">
                     <div class="loading-spinner mx-auto mb-4"></div>
