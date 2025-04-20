@@ -719,7 +719,7 @@ body {
         <div class="p-6">
             <!-- Proxy List Section -->
             <div id="proxy-list-section">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-5 mx-2">
                     <div class="flex items-center mb-3 sm:mb-0 justify-between w-full">
     <div class="flex items-center ml-4"> <!-- Menambahkan ml-4 di sini untuk jarak kiri -->
         <i class="fas fa-server mr-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500"></i>
@@ -738,17 +738,14 @@ body {
         </span>
     </div>
 </div>
-
-
-
-                    <div class="flex flex-col sm:flex-row w-full sm:w-auto space-y-2 sm:space-y-0 sm:space-x-3">
-                        <button id="refresh-btn" class="primary-btn py-2 px-4 rounded-lg flex items-center justify-center text-sm">
-                            <i class="fas fa-sync-alt mr-2"></i>Refresh
-                        </button>
-                        <button id="custom-url-btn" class="secondary-btn py-2 px-4 rounded-lg flex items-center justify-center text-sm">
-                            <i class="fas fa-link mr-2"></i>URL
-                        </button>
-                    </div>
+                    <div class="grid grid-cols-2 gap-2 sm:gap-4 w-full sm:w-auto">
+    <button id="refresh-btn" class="primary-btn py-1 px-2 rounded-lg flex items-center justify-center text-sm w-full">
+        <i class="fas fa-sync-alt mr-2"></i>Refresh
+    </button>
+    <button id="custom-url-btn" class="secondary-btn py-1 px-2 rounded-lg flex items-center justify-center text-sm w-full">
+        <i class="fas fa-link mr-2"></i>URL
+    </button>
+</div>
                 </div>
                 
                 <div id="custom-url-input" class="mb-5 hidden">
