@@ -1271,10 +1271,8 @@ body {
 let proxyList = [];
 let filteredProxyList = [];
 let selectedProxy = null;
-const defaultProxyUrl = 'https://raw.githubusercontent.com/tedjo877/cek/main/update_proxyip.txt';
+const defaultProxyUrl = 'https://c-bnn.xyz/update_proxyip.txt';
 // Change from:
-
-
 // To:
 const serverDomains = ['dns-google.c-bnn.xyz', 'privasi.bmkg.xyz', 'privasi.ndeso.web.id', 'privasi.xhamster.biz.id', 'privasi.turah.my.id', 'privasi.najah.biz.id', 'privasi.cloudproxyip.my.id', 'privasi.ndeso.xyz', ];
 let selectedServerDomain = serverDomains[0]; // Default to first domain
@@ -1284,20 +1282,37 @@ const default1UUID = '0fbf4f81-2598-4b6a-a623-0ead4cb9efa8';
 const bugOptions = [
   { value: '', label: 'Default' },
   { value: 'manual', label: 'Type Manual' },
-  { value: 'business.blibli.com', label: 'business.blibli.com' },
-  { value: 'ava.game.naver.com', label: 'ava.game.naver.com' },
-  { value: 'graph.instagram.com', label: 'graph.instagram.com' },
-  { value: 'quiz.int.vidio.com', label: 'quiz.int.vidio.com' },
+  
+  { value: 'investor.fb.com', label: 'investor.fb.com' },
   { value: 'live.iflix.com', label: 'live.iflix.com' },
   { value: 'support.zoom.us', label: 'support.zoom.us' },
+  { value: 'zoomcares.zoom.us', label: 'zoomcares.zoom.us' },
+  { value: 'partner.zoom.us', label: 'partner.zoom.us' },
+  { value: 'zoomgov.com', label: 'zoomgov.com' },
+  { value: 'gomarketplacecontent-cf.zoom.us', label: 'gomarketplacecontent-cf.zoom.us' },
+  { value: 'ava.game.naver.com', label: 'ava.game.naver.com' },
   { value: 'blog.webex.com', label: 'blog.webex.com' },
+  { value: 'graph.instagram.com', label: 'graph.instagram.com' },
   { value: 'investors.spotify.com', label: 'investors.spotify.com' },
-  { value: 'cache.netflix.com', label: 'cache.netflix.com' },
+  { value: 'investors.fb.com', label: 'investors.fb.com' },
   { value: 'zaintest.vuclip.com', label: 'zaintest.vuclip.com' },
-  { value: 'ads.ruangguru.com', label: 'io.ruangguru.com' },
+  { value: 'cache.netflix.com', label: 'cache.netflix.com' },
+  { value: 'quiz.vidio.com', label: 'quiz.vidio.com' },
+  { value: 'quiz.staging.vidio.com', label: 'quiz.staging.vidio.com' },
+  { value: 'quiz.int.vidio.com', label: 'quiz.int.vidio.com' },
+  { value: 'ads.ruangguru.com', label: 'ads.ruangguru.com' },
+  { value: 'bimbel.ruangguru.com', label: 'bimbel.ruangguru.com' },
+  { value: 'edu.ruangguru.com', label: 'edu.ruangguru.com' },
+  { value: 'io.ruangguru.com', label: 'io.ruangguru.com' },
+  { value: 'cf.shopee.co.id.sea-sw.swiftserve.com', label: 'cf.shopee.co.id.sea-sw.swiftserve.com' },
   { value: 'api.midtrans.com', label: 'api.midtrans.com' },
-  { value: 'investor.fb.com', label: 'investor.fb.com' },		
-  { value: 'bakrie.ac.id', label: 'bakrie.ac.id' }    
+  { value: 'api.blibli.com', label: 'api.blibli.com' },
+  { value: 'bakrie.ac.id', label: 'bakrie.ac.id' },
+  { value: 'unnes.ac.id', label: 'unnes.ac.id' },
+  { value: 'fikom.esaunggul.ac.id', label: 'fikom.esaunggul.ac.id' },
+  { value: 'app.gopay.co.id', label: 'app.gopay.co.id' },
+  { value: 'chat.sociomile.com', label: 'chat.sociomile.com' },
+  { value: 'api.quipper.com', label: 'api.quipper.com' }    
 ];
 
 const itemsPerPage = 15;
