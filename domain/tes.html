@@ -703,10 +703,10 @@ body {
     
 <body class="font-sans">
 <div class="container mx-auto px-2 sm:px-4 py-4 sm:py-6 max-w-[900px]">
-
-   
+<div class="flex flex-col sm:flex-row gap-6">
+    <div class="w-full sm:w-1/3">
+        
     <div class="glass-card overflow-hidden">
-    <div class="flex flex-col sm:flex-row sm:gap-6">
         <!-- Animated header background -->
         <div class="animated-bg">
             <div class="flex items-center justify-center">
@@ -716,7 +716,7 @@ body {
                 </div>
                 <h1 class="text-3xl font-bold text-center glow-text bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400">Free-CF-Proxy</h1>
              
-            
+            </div>
         </div>
         
         <div class="p-6">
@@ -783,9 +783,11 @@ body {
                             <i class="fas fa-search text-gray-400"></i>
                         </div>
                     </div>
-                </div>
+                </div> </div>
                 
                 <!-- Mobile-friendly proxy list -->
+                <div class="w-full sm:w-2/3">
+       
                 <div id="proxy-list-container" class="mt-4">
                     <!-- Proxy cards will be populated here -->
                 </div>
@@ -1182,7 +1184,8 @@ body {
                 </div>
             </div>
         </div>
-    </div></div></div>
+    </div></div>
+    </div>
     <footer class="mx-auto px-2 sm:px-4 py-4 sm:py-6 max-w-[900px]">
     <div class="divider mb-6"></div>
     <div class="relative overflow-hidden rounded-xl p-6 bg-slate-800/30 backdrop-blur-sm border border-slate-700/30">
