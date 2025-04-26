@@ -19,144 +19,224 @@
 
   <script src=
   "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<div id="particles-js"></div>
+
 <style>
-    :root {
-        --neon-blue: #00f3ff;
-        --neon-purple: #bc13fe;
-        --dark-bg: #0a0e14;
-    }
-
-    body {
-        background: var(--dark-bg);
-        font-family: 'Segoe UI', system-ui, sans-serif;
-        min-height: 100vh;
-    }
-
-    .cyber-border {
-        position: relative;
-        background: rgba(10, 14, 20, 0.8);
-        border: 2px solid transparent;
-        border-radius: 15px;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
-    }
-
-    .cyber-border::before {
-        content: '';
-        position: absolute;
-        inset: -2px;
-        border-radius: 15px;
-        background: linear-gradient(45deg, 
-            var(--neon-blue), 
-            var(--neon-purple),
-            var(--neon-blue));
+    #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
         z-index: -1;
-        animation: border-flow 4s linear infinite;
+    }
+    
+    body {
+        background: #0a192f;
+        color: #8892b0;
+    }
+</style>
+
+<script>
+    particlesJS('particles-js',
+        {
+            particles: {
+                number: { value: 80 },
+                color: { value: '#ffffff' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        }
+    );
+</script>
+  <style>
+    #cover-spin {
+        position:fixed;
+        width:100%;
+        left:0;right:0;top:0;bottom:0;
+        background-color: rgba(255,255,255,0.7);
+        z-index:9999;
+        display:none;
     }
 
-    @keyframes border-flow {
-        0% { filter: hue-rotate(0deg); }
-        100% { filter: hue-rotate(360deg); }
+    @-webkit-keyframes spin {
+        from {-webkit-transform:rotate(0deg);}
+        to {-webkit-transform:rotate(360deg);}
     }
 
-    .hologram-effect {
-        background: linear-gradient(45deg,
-            rgba(0, 243, 255, 0.1),
-            rgba(188, 19, 254, 0.1));
-        position: relative;
-        overflow: hidden;
+    @keyframes spin {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
     }
 
-    .hologram-effect::after {
+    #cover-spin::after {
+        content:'';
+        display:block;
+        position:absolute;
+        left:48%;top:40%;
+        width:40px;height:40px;
+        border-style:solid;
+        border-color:black;
+        border-top-color:transparent;
+        border-width: 4px;
+        border-radius:50%;
+        -webkit-animation: spin .8s linear infinite;
+        animation: spin .8s linear infinite;
+    }
+  </style>
+  <style>
+    #cover-spin {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        z-index: 9999;
+        display: none;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    #cover-spin::after {
         content: '';
         position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: linear-gradient(45deg, 
-            transparent 25%,
-            rgba(0, 243, 255, 0.1) 50%,
-            transparent 75%);
-        animation: hologram 3s infinite linear;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #3B82F6;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
     }
 
-    @keyframes hologram {
-        0% { transform: rotate(0deg) translate(-25%, -25%); }
-        100% { transform: rotate(360deg) translate(-25%, -25%); }
+    header {
+        background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+        box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
     }
 
-    .neon-text {
-        text-shadow: 0 0 10px var(--neon-blue),
-                     0 0 20px var(--neon-blue),
-                     0 0 30px var(--neon-blue);
+    header h1 {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .cyber-input {
-        background: rgba(0, 0, 0, 0.5);
-        border: 1px solid var(--neon-blue);
-        color: var(--neon-blue);
-        padding: 12px 20px;
-        border-radius: 8px;
+    #about, #contact {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 2rem;
+        max-width: 800px;
+    }
+
+    .form-input {
         transition: all 0.3s ease;
+        border: 2px solid #e2e8f0;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-size: 16px;
     }
 
-    .cyber-input:focus {
-        box-shadow: 0 0 15px var(--neon-blue);
-        background: rgba(0, 243, 255, 0.05);
+    .form-input:focus {
+        border-color: #3B82F6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
     }
 
-    .glow-button {
-        background: linear-gradient(45deg, 
-            var(--neon-blue), 
-            var(--neon-purple));
+    button {
+        transition: all 0.3s ease;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
         position: relative;
         overflow: hidden;
-        border: none;
-        color: black;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        transition: all 0.3s ease;
     }
 
-    .glow-button:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 25px var(--neon-purple);
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
     }
 
-    .matrix-terminal {
-        background: rgba(0, 20, 0, 0.9);
-        border: 1px solid #00ff00;
+    #reqOTP, #verOTP, #checkVerOTP, #checkQuota {
+        background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+        color: white;
+    }
+
+    #logResponse {
+        background: #1a1a1a;
         color: #00ff00;
         font-family: 'Courier New', monospace;
-        text-shadow: 0 0 5px #00ff00;
-    }
-
-    .cyber-table {
-        --table-border: 1px solid rgba(0, 243, 255, 0.3);
-        border: var(--table-border);
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .cyber-table th {
-        background: linear-gradient(45deg, 
-            rgba(0, 243, 255, 0.2), 
-            rgba(188, 19, 254, 0.2));
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    .cyber-table td {
-        border-top: var(--table-border);
         padding: 15px;
+        border-radius: 8px;
+        min-height: 150px;
+        border: 2px solid #2d3748;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    th {
+        background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+        color: white;
+        padding: 15px;
+        text-align: left;
+    }
+
+    td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    tr:hover {
+        background-color: #f8fafc;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    #hasilPaket {
+        animation: fadeIn 0.5s ease-out;
     }
 </style>
 </head>
-<body class="hologram-effect">
-    <header class="cyber-border p-6 mb-8">
-        <h1 class="neon-text text-4xl font-bold text-center">XL OTP LOGIN SOLUTION</h1>
-    </header><!-- Infonya -->
+<body class="bg-gray-100 text-gray-800">
+  <div id="cover-spin"></div><!-- Headernya -->
+  <header class="shadow-lg">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center">XL OTP LOGIN SOLUTION</h1>
+    </div>
+</header><!-- Infonya -->
   <section id="about" class="container mx-auto px-4 py-10">
     <h2 class="text-2xl font-bold mb-4">Tinggalkan Login Anda!</h2>
     <p class="text-lg text-gray-700">Sesi login kamu/pelanggan kamu
@@ -178,48 +258,41 @@
         <label for="seller_code" class=
         "block text-lg font-medium text-gray-700">Kode Seller (jika
         tidak tahu, tanyakan ke seller Anda)</label> <input type=
-        "text" id="seller_code" name="seller_code" class=
-        "mt-1 p-2 border border-gray-300 rounded-md w-full"
+        "text" id="seller_code" name="seller_code" class="form-input w-full mb-4"
         placeholder="Contoh: BosamStoreKizaOpaOpa" value=
         "532989b6215a64c1ccca2d04c89f4fd2" required=""><br>
       </div>
       <div class="mb-4">
         <label for="msisdn" class=
-        "cyber-input w-full mb-4">Msisdn/Nomor
+        "block text-lg font-medium text-gray-700">Msisdn/Nomor
         XL</label> <input type="number" id="msisdn" name="msisdn"
-        class="mt-1 p-2 border border-gray-300 rounded-md w-full"
+        class="form-input w-full mb-4"
         placeholder="Contoh: 628xxx/08xxx" value="" required=
         ""><br>
       </div>
       <div class="mb-4">
         <label for="otp" class=
-        "cyber-input w-full mb-4">Kode OTP</label>
-        <input type="text" id="otp" name="otp" class=
-        "mt-1 p-2 border border-gray-300 rounded-md w-full"
+        "block text-lg font-medium text-gray-700">Kode OTP</label>
+        <input type="text" id="otp" name="otp" class="form-input w-full mb-4"
         placeholder="Contoh: 123456" value="" required="">
       </div><input type="hidden" id="auth_id" name="auth_id" value=
       ""> <input type="hidden" id="access_token_temp" name=
-      "access_token_temp" value=""> <button type="button" class=
-      "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" id=
+      "access_token_temp" value=""> <button type="button" class="btn-primary" id=
       "checkVerOTP">CHECK STATUS VERIFIKASI</button><br>
       <br>
-      <button type="button" class=
-      "glow-button py-3 rounded-lg" id=
-      "reqOTP">MINTA KODE OTP</button> <button type="button" class=
-      "glow-button py-3 rounded-lg" id=
+      <button type="button" class="btn-primary" id=
+      "reqOTP">MINTA KODE OTP</button> <button type="button" class="btn-primary" id=
       "verOTP">LOGIN OTP</button>
       <div id="checkQuotaSection" style="display: none;">
         <br>
-        <button type="button" class=
-        "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+        <button type="button" class="btn-primary"
         id="checkQuota">CEK KUOTA</button>
       </div>
       <div id="hasilPaket" style="display: none;">
         <br>
         <h2>Package/Quota Information</h2>
         <p id="textKuota" style="text-align: justify;"></p>
-        <section class="cyber-border max-w-4xl mx-auto p-8">
-        <table class="cyber-table w-full">
+        <table class="table table-bordered">
           <thead>
             <tr>
               <th>Nama Paket</th>
@@ -229,7 +302,6 @@
           </thead>
           <tbody id="packageTableBody"></tbody>
         </table>
-        </section>
       </div><br>
       <br>
       <p><b>LOG RESPONSE:</b></p>
