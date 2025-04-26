@@ -1,851 +1,589 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FREE | CF | PROXY | LIFETIME</title>
-    <meta name="description" content="FREE | CF | PROXY | LIFETIME">
-    <meta name="keywords" content="FREE | CF | PROXY | LIFETIME">
-    <meta name="author" content="FREE | CF | PROXY | LIFETIME">
-    <meta name="robots" content="FREE | CF | PROXY | LIFETIME">
-
-    <!-- Open Graph Meta Tags untuk SEO Media Sosial -->
-    <meta property="og:title" content="FREE | CF | PROXY | LIFETIME">
-    <meta property="og:description" content="FREE | CF | PROXY | LIFETIME">
-    <meta property="og:image" content="https://bmkg.xyz/img/botvpn.jpg"> <!-- Ganti dengan URL gambar yang sesuai -->
-    <meta property="og:url" content="https://bmkg.xyz/img/botvpn.jpg">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FREE | CF | PROXY | LIFETIME">
-    <meta name="twitter:description" content="FREE | CF | PROXY | LIFETIME">
-    <meta name="twitter:image" content="https://bmkg.xyz/img/botvpn.jpg"> <!-- Ganti dengan URL gambar yang sesuai -->
-    <link href="https://bmkg.xyz/img/botvpn.jpg" rel="icon" type="image/png">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-          :root {
-        --primary: #00ff88;
-        --secondary: #00ffff;
-        --accent: #ff00ff;
-        --dark: #080c14;
-        --darker: #040608;
-        --light: #e0ffff;
-            --color-primary: #00ff88;
-            --color-secondary: #00ffff;
-            --color-background: #0a0f1a;
-            --color-card: rgba(15, 22, 36, 0.95);
-            --color-text: #e0f4f4;
-            --transition: all 0.3s ease;
-            
-        --card-bg: rgba(8, 12, 20, 0.95);
-        --glow: 0 0 20px rgba(0, 255, 136, 0.3);
-      }
-      
-  
-
-        body {
-  background: url('https://raw.githubusercontent.com/bitzblack/ip/refs/heads/main/shubham-dhage-5LQ_h5cXB6U-unsplash.jpg') no-repeat center center fixed;
-        background-size: cover;
-        justify-content: center;
-        align-items: center;
-  background-size: 300% 300%; /* Untuk animasi gradient */
-  color: #fff; /* Teks putih agar kontras */
-  margin: 0;
-  font-family: Arial, sans-serif; /* Font sederhana dan bersih */
-  animation: rainbowBackground 10s infinite; /* Animasi bergerak */
-}
-
-/* Animasi untuk background */
-@keyframes rainbowBackground {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-@keyframes moveColors {
-  100% {
-    background-position: -200%; /* Mulai dari luar kiri */
-  }
-  0% {
-    background-position: 200%; /* Bergerak ke kanan */
-  }
-}
-       h1 {
-      font-family: 'Rajdhani', sans-serif;
-      padding-top: 10px; /* To avoid content being hidden under the header */
-      margin-top: 10px;
-      color: black;
-            text-align: center;
-            font-size: 9vw;
-            font-weight: bold;
-            text-shadow: 
-                0 0 5px rgba(0, 123, 255, 0.8),
-                0 0 10px rgba(0, 123, 255, 0.8),
-                0 0 20px rgba(0, 123, 255, 0.8),
-                0 0 30px rgba(0, 123, 255, 0.8),
-                0 0 40px rgba(0, 123, 255, 0.8);
-    
-         background: linear-gradient(45deg, var(--primary), var(--secondary), var(--dark));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0 0 30px #000;
-        position: relative;
-        animation: titlePulse 3s ease-in-out infinite;
-    }
-
-      @keyframes titlePulse {
-        0%, 100% { transform: scale(1); filter: brightness(1); }
-        50% { transform: scale(1.02); filter: brightness(1.2); }
-      }
-    
-    h2 {
-      color: black;
-            text-align: center;
-            font-size: 4vw;
-            font-weight: bold;
-            text-shadow: 
-                0 0 5px rgba(0, 123, 255, 0.8),
-                0 0 10px rgba(0, 123, 255, 0.8),
-                0 0 20px rgba(0, 123, 255, 0.8),
-                0 0 30px rgba(0, 123, 255, 0.8),
-                0 0 40px rgba(0, 123, 255, 0.8);
-    }
-    header, footer {
-      box-sizing: border-box; /* Pastikan padding dihitung dalam lebar elemen */
-      background-color: ;
-      color: white;
-      text-align: center;
-      border: 0px solid rgba(143, 0, 0, 0.89); /* Border dengan warna abu-abu */
-      border-radius: 10px;
-      padding: 0 20px;
-      position: fixed;
-      width: 100%;
-      left: 0;
-      right: 2px;
-      pointer-events: none;
-      z-index: 10;
-    }
-
-    header {
-      top: 0;
-    }
-
-    footer {
-      bottom: 0;
-    }
-    
-  .title {
-            text-align: center;
-            color: var(--color-primary);
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--color-text);
-            font-weight: 500;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            background: rgba(0, 255, 136, 0.05);
-            border: 2px solid rgba(0, 255, 136, 0.3);
-            border-radius: 8px;
-            color: var(--color-text);
-            transition: var(--transition);
-        }
-
-        .form-control:focus {
-            border-color: var(--color-secondary);
-            box-shadow: 0 0 0 3px rgba(0, 255, 255, 0.2);
-        }
-
-        .btn {
-            width: 100%;
-            padding: 0.75rem;
-            background: var(--color-primary);
-            color: var(--color-background);
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .btn:hover {
-            background: var(--color-secondary);
-        }
-
-        .result {
-            margin-top: 1rem;
-            padding: 1rem;
-            background: rgba(0, 255, 136, 0.1);
-            border-radius: 8px;
-            word-break: break-all;
-        }
-
-        .loading {
-            display: none;
-            text-align: center;
-            color: var(--color-primary);
-            margin-top: 1rem;
-        }
-
-        .copy-btns {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 0.5rem;
-        }
-
-        .copy-btn {
-            background: rgba(0, 255, 136, 0.2);
-            color: var(--color-primary);
-            padding: 0.5rem;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .copy-btn:hover {
-            background: rgba(0, 255, 136, 0.3);
-        }
-
-        #error-message {
-            color: #ff4444;
-            text-align: center;
-            margin-top: 1rem;
-        }
-
-        /* Navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 80px;
-            height: 100vh;
-            background: ;
-            color: white;
-            padding: 10px 0px;
-            transition: transform 0.3s ease-in-out;
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 0 10px 10px 0;
-            transform: translateX(-100%);
-        }
-
-        .navbar.show {
-            transform: translateX(0);
-        }
-
-        .navbar a {
-            display: block;
-            margin: 10px 0;
-        }
-
-        .navbar a img {
-            width: 40px;
-        }
-
-        /* Tombol Toggle */
-        .toggle-btn {
-            position: fixed;
-            top: 60%;
-            left: 0px;
-            transform: translateY(-50%);
-            background: ;
-            border: none;
-            cursor: pointer;            
-            justify-content: center;
-            z-index: 1001;
-            padding: 0px;
-            border-radius: 50%;
-            transition: left 0.3s ease-in-out;
-        }
-
-        .toggle-btn img {
-            width: 18px;
-        }
-
-        /* Saat navbar terbuka, tombol ikut bergeser */
-        .navbar.show + .toggle-btn {
-            left: 80px;
-        }
-
-        /* Konten Utama */
-        .container {
-              background-color: rgba(0, 0, 0, 0.82);
-    flex: 1;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 95px;
-    margin-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    flex-direction: column;
-    max-width: 960px;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-
-/* Menambahkan margin-left agar konten tidak terhalang navbarr */
-    margin-left: 110px; /* Jarak sesuai dengan lebar navbarr */
-    margin-right: auto;
-
-  /* Tambahkan efek glow */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), /* Glow putih */
-              0 0 30px rgba(0, 150, 255, 0.5);   /* Glow biru */
-  
-  /* Default untuk HP */
-  margin-left: auto;
-  margin-right: auto;
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-          .card {
-            width: 100%;
-            margin-top: 10px;
-            padding-top: 10px; /* To avoid content being hidden under the header */
-            max-width: 500px;
-            padding: 2rem;
-            align-items: center;
-  position: relative;
-  z-index: 1;
-            
-        }
-
-         .navbarconten {
-    width: 100%;
-    overflow-x: auto; /* Mengaktifkan scroll horizontal */
-    margin-bottom: 0px;
-    border: 1px solid #000; /* Border dengan warna abu-abu */
-    border-radius: 10px; /* Membuat sudut melengkung */
-    padding: 0px; /* Memberi jarak antara border dan konten */
-    background-color: rgba(0, 0, 0, 0.82); /* Warna latar belakang */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), /* Glow putih */
-              0 0 30px rgba(0, 150, 255, 0.5);   /* Glow biru */
-
-    }
-    </style>
+	<meta charset="utf-8"> 
+	<title>SCAN ANGKA OTOMATIS TOGEL</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> 
+	<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" /> 
+	<link rel="canonical" href="https://app.scanangka.info/" />
+	<meta name="description" content="scanangka adalah aplikasi togel scan untuk mencari angka main secara otomatis pertama di Indonesia dengan parameter-parameter scan yang lengkap dan bisa diatur sesuai keinginan tanpa harus mengisi atau menuliskan satu persatu key yang diinginkan"> 
+	<meta name="author" content="Scan Angka"> 
+	<meta name="generator" content="Scan Angka"> 
+	<meta name="google-site-verification" content="f6FjftOgZnHUFArNwzn3C9aQvcYJrUnJIVsFijxMs-M" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="SCAN ANGKA OTOMATIS - APLIKASI SCAN ANGKA MAIN OTOMATIS TOGEL" />
+	<meta property="og:description" content="scanangka adalah aplikasi togel scan untuk mencari angka main secara otomatis pertama di Indonesia dengan parameter-parameter scan yang lengkap dan bisa diatur sesuai keinginan tanpa harus mengisi atau menuliskan satu persatu key yang diinginkan" />
+	<meta property="og:url" content="https://app.scanangka.info/" />
+	<meta property="og:site_name" content="SCAN ANGKA MAIN OTOMATIS" />
+	<meta property="og:updated_time" content="2023-09-06T17:08:00+07:00" />
+	<meta property="og:image" content="icon.png" />
+	<meta property="og:image:secure_url" content="https://app.scanangka.info/icon.png" />
+	<meta property="og:image:alt" content="SCAN ANGKA OTOMATIS - APLIKASI SCAN ANGKA MAIN OTOMATIS TOGEL" />
+	<meta property="og:image:type" content="https://app.scanangka.info/image/png" />
+	
+	
+	<link href="style.css" rel="stylesheet" />
+	<link href="https://app1.scanangka.fun/dist/select2.min.css" rel="stylesheet">
+	<script src="https://app1.scanangka.fun/dist/jquery.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+	<script src="https://app1.scanangka.fun/dist/sweetalert2.js"></script>
+	<style>
+	.card-body {
+		padding: 0.5rem 0.5rem;
+	}
+	.bg-light {
+		background-color: #ffffff00 !important;
+	}
+	.card-body {
+		padding: 0.5rem 0.5rem;
+	}
+	.bg-light {
+		background-color: #ffffff00 !important;
+	}
+	#adstop {
+			width: 90%;
+	}
+	.column {
+		float: left;
+		width: 50%;
+		padding: 1px;
+	}		
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+		border-right: 1px solid #ff6550;
+		border-bottom: 2px solid #ff6550;
+		border-left: 1px solid #ff6550;
+	}
+	@media only screen and (max-width: 600px) {
+		#wrapper {
+			width: 100%;
+			border: none;
+		}
+		.column {
+			float: left;
+			width: 100%;
+			padding: 1px;
+		}
+		#adstop {
+			width: 100%;
+		}
+	}
+	td.dt-nowrap { white-space: nowrap }
+	.badge {
+		padding: 0.20em 0.5em;
+	}
+	#sidebar-wrapper .list-group {
+		overflow: auto;
+		height: auto;
+	}
+	</style>
 </head>
-<body>
+<body class="">
+	<div class="d-flex" id="wrapper">
+		<div class="border-end bg-dark" id="sidebar-wrapper">
+	<a href="./" style="text-decoration: none;"><div class="sidebar-heading border-bottom bg-dark" style="color:white">Racik Angka VIP👑</div></a>
+	<div class="list-group list-group-flush">
+		<small>
+		<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./">🏠 HOME</a>
+		<br>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=bbfske">🧩 BBFS KE</a>
+				<br>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ctac">🧩 CT AC</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ctck">🧩 CT CK</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ctke">🧩 CT KE</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=cb">🧩 CB / CT 4D</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ct3d">🧩 CT 3D</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ct3dd">🧩 CT 3D Depan</a>
+				<br>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=a">🧩 AS</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=c">🧩 COP</a>
+				<a class="list-group-item list-group-item-action list-group-item-light active p-2" href="./?m=k">🧩 KEPALA</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=e">🧩 EKOR</a>
+				<br>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=jac">🧩 JUMLAH AC</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=jck">🧩 JUMLAH CK</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=jke">🧩 JUMLAH KE</a>
+				<br>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=lac">🧩 LEMAH AS COP</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=lck">🧩 LEMAH COP KEPALA</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=lke">🧩 LEMAH KEPALA EKOR</a>
+				<br>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=la">🧩 LEMAH AS</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=lc">🧩 LEMAH COP</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=lk">🧩 LEMAH KEPALA</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=le">🧩 LEMAH EKOR</a>
+				<br>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ljac">🧩 LEMAH JAC</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ljck">🧩 LEMAH JCK</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ljke">🧩 LEMAH JKE</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=lj4d">🧩 LEMAH JUMLAH 4D</a>
+				<br>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=sac">🧩 SELISIH AC</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=sck">🧩 SELISIH CK</a>
+				<a class="list-group-item list-group-item-action list-group-item-light  p-2" href="./?m=ske">🧩 SELISIH KE</a>
+				<br>
+				<!--<a class="list-group-item list-group-item-action list-group-item-light p-2" href="http://scanangka.fun/" target="_blank">🔗 Scan Angka Otomatis</a>
+		<a class="list-group-item list-group-item-action list-group-item-light p-2" href="https://rekapangka.online/" target="_blank">🔗 Scan AI dari Pasaran Lain</a>
+		<a class="list-group-item list-group-item-action list-group-item-light p-2" href="https://scanpolajitu.com/" target="_blank">🔗 Scan Rumus Pola Jitu</a>-->
+		</small>
+		
+		<center>
+		<a class="" href="https://app.scanangka.fun/" target="_blank" style="color:yellow">Scan Angka Otomatis</a><br><br>
+		</center>
+	</div>
+</div>		
+		<div id="page-content-wrapper">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+				<div class="container-fluid">
+					<div class="col col-xs-12">
+						<button class="btn btn-sm btn-danger w-100" id="sidebarToggle">MAIN MENU</button>
+						
+						<span class="d-xl-none" style="color:#cdc9c9"><center><small>visitor 👱</small></center></span>
+					</div>
+					<div class="col-2 d-none d-sm-block" style="text-align: right;">
+						<span style="color:#cdc9c9"><small>visitor 👱</small></span>
+					</div>
+				</div>
+			</nav>
+			
+			<div class="container-fluid" style="">
+				
+<div class="container-fluid py-1">
+	<div class="card">
+		<div class="card-body">
+			<div class="box box-danger">
+				<div class="box-body">
+					<style>
+.nav {
+    --bs-nav-link-padding-x: 0rem;
+    --bs-nav-link-padding-y: 0rem;
+}
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0px;
+    --bs-nav-tabs-border-color: #dee2e629;
+    --bs-nav-tabs-border-radius: 0rem;
+    --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
+    --bs-nav-tabs-link-active-color: #919191;
+    --bs-nav-tabs-link-active-bg: #ffffff00;
+    --bs-nav-tabs-link-active-border-color: #dee2e600 #dee2e600 #FFEB3B00;
+	--bs-nav-tabs-link-hover-border-color: #e9ecef00 #e9ecef00 #FFEB3B00;
+	--bs-nav-tabs-link-active-color: #FFEB3B;
+	--bs-nav-link-color: #8f8f8f;
+    --bs-nav-link-hover-color: #FFEB3B;
+    border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+}
+.nav-tabs .nav-link {
+    margin-right: 0.2rem;
+}
+.select2-container--classic .select2-selection--multiple .select2-selection__choice {
+    color: #5f5f5f;
+	font-size: small;
+}
+.select2-container .select2-search--inline .select2-search__field {
+    font-size: small;
+    font-weight: normal;
+}
+[aria-selected="true"] {
+	background-color: #c8cbcf;
+}
+.select2-container--classic .select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 0px;
+    cursor: text;
+    outline: 0;
+	
+	box-sizing: border-box;
+    display: block;
+    user-select: none;
+    -webkit-user-select: none;
+	height: 28px;
+}
+.select2-container .select2-search--inline:first-child {
+    float: none;
+}
+.select2-container .select2-search--inline:first-child .select2-search__field{
+    width: 100% !important;
+}
+textarea.form-control {
+    min-height: calc(1.5em + 0.75rem + 2px);
+    border-radius: 0px;
+}
+.form-label {
+    margin-bottom: 0rem;
+    font-size: small;
+}
 
-<header><h1 class="title">${namaWeb}</h1></header>
+.py-1 {
+    margin: 0px;
+    padding: 0px;
+}
+.loader {
+  display: none;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 
-<!-- Navbar -->
-<div class="navbar" id="navbar">
-    <div class="navbarconten">
-    <span><a href="${waku1}" target="_blank" rel="noopener noreferrer" style="font-family: 'Rajdhani', sans-serif;">
-    <img src="https://bmkg.xyz/img/mobile.png" alt="menu" width="40">
-  </a></span>
-        <span><a href="/api" target="_self" rel="noopener noreferrer" style="font-family: 'Rajdhani', sans-serif;">
-    <img src="https://bmkg.xyz/img/linksub.png" alt="menu" width="40" style="margin-top: 5px;"></a></span>
-        <span><a href="/proxy" target="_self" rel="noopener noreferrer" style="font-family: 'Rajdhani', sans-serif;">
-    <img src="https://bmkg.xyz/img/vpn.png" alt="menu" width="40" style="margin-top: 5px;">
-  </a></span>
-        <span><a href="${telegramku}" target="_blank" rel="noopener noreferrer" style="font-family: 'Rajdhani', sans-serif;"><img src="https://bmkg.xyz/img/tele.png
-" alt="menu" width="40"></a></span>
-        <span><a href="${telegrambot}" target="_blank" rel="noopener noreferrer" style="font-family: 'Rajdhani', sans-serif;"><img src="https://bmkg.xyz/img/bot.png
-" alt="menu" width="40"></a></span>
-        <span><a href="${pagehost}" target="_self" rel="noopener noreferrer">
-    <img src="https://bmkg.xyz/img/home.png" alt="menu" width="40"></a></span>
-    </div>
+.loading {
+  border: 6px solid #2a4f7c;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-top-color: #4f81bf;
+  border-left-color: #4f81bf;
+  animation: spin 1s infinite ease-in;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+div:where(.swal2-container) .swal2-html-container {
+    margin: 0em 0em 0em;
+}
+div:where(.swal2-container) div:where(.swal2-popup) {
+    padding: 0 0 0em;
+}
+</style>
+<div class="loader">
+  <div class="loading">
+  </div>
 </div>
 
-<!-- Tombol Toggle -->
-<button class="toggle-btn" id="menu-btn" onclick="toggleNavbar()">
-    <img src="https://bmkg.xyz/img/buka.png" alt="Toggle Menu">
-</button>
+<form action="" method="get">
+	<input type="hidden" name="m" value="k">
+	<div class="form-group row">
+		<div class="col-md-4">
+			<label for="i" class="form-label">Pasaran</label>
+			<select name="p" id="pasaran2" class="form-control form-control-sm select" style="width: 100%;" required="required">
+				<option value="sydney"  data-icon="au">Sydney <small>[13:30-13:50-setiap hari]</small></option>
+				<option value="singapore"  data-icon="sg">Singapore <small>[17:30-17:40-off selasa-jumat]</small></option>
+				<option value="hongkong"  data-icon="cn">Hongkong <small>[22:45-23:00-setiap hari]</small></option>
+				
+												<option value="morocco quatro 00:00"  data-icon="ma">Morocco Quatro 00:00 <small>[00:45-01:00-setiap hari]</small></option>
+								<option value="germany plus5"  data-icon="de">Germany Plus5 <small>[01:00-01:10-setiap hari]</small></option>
+								<option value="tennesse midday"  data-icon="us">Tennesse Midday <small>[01:05-01:20-senin off]</small></option>
+								<option value="indiana midday"  data-icon="us">Indiana Midday <small>[01:05-01:20-setiap hari]</small></option>
+								<option value="kentucky midday"  data-icon="us">Kentucky Midday <small>[01:05-01:21-setiap hari]</small></option>
+								<option value="florida midday"  data-icon="us">Florida Midday <small>[01:15-01:30-setiap hari]</small></option>
+								<option value="rhode island midday"  data-icon="us">Rhode Island Midday <small>[01:15-01:30-setiap hari]</small></option>
+								<option value="texas day"  data-icon="us">Texas Day <small>[01:15-01:27-senin off]</small></option>
+								<option value="illinois midday"  data-icon="us">Illinois Midday <small>[01:25-01:40-setiap hari]</small></option>
+								<option value="missouri midday"  data-icon="us">Missouri Midday <small>[01:30-01:45-setiap hari]</small></option>
+								<option value="massachusetts midday"  data-icon="us">Massachusetts Midday <small>[01:35-01:50-setiap hari]</small></option>
+								<option value="virginia day"  data-icon="us">Virginia Day <small>[01:40-02:00-setiap hari]</small></option>
+								<option value="delaware day"  data-icon="us">Delaware Day <small>[01:40-01:58-setiap hari]</small></option>
+								<option value="washington dc midday"  data-icon="us">Washington Dc Midday <small>[01:40-01:55-setiap hari]</small></option>
+								<option value="morocco quatro 01:00"  data-icon="ma">Morocco Quatro 01:00 <small>[01:45-02:00-setiap hari]</small></option>
+								<option value="new york midday"  data-icon="us">New York Midday <small>[02:10-02:30-setiap hari]</small></option>
+								<option value="wisconsin"  data-icon="us">Wisconsin <small>[02:14-02:29-setiap hari]</small></option>
+								<option value="darwin"  data-icon="au">Darwin <small>[02:15-02:25-setiap hari]</small></option>
+								<option value="orlando"  data-icon="us">Orlando <small>[02:30-02:40-setiap hari]</small></option>
+								<option value="north carolina day"  data-icon="us">North Carolina Day <small>[02:45-03:00-setiap hari]</small></option>
+								<option value="morocco quatro 02:00"  data-icon="ma">Morocco Quatro 02:00 <small>[02:45-03:00-setiap hari]</small></option>
+								<option value="milan"  data-icon="it">Milan <small>[03:10-03:20-setiap hari]</small></option>
+								<option value="oregon 1"  data-icon="us">Oregon 1 <small>[03:45-04:00-setiap hari]</small></option>
+								<option value="morocco quatro 03:00"  data-icon="ma">Morocco Quatro 03:00 <small>[03:45-04:00-setiap hari]</small></option>
+								<option value="bucharest"  data-icon="ro">Bucharest <small>[04:15-04:25-setiap hari]</small></option>
+								<option value="brunei"  data-icon="bn">Brunei <small>[04:35-04:45-setiap hari]</small></option>
+								<option value="morocco quatro 04:00"  data-icon="ma">Morocco Quatro 04:00 <small>[04:45-05:00-setiap hari]</small></option>
+								<option value="munich"  data-icon="de">Munich <small>[05:00-05:10-setiap hari]</small></option>
+								<option value="atlantic night"  data-icon="us">Atlantic Night <small>[05:20-05:30-setiap hari]</small></option>
+								<option value="queensland"  data-icon="au">Queensland <small>[05:45-05:55-setiap hari]</small></option>
+								<option value="morocco quatro 05:00"  data-icon="ma">Morocco Quatro 05:00 <small>[05:45-06:00-setiap hari]</small></option>
+								<option value="usa night"  data-icon="us">Usa Night <small>[06:05-06:15-setiap hari]</small></option>
+								<option value="dublin night"  data-icon="ie">Dublin Night <small>[06:30-06:40-setiap hari]</small></option>
+								<option value="west virginia"  data-icon="us">West Virginia <small>[06:40-06:58-senin off]</small></option>
+								<option value="oregon 2"  data-icon="us">Oregon 2 <small>[06:45-07:00-setiap hari]</small></option>
+								<option value="morocco quatro 06:00"  data-icon="ma">Morocco Quatro 06:00 <small>[06:45-07:00-setiap hari]</small></option>
+								<option value="texas evening"  data-icon="us">Texas Evening <small>[06:45-07:00-senin off]</small></option>
+								<option value="georgia evening"  data-icon="us">Georgia Evening <small>[06:45-07:00-setiap hari]</small></option>
+								<option value="manhattan night"  data-icon="us">Manhattan Night <small>[07:00-07:10-setiap hari]</small></option>
+								<option value="tennesse evening"  data-icon="us">Tennesse Evening <small>[07:05-07:20-setiap hari]</small></option>
+								<option value="ohio evening"  data-icon="us">Ohio Evening <small>[07:15-07:29-setiap hari]</small></option>
+								<option value="michigan evening"  data-icon="us">Michigan Evening <small>[07:15-07:29-setiap hari]</small></option>
+								<option value="maryland evening"  data-icon="us">Maryland Evening <small>[07:40-07:55-setiap hari]</small></option>
+								<option value="washington dc evening"  data-icon="us">Washington Dc Evening <small>[07:40-07:57-setiap hari]</small></option>
+								<option value="delaware night"  data-icon="us">Delaware Night <small>[07:40-07:57-setiap hari]</small></option>
+								<option value="brisbane"  data-icon="au">Brisbane <small>[08:10-08:20-setiap hari]</small></option>
+								<option value="pacific"  data-icon="us">Pacific <small>[08:35-08:45-setiap hari]</small></option>
+								<option value="massachusetts evening"  data-icon="us">Massachusetts Evening <small>[08:37-08:50-setiap hari]</small></option>
+								<option value="stockholm"  data-icon="se">Stockholm <small>[09:00-09:10-setiap hari]</small></option>
+								<option value="california"  data-icon="us">California <small>[09:15-09:30-setiap hari]</small></option>
+								<option value="florida evening"  data-icon="us">Florida Evening <small>[09:30-09:45-setiap hari]</small></option>
+								<option value="missouri evening"  data-icon="us">Missouri Evening <small>[09:40-09:59-setiap hari]</small></option>
+								<option value="oregon 3"  data-icon="us">Oregon 3 <small>[09:45-10:00-setiap hari]</small></option>
+								<option value="illinois evening"  data-icon="us">Illinois Evening <small>[10:05-10:20-setiap hari]</small></option>
+								<option value="new york evening"  data-icon="us">New York Evening <small>[10:10-10:30-setiap hari]</small></option>
+								<option value="indiana evening"  data-icon="us">Indiana Evening <small>[10:35-10:50-setiap hari]</small></option>
+								<option value="new jersey evening"  data-icon="us">New Jersey Evening <small>[10:40-10:56-setiap hari]</small></option>
+								<option value="virginia night"  data-icon="us">Virginia Night <small>[10:40-11:00-setiap hari]</small></option>
+								<option value="kentucky evening"  data-icon="us">Kentucky Evening <small>[10:45-11:00-setiap hari]</small></option>
+								<option value="texas night"  data-icon="us">Texas Night <small>[10:55-11:12-senin off]</small></option>
+								<option value="north carolina evening"  data-icon="us">North Carolina Evening <small>[11:05-11:22-setiap hari]</small></option>
+								<option value="georgia night"  data-icon="us">Georgia Night <small>[11:20-11:34-setiap hari]</small></option>
+								<option value="cambodia"  data-icon="kh">Cambodia <small>[11:35-11:50-setiap hari]</small></option>
+								<option value="bullseye"  data-icon="us">Bullseye <small>[11:50-12:10-setiap hari]</small></option>
+								<option value="dublin morning"  data-icon="ie">Dublin Morning <small>[12:00-12:10-setiap hari]</small></option>
+								<option value="oregon 4"  data-icon="us">Oregon 4 <small>[12:45-13:00-setiap hari]</small></option>
+								<option value="toto macau 13:00"  data-icon="cn">Toto Macau 13:00 <small>[13:00-13:15-setiap hari]</small></option>
+								<option value="midway"  data-icon="us">Midway <small>[13:10-13:20-setiap hari]</small></option>
+								<option value="sydney lotto"  data-icon="au">Sydney Lotto <small>[13:30-13:50-setiap hari]</small></option>
+								<option value="helsinki"  data-icon="fi">Helsinki <small>[14:10-14:20-setiap hari]</small></option>
+								<option value="cambridge"  data-icon="gb">Cambridge <small>[14:35-14:45-setiap hari]</small></option>
+								<option value="morocco quatro 15:00"  data-icon="ma">Morocco Quatro 15:00 <small>[14:45-15:00-setiap hari]</small></option>
+								<option value="britania"  data-icon="gb">Britania <small>[15:00-15:10-setiap hari]</small></option>
+								<option value="usa day"  data-icon="us">Usa Day <small>[15:15-15:25-setiap hari]</small></option>
+								<option value="china"  data-icon="cn">China <small>[15:15-15:30-setiap hari]</small></option>
+								<option value="houston"  data-icon="us">Houston <small>[15:20-15:30-setiap hari]</small></option>
+								<option value="morocco quatro 16:00"  data-icon="ma">Morocco Quatro 16:00 <small>[15:45-16:00-setiap hari]</small></option>
+								<option value="oslo"  data-icon="no">Oslo <small>[15:45-15:55-setiap hari]</small></option>
+								<option value="nicosia"  data-icon="tr">Nicosia <small>[16:00-16:10-setiap hari]</small></option>
+								<option value="toto macau 16:00"  data-icon="cn">Toto Macau 16:00 <small>[16:00-16:15-setiap hari]</small></option>
+								<option value="venezia"  data-icon="it">Venezia <small>[16:25-16:35-setiap hari]</small></option>
+								<option value="atlantic day"  data-icon="us">Atlantic Day <small>[16:40-16:50-setiap hari]</small></option>
+								<option value="barcelona"  data-icon="it">Barcelona <small>[16:50-17:00-setiap hari]</small></option>
+								<option value="japan"  data-icon="jp">Japan <small>[17:00-17:20-setiap hari]</small></option>
+								<option value="zurich"  data-icon="se">Zurich <small>[17:10-17:20-setiap hari]</small></option>
+								<option value="magnum4d"  data-icon="my">Magnum4d <small>[17:45-18:50-rabu,sabtu,minggu]</small></option>
+								<option value="morocco quatro 17:00"  data-icon="ma">Morocco Quatro 17:00 <small>[17:45-18:00-setiap hari]</small></option>
+								<option value="dublin day"  data-icon="ie">Dublin Day <small>[18:00-18:10-setiap hari]</small></option>
+								<option value="batavia"  data-icon="id">Batavia <small>[18:40-18:50-setiap hari]</small></option>
+								<option value="morocco quatro 18:00"  data-icon="ma">Morocco Quatro 18:00 <small>[18:45-19:00-setiap hari]</small></option>
+								<option value="emirates day"  data-icon="ae">Emirates Day <small>[19:00-19:10-setiap hari]</small></option>
+								<option value="toto macau 19:00"  data-icon="cn">Toto Macau 19:00 <small>[19:00-19:15-setiap hari]</small></option>
+								<option value="greenland"  data-icon="gl">Greenland <small>[19:20-19:30-setiap hari]</small></option>
+								<option value="morocco quatro 19:00"  data-icon="ma">Morocco Quatro 19:00 <small>[19:45-20:00-setiap hari]</small></option>
+								<option value="pcso"  data-icon="ph">Pcso <small>[19:50-20:10-minggu off]</small></option>
+								<option value="birmingham"  data-icon="gb">Birmingham <small>[20:25-20:35-setiap hari]</small></option>
+								<option value="taiwan"  data-icon="tw">Taiwan <small>[20:35-20:45-setiap hari]</small></option>
+								<option value="morocco quatro 20:00"  data-icon="ma">Morocco Quatro 20:00 <small>[20:45-21:00-setiap hari]</small></option>
+								<option value="canberra"  data-icon="au">Canberra <small>[21:10-21:20-setiap hari]</small></option>
+								<option value="rotterdam"  data-icon="nl">Rotterdam <small>[21:35-21:45-setiap hari]</small></option>
+								<option value="morocco quatro 21:00"  data-icon="ma">Morocco Quatro 21:00 <small>[21:45-22:00-setiap hari]</small></option>
+								<option value="toto macau 22:00"  data-icon="cn">Toto Macau 22:00 <small>[22:00-22:15-setiap hari]</small></option>
+								<option value="euro"  data-icon="br">Euro <small>[22:05-22:15-setiap hari]</small></option>
+								<option value="tennesse morning"  data-icon="us">Tennesse Morning <small>[22:05-22:22-minggu off]</small></option>
+								<option value="atlantic morning"  data-icon="us">Atlantic Morning <small>[22:20-22:30-setiap hari]</small></option>
+								<option value="hongkong lotto"  data-icon="cn">Hongkong Lotto <small>[22:30-23:00-setiap hari]</small></option>
+								<option value="copenhagen"  data-icon="dk">Copenhagen <small>[22:40-22:50-setiap hari]</small></option>
+								<option value="texas morning"  data-icon="us">Texas Morning <small>[22:45-23:00-minggu off]</small></option>
+								<option value="morocco quatro 22:00"  data-icon="ma">Morocco Quatro 22:00 <small>[22:45-23:00-setiap hari]</small></option>
+								<option value="maryland midday"  data-icon="us">Maryland Midday <small>[23:10-23:28-setiap hari]</small></option>
+								<option value="budapest"  data-icon="hu">Budapest <small>[23:10-23:20-setiap hari]</small></option>
+								<option value="ohio midday"  data-icon="us">Ohio Midday <small>[23:15-23:29-setiap hari]</small></option>
+								<option value="georgia midday"  data-icon="us">Georgia Midday <small>[23:15-23:29-setiap hari]</small></option>
+								<option value="manhattan day"  data-icon="us">Manhattan Day <small>[23:30-23:40-setiap hari]</small></option>
+								<option value="new jersey midday"  data-icon="us">New Jersey Midday <small>[23:45-23:59-setiap hari]</small></option>
+								<option value="south carolina midday"  data-icon="us">South Carolina Midday <small>[23:45-23:59-minggu off]</small></option>
+								<option value="michigan midday"  data-icon="us">Michigan Midday <small>[23:45-23:59-setiap hari]</small></option>
+								<option value="morocco quatro 23:00"  data-icon="ma">Morocco Quatro 23:00 <small>[23:45-23:59-setiap hari]</small></option>
+								<option value="emirates night"  data-icon="ae">Emirates Night <small>[23:45-23:55-setiap hari]</small></option>
+								<option value="toto macau 00:00"  data-icon="cn">Toto Macau 00:00 <small>[23:55-00:15-setiap hari]</small></option>
+							</select>
+		</div>
+		<div class="col-md-2">
+			<label for="r" class="form-label">Jenis Result</label>
+			<select name="r" class="form-control form-control-sm" required>
+				<optgroup label="RESULT HARIAN">
+					<option value="HARIAN" >- Harian</option>
+				</optgroup>
+				<optgroup label="RESULT MINGGUAN">
+					<option value="senin" >- Senin</option>
+					<option value="selasa" >- Selasa</option>
+					<option value="rabu" >- Rabu</option>
+					<option value="kamis" >- Kamis</option>
+					<option value="jumat" >- Jumat</option>
+					<option value="sabtu" >- Sabtu</option>
+					<option value="minggu" >- Minggu</option>
+				</optgroup>
+				<optgroup label="RESULT TANGGAL">
+										<option value="tgl01" >Result Tiap Tgl 01</option>
+										<option value="tgl02" >Result Tiap Tgl 02</option>
+										<option value="tgl03" >Result Tiap Tgl 03</option>
+										<option value="tgl04" >Result Tiap Tgl 04</option>
+										<option value="tgl05" >Result Tiap Tgl 05</option>
+										<option value="tgl06" >Result Tiap Tgl 06</option>
+										<option value="tgl07" >Result Tiap Tgl 07</option>
+										<option value="tgl08" >Result Tiap Tgl 08</option>
+										<option value="tgl09" >Result Tiap Tgl 09</option>
+										<option value="tgl10" >Result Tiap Tgl 10</option>
+										<option value="tgl11" >Result Tiap Tgl 11</option>
+										<option value="tgl12" >Result Tiap Tgl 12</option>
+										<option value="tgl13" >Result Tiap Tgl 13</option>
+										<option value="tgl14" >Result Tiap Tgl 14</option>
+										<option value="tgl15" >Result Tiap Tgl 15</option>
+										<option value="tgl16" >Result Tiap Tgl 16</option>
+										<option value="tgl17" >Result Tiap Tgl 17</option>
+										<option value="tgl18" >Result Tiap Tgl 18</option>
+										<option value="tgl19" >Result Tiap Tgl 19</option>
+										<option value="tgl20" >Result Tiap Tgl 20</option>
+										<option value="tgl21" >Result Tiap Tgl 21</option>
+										<option value="tgl22" >Result Tiap Tgl 22</option>
+										<option value="tgl23" >Result Tiap Tgl 23</option>
+										<option value="tgl24" >Result Tiap Tgl 24</option>
+										<option value="tgl25" >Result Tiap Tgl 25</option>
+										<option value="tgl26" >Result Tiap Tgl 26</option>
+										<option value="tgl27" >Result Tiap Tgl 27</option>
+										<option value="tgl28" >Result Tiap Tgl 28</option>
+										<option value="tgl29" >Result Tiap Tgl 29</option>
+										<option value="tgl30" >Result Tiap Tgl 30</option>
+										<option value="tgl31" >Result Tiap Tgl 31</option>
+									</optgroup>
+			</select>
+		</div>
+		<div class="col-md-1">
+			<label for="l" class="form-label">Putaran</label>
+			<input class="form-control form-control-sm" name="l" type="number" placeholder="x putaran" id="l" min="5" max="27" value="5" required="">
+		</div>
+		<div class="col-md-2">
+			<label for="i" class="form-label">Kuncian</label>
+			<select name="i" class="form-control form-control-sm" required>
+				<option value="A" >AS (A)</option>
+				<option value="C" >COP (C)</option>
+				<option value="K" >KEPALA (K)</option>
+				<option value="E" >EKOR (E)</option>
+				<option value="JKE" >JUMLAH KEP EKOR (JKE)</option>
+			</select>
+		</div>
+		<div class="col-md-2">
+			<label for="o" class="form-label">Operator</label>
+			<select name="o" class="form-control form-control-sm" required>
+				<option value="t" >Penambahan (+)</option>
+				<option value="k" >Pengurangan (-)</option>
+			</select>
+		</div>
+		<div class="col-md-1">
+			<label for="k" class="form-label">Konversi</label>
+			<select name="k" class="form-control form-control-sm" required>
+												<option value="-" >-</option>
+								<option value="ix" >ix</option>
+								<option value="ml" >ml</option>
+								<option value="mb" >mb</option>
+								<option value="ty" >ty</option>
+								<option value="m0" >m0</option>
+								<option value="m1" >m1</option>
+								<option value="m3" >m3</option>
+								<option value="m5" >m5</option>
+								<option value="m7" >m7</option>
+								<option value="m9" >m9</option>
+								<option value="m2" >m2</option>
+								<option value="m4" >m4</option>
+								<option value="m6" >m6</option>
+								<option value="m8" >m8</option>
+								<option value="m10" >m10</option>
+								<option value="m11" >m11</option>
+								<option value="m12" >m12</option>
+								<option value="m13" >m13</option>
+								<option value="m14" >m14</option>
+								<option value="m15" >m15</option>
+								<option value="m16" >m16</option>
+								<option value="m17" >m17</option>
+								<option value="m18" >m18</option>
+								<option value="m19" >m19</option>
+							</select>
+		</div>
+	</div>            
+	<div class="form-group row">
+		<div class="col-md-12">
+			<button type="submit" class="btn btn-sm btn-warning w-100" onclick="spinner()">TAMPILKAN</button>
+		</div>
+	</div>
+</form>
 
-<!-- Konten Utama -->
-<div class="container">
-    <h1>Selamat Datang di Website Saya</h1>
-    <p>Ini adalah contoh halaman dengan navbar yang dapat dibuka dan ditutup. Tombol menu akan mengikuti posisi navbar saat dibuka.</p>
+<link rel="stylesheet" href="https://app1.scanangka.fun/dist/lite-yt-embed.css" />
+<script src="https://app1.scanangka.fun/dist//lite-yt-embed.js"></script>
+<script type="text/javascript">
+function spinner() {
+	document.getElementsByClassName("loader")[0].style.display = "block";
+	//window.open('https://shorturl.at/psJVY','popUpWindow','height=400,width=600,left=10,top=10,,scrollbars=yes,menubar=no'); 
+}
+function openmodal()
+{
+	Swal.fire({
+		//title: "hub admin",
+		//icon: "info",
+		html: "<small><lite-youtube videoid='zBLaiXssmN8'></lite-youtube></small>",
+		showConfirmButton: false,
+		//timer: 50000,
+		//timerProgressBar: true,
+		allowOutsideClick: true,
+		allowEscapeKey: true
+		}).then(function() {
 
-    <div class="card">
-        <br/>             <form id="subLinkForm">
-                <div class="form-group">
-                    <label for="app">Aplikasi</label>
-                    <select id="app" class="form-control" required>
-                        <option value="v2ray">V2RAY</option>
-                        <option value="v2rayng">V2RAYNG</option>
-                        <option value="clash">CLASH</option>
-                        <option value="nekobox">NEKOBOX</option>
-                        <option value="singbox">SINGBOX</option>
-                        <option value="surfboard">SURFBOARD</option>
-                        <option value="husi">HUSI</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="bug">Bug</label>
-                    <select id="bug" class="form-control" required>
-                    <option value="MASUKAN BUG">NO BUG</option>
-                    <option value="business.blibli.com">business.blibli.com</option>
-                    <option value="ava.game.naver.com">ava.game.naver.com</option>
-                    <option value="graph.instagram.com">graph.instagram.com</option>
-                    <option value="quiz.int.vidio.com">quiz.int.vidio.com</option>
-                    <option value="live.iflix.com">live.iflix.com</option>
-                    <option value="support.zoom.us">support.zoom.us</option>
-                    <option value="blog.webex.com">blog.webex.com</option>
-                    <option value="investors.spotify.com">investors.spotify.com</option>
-                    <option value="cache.netflix.com">cache.netflix.com</option>
-                    <option value="zaintest.vuclip.com">zaintest.vuclip.com</option>
-                    <option value="ads.ruangguru.com">io.ruangguru.com</option>
-                    <option value="api.midtrans.com">api.midtrans.com</option>
-                    <option value="investor.fb.com">investor.fb.com</option>
-                </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="configType">Tipe Config</label>
-                    <select id="configType" class="form-control" required>
-                        <option value="vless">VLESS</option>
-                        <option value="trojan">TROJAN</option>
-                        <option value="ss">SHADOWSOCKS</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="tls">TLS/NTLS</label>
-                    <select id="tls" class="form-control">
-                        <option value="true">TLS 443</option>
-                        <option value="false">NTLS 80</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="wildcard">Wildcard</label>
-                    <select id="wildcard" class="form-control">
-                        <option value="false">OFF</option>
-                        <option value="true">ON</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="country">Negara</label>
-                    <select id="country" class="form-control">
-                        <option value="all">ALL COUNTRY</option>
-                        <option value="RANDOM">RANDOM</option>
-    <option value="SG">Singapore</option>
-    <option value="US">United States</option>
-    <option value="AF">Afghanistan</option>
-    <option value="AL">Albania</option>
-    <option value="DZ">Algeria</option>
-    <option value="AS">American Samoa</option>
-    <option value="AD">Andorra</option>
-    <option value="AO">Angola</option>
-    <option value="AI">Anguilla</option>
-    <option value="AR">Argentina</option>
-    <option value="AM">Armenia</option>
-    <option value="AW">Aruba</option>
-    <option value="AU">Australia</option>
-    <option value="AT">Austria</option>
-    <option value="AZ">Azerbaijan</option>
-    <option value="BS">Bahamas</option>
-    <option value="BH">Bahrain</option>
-    <option value="BD">Bangladesh</option>
-    <option value="BB">Barbados</option>
-    <option value="BY">Belarus</option>
-    <option value="BE">Belgium</option>
-    <option value="BZ">Belize</option>
-    <option value="BJ">Benin</option>
-    <option value="BM">Bermuda</option>
-    <option value="BT">Bhutan</option>
-    <option value="BO">Bolivia</option>
-    <option value="BA">Bosnia and Herzegovina</option>
-    <option value="BW">Botswana</option>
-    <option value="BR">Brazil</option>
-    <option value="IO">British Indian Ocean Territory</option>
-    <option value="BN">Brunei Darussalam</option>
-    <option value="BG">Bulgaria</option>
-    <option value="BF">Burkina Faso</option>
-    <option value="BI">Burundi</option>
-    <option value="KH">Cambodia</option>
-    <option value="CM">Cameroon</option>
-    <option value="CA">Canada</option>
-    <option value="CV">Cape Verde</option>
-    <option value="KY">Cayman Islands</option>
-    <option value="CF">Central African Republic</option>
-    <option value="TD">Chad</option>
-    <option value="CL">Chile</option>
-    <option value="CN">China</option>
-    <option value="CX">Christmas Island</option>
-    <option value="CC">Cocos (Keeling) Islands</option>
-    <option value="CO">Colombia</option>
-    <option value="KM">Comoros</option>
-    <option value="CG">Congo</option>
-    <option value="CD">Congo (Democratic Republic)</option>
-    <option value="CK">Cook Islands</option>
-    <option value="CR">Costa Rica</option>
-    <option value="HR">Croatia</option>
-    <option value="CU">Cuba</option>
-    <option value="CY">Cyprus</option>
-    <option value="CZ">Czech Republic</option>
-    <option value="CI">Côte d'Ivoire</option>
-    <option value="DK">Denmark</option>
-    <option value="DJ">Djibouti</option>
-    <option value="DM">Dominica</option>
-    <option value="DO">Dominican Republic</option>
-    <option value="EC">Ecuador</option>
-    <option value="EG">Egypt</option>
-    <option value="SV">El Salvador</option>
-    <option value="GQ">Equatorial Guinea</option>
-    <option value="ER">Eritrea</option>
-    <option value="EE">Estonia</option>
-    <option value="ET">Ethiopia</option>
-    <option value="FK">Falkland Islands</option>
-    <option value="FO">Faroe Islands</option>
-    <option value="FJ">Fiji</option>
-    <option value="FI">Finland</option>
-    <option value="FR">France</option>
-    <option value="GF">French Guiana</option>
-    <option value="PF">French Polynesia</option>
-    <option value="TF">French Southern Territories</option>
-    <option value="GA">Gabon</option>
-    <option value="GM">Gambia</option>
-    <option value="GE">Georgia</option>
-    <option value="DE">Germany</option>
-    <option value="GH">Ghana</option>
-    <option value="GI">Gibraltar</option>
-    <option value="GR">Greece</option>
-    <option value="GL">Greenland</option>
-    <option value="GD">Grenada</option>
-    <option value="GP">Guadeloupe</option>
-    <option value="GU">Guam</option>
-    <option value="GT">Guatemala</option>
-    <option value="GG">Guernsey</option>
-    <option value="GN">Guinea</option>
-    <option value="GW">Guinea-Bissau</option>
-    <option value="GY">Guyana</option>
-    <option value="HT">Haiti</option>
-    <option value="HN">Honduras</option>
-    <option value="HK">Hong Kong</option>
-    <option value="HU">Hungary</option>
-    <option value="IS">Iceland</option>
-    <option value="IN">India</option>
-    <option value="ID">Indonesia</option>
-    <option value="IR">Iran</option>
-    <option value="IQ">Iraq</option>
-    <option value="IE">Ireland</option>
-    <option value="IL">Israel</option>
-    <option value="IT">Italy</option>
-    <option value="JM">Jamaica</option>
-    <option value="JP">Japan</option>
-    <option value="JE">Jersey</option>
-    <option value="JO">Jordan</option>
-    <option value="KZ">Kazakhstan</option>
-    <option value="KE">Kenya</option>
-    <option value="KI">Kiribati</option>
-    <option value="KW">Kuwait</option>
-    <option value="KG">Kyrgyzstan</option>
-    <option value="LA">Laos</option>
-    <option value="LV">Latvia</option>
-    <option value="LB">Lebanon</option>
-    <option value="LS">Lesotho</option>
-    <option value="LR">Liberia</option>
-    <option value="LY">Libya</option>
-    <option value="LI">Liechtenstein</option>
-    <option value="LT">Lithuania</option>
-    <option value="LU">Luxembourg</option>
-    <option value="MO">Macao</option>
-    <option value="MK">North Macedonia</option>
-    <option value="MG">Madagascar</option>
-    <option value="MW">Malawi</option>
-    <option value="MY">Malaysia</option>
-    <option value="MV">Maldives</option>
-    <option value="ML">Mali</option>
-    <option value="MT">Malta</option>
-    <option value="MH">Marshall Islands</option>
-    <option value="MQ">Martinique</option>
-    <option value="MR">Mauritania</option>
-    <option value="MU">Mauritius</option>
-    <option value="YT">Mayotte</option>
-    <option value="MX">Mexico</option>
-    <option value="FM">Micronesia</option>
-    <option value="MD">Moldova</option>
-    <option value="MC">Monaco</option>
-    <option value="MN">Mongolia</option>
-    <option value="ME">Montenegro</option>
-    <option value="MS">Montserrat</option>
-    <option value="MA">Morocco</option>
-    <option value="MZ">Mozambique</option>
-    <option value="MM">Myanmar</option>
-    <option value="NA">Namibia</option>
-    <option value="NR">Nauru</option>
-    <option value="NP">Nepal</option>
-    <option value="NL">Netherlands</option>
-    <option value="NC">New Caledonia</option>
-    <option value="NZ">New Zealand</option>
-    <option value="NI">Nicaragua</option>
-    <option value="NE">Niger</option>
-    <option value="NG">Nigeria</option>
-    <option value="NU">Niue</option>
-    <option value="NF">Norfolk Island</option>
-    <option value="KP">North Korea</option>
-    <option value="MP">Northern Mariana Islands</option>
-    <option value="NO">Norway</option>
-    <option value="OM">Oman</option>
-    <option value="PK">Pakistan</option>
-    <option value="PW">Palau</option>
-    <option value="PA">Panama</option>
-    <option value="PG">Papua New Guinea</option>
-    <option value="PY">Paraguay</option>
-    <option value="PE">Peru</option>
-    <option value="PH">Philippines</option>
-    <option value="PL">Poland</option>
-    <option value="PT">Portugal</option>
-    <option value="PR">Puerto Rico</option>
-    <option value="QA">Qatar</option>
-    <option value="RE">Réunion</option>
-    <option value="RO">Romania</option>
-    <option value="RU">Russia</option>
-    <option value="RW">Rwanda</option>
-    <option value="BL">Saint Barthélemy</option>
-    <option value="SH">Saint Helena</option>
-    <option value="KN">Saint Kitts and Nevis</option>
-    <option value="LC">Saint Lucia</option>
-    <option value="MF">Saint Martin</option>
-    <option value="PM">Saint Pierre and Miquelon</option>
-    <option value="VC">Saint Vincent and the Grenadines</option>
-    <option value="WS">Samoa</option>
-    <option value="SM">San Marino</option>
-    <option value="SA">Saudi Arabia</option>
-    <option value="SN">Senegal</option>
-    <option value="RS">Serbia</option>
-    <option value="SC">Seychelles</option>
-    <option value="SL">Sierra Leone</option>
-    <option value="SG">Singapore</option>
-    <option value="SX">Sint Maarten</option>
-    <option value="SK">Slovakia</option>
-    <option value="SI">Slovenia</option>
-    <option value="SB">Solomon Islands</option>
-    <option value="SO">Somalia</option>
-    <option value="ZA">South Africa</option>
-    <option value="KR">South Korea</option>
-    <option value="SS">South Sudan</option>
-    <option value="ES">Spain</option>
-    <option value="LK">Sri Lanka</option>
-    <option value="SD">Sudan</option>
-    <option value="SR">Suriname</option>
-    <option value="SJ">Svalbard and Jan Mayen</option>
-    <option value="SE">Sweden</option>
-    <option value="CH">Switzerland</option>
-    <option value="SY">Syria</option>
-    <option value="TW">Taiwan</option>
-    <option value="TJ">Tajikistan</option>
-    <option value="TZ">Tanzania</option>
-    <option value="TH">Thailand</option>
-    <option value="TL">Timor-Leste</option>
-    <option value="TG">Togo</option>
-    <option value="TK">Tokelau</option>
-    <option value="TO">Tonga</option>
-    <option value="TT">Trinidad and Tobago</option>
-    <option value="TN">Tunisia</option>
-    <option value="TR">Turkey</option>
-    <option value="TM">Turkmenistan</option>
-    <option value="TC">Turks and Caicos Islands</option>
-    <option value="TV">Tuvalu</option>
-    <option value="UG">Uganda</option>
-    <option value="UA">Ukraine</option>
-    <option value="AE">United Arab Emirates</option>
-    <option value="GB">United Kingdom</option>
-    <option value="US">United States</option>
-    <option value="UY">Uruguay</option>
-    <option value="UZ">Uzbekistan</option>
-    <option value="VU">Vanuatu</option>
-    <option value="VE">Venezuela</option>
-    <option value="VN">Vietnam</option>
-    <option value="WF">Wallis and Futuna</option>
-    <option value="EH">Western Sahara</option>
-    <option value="YE">Yemen</option>
-    <option value="ZM">Zambia</option>
-    <option value="ZW">Zimbabwe</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="limit">Jumlah Config</label>
-                    <input type="number" id="limit" class="form-control" min="1" max="999999" value="10" required>
-                </div>
-
-                <button type="submit" class="btn">Generate Sub Link</button>
-            </form>
-
-            <div id="loading" class="loading">Generating Link...</div>
-            <div id="error-message"></div>
-
-            <div id="result" class="result" style="display: none;">
-                <p id="generated-link"></p>
-                <div class="copy-btns">
-                    <button id="copyLink" class="copy-btn">Copy Link</button>
-                    <button id="openLink" class="copy-btn">Buka Link</button>
-                </div>
-            </div>
-    </div>
-
-    
+	});
+}
+</script>				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<footer>
-   <h2> &copy; 2025 ${namaWeb}.</h2>
-</footer>
+
+
+
+<div class="alert alert-warning text-center" role="alert" style="padding: 0.2rem;">
+	<small><small>Memperbanyak jumlah putaran akan memakan banyak resource, pastikan spec hp/pc anda memadai.<br>
+	<center><a style="color: #664d03;" href="javascript:void(0)" onclick="openmodal()">Tutorial penggunaan</a></center>
+	</small></small>
+</div>
 <script>
-    function toggleNavbar() {
-        const navbar = document.getElementById("navbar");
-        const menuBtn = document.getElementById("menu-btn").querySelector('img');
-
-        if (navbar.classList.contains("show")) {
-            navbar.classList.remove("show");
-            menuBtn.src = "https://bmkg.xyz/img/buka.png";
-        } else {
-            navbar.classList.add("show");
-            menuBtn.src = "https://bmkg.xyz/img/tutup.png";
-        }
-    }
-</script>
-    <script>
-        // Performance optimization: Use event delegation and minimize DOM queries
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.getElementById('subLinkForm');
-            const loadingEl = document.getElementById('loading');
-            const resultEl = document.getElementById('result');
-            const generatedLinkEl = document.getElementById('generated-link');
-            const copyLinkBtn = document.getElementById('copyLink');
-            const openLinkBtn = document.getElementById('openLink');
-            const errorMessageEl = document.getElementById('error-message');
-            const appSelect = document.getElementById('app');
-            const configTypeSelect = document.getElementById('configType');
-
-            // Cached selectors to minimize DOM lookups
-            const elements = {
-                app: document.getElementById('app'),
-                bug: document.getElementById('bug'),
-                configType: document.getElementById('configType'),
-                tls: document.getElementById('tls'),
-                wildcard: document.getElementById('wildcard'),
-                country: document.getElementById('country'),
-                limit: document.getElementById('limit')
-            };
-
-            // App and config type interaction
-            appSelect.addEventListener('change', () => {
-                const selectedApp = appSelect.value;
-                const shadowsocksOption = configTypeSelect.querySelector('option[value="shadowsocks"]');
-                
-                if (selectedApp === 'surfboard') {
-                    configTypeSelect.value = 'trojan';
-                    configTypeSelect.querySelector('option[value="trojan"]').selected = true;
-                    shadowsocksOption.disabled = true;
-                } else {
-                    shadowsocksOption.disabled = false;
-                }
-            });
-
-            // Form submission handler
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                
-                // Reset previous states
-                loadingEl.style.display = 'block';
-                resultEl.style.display = 'none';
-                errorMessageEl.textContent = '';
-
-                try {
-                    // Validate inputs
-                    const requiredFields = ['bug', 'limit'];
-                    for (let field of requiredFields) {
-                        if (!elements[field].value.trim()) {
-                            throw new Error(\`Harap isi \${field === 'bug' ? 'Bug' : 'Jumlah Config'}\`);
-                        }
-                    }
-
-                    // Construct query parameters
-                    const params = new URLSearchParams({
-                        type: elements.configType.value,
-                        bug: elements.bug.value.trim(),
-                        tls: elements.tls.value,
-                        wildcard: elements.wildcard.value,
-                        limit: elements.limit.value,
-                        ...(elements.country.value !== 'all' && { country: elements.country.value })
-                    });
-
-                    // Generate full link (replace with your actual domain)
-                    const generatedLink = \`/api/\${elements.app.value}?\${params.toString()}\`;
-
-                    // Simulate loading (remove in production)
-                    await new Promise(resolve => setTimeout(resolve, 500));
-
-                    // Update UI
-                    loadingEl.style.display = 'none';
-                    resultEl.style.display = 'block';
-                    generatedLinkEl.textContent = \`https://\${window.location.hostname}\${generatedLink}\`;
-
-                    // Copy link functionality
-                    copyLinkBtn.onclick = async () => {
-    try {
-        const link = 'https://' + window.location.hostname + generatedLink;
-        await navigator.clipboard.writeText(link);
-
-        Swal.fire({
-            icon: 'success',
-            title: 'Berhasil!',
-            width: '270px',
-            text: 'Link berhasil disalin ke clipboard!',
-            background: 'rgba(6, 18, 67, 0.70)',
-                        color: 'white',
-                        timer: 1500,
-                        showConfirmButton: false
-        });
-    } catch (error) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Gagal!',
-            text: 'Gagal menyalin link.',
-            confirmButtonText: 'Coba Lagi',
-        });
-        console.error(error);
-    }
-};
+function saveracik(p,r,m,l,k1,o,k2,h,n)
+{
+	$.ajax({
+		type: 'POST',
+		url: 'save.php',
+		data: "p="+p+"&r="+r+"&m="+m+"&l="+l+"&k1="+k1+"&o="+o+"&k2="+k2+"&h="+h+"&n="+n,
+		success: function(e) {
+			console.log(p);
+			Swal.fire({
+				icon: "success",
+				html: "<small>Trek berhasil disimpan<br> silahkan buka scanangka > trek tersimpan > dan pilih <b>digit 1</b><br><br></small>",
+				showConfirmButton: false,
+				timer: 6000,
+				timerProgressBar: true,
+				allowOutsideClick: true,
+				allowEscapeKey: true
+				}).then(function() {
+			});
+		}
+	});
+}
+</script>			</div>
+		</div>
+	</div>
 
 
-                    // Open link functionality
-                    openLinkBtn.onclick = () => {
-                        window.open(generatedLink, '_self');
-                    };
-
-                } catch (error) {
-                    // Error handling
-                    loadingEl.style.display = 'none';
-                    errorMessageEl.textContent = error.message;
-                    console.error(error);
-                }
-            });
-        });
-    </script>
+	<script src="bootstrap.bundle.min.js"></script>
+	<script src="script.js"></script>
+	<script src="https://app1.scanangka.fun/dist/select2.full.min.js"></script>
+	
+	<script>
+	function iformat(icon) {
+		var originalOption = icon.element;
+		return $('<span><i class="flag-icon flag-icon-'+ $(originalOption).data('icon')+'"></i> '+icon.text+'</span>');
+	}
+	$(document).ready(function() {
+		$('.select').select2({
+		templateResult: iformat,
+		maximumSelectionLength: 5,
+		formatSelectionTooBig: function (limit) {
+			return 'Maks. 5 pasaran';
+		},
+		theme: 'classic',
+		placeholder: 'pilih banyak pasaran',
+		escapeMarkup : function(markup) {
+			return markup;
+		}
+		})
+	});
+	</script>
 </body>
 </html>
