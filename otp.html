@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>XL OTP LOGIN SOLUTION</title>
+  <link href=
+  "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+  rel="stylesheet"><!-- Bootstrap CSS -->
+  <link rel="stylesheet" href=
+  "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href=
+  "https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    #cover-spin {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        z-index: 9999;
+        display: none;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    #cover-spin::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        border: 4px solid #3B82F6;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+    }
+
+    .gradient-header {
+        background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+    }
+
+    .form-input {
+        @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition duration-200;
+    }
+
+    .btn-primary {
+        @apply px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 transform hover:scale-105;
+        background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+    }
+
+    .btn-secondary {
+        @apply px-6 py-3 rounded-lg font-semibold text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 transform hover:scale-105;
+    }
+
+    .log-terminal {
+        @apply w-full p-4 bg-gray-800 text-green-400 rounded-lg font-mono text-sm;
+        min-height: 150px;
+        resize: vertical;
+        scrollbar-width: thin;
+        scrollbar-color: #4F46E5 #1F2937;
+    }
+
+    .section-title {
+        @apply text-2xl font-bold mb-6 pb-2 relative;
+    }
+
+    .section-title:after {
+        content: '';
+        @apply absolute bottom-0 left-0 w-16 h-1 bg-indigo-500 rounded-full;
+    }
+
+    .package-table {
+        @apply min-w-full divide-y divide-gray-200 shadow-lg rounded-lg overflow-hidden;
+    }
+
+    .package-table thead {
+        @apply bg-indigo-600 text-white;
+    }
+
+    .package-table th {
+        @apply px-6 py-4 text-left text-sm font-semibold;
+    }
+
+    .package-table td {
+        @apply px-6 py-4 whitespace-nowrap text-sm text-gray-800;
+    }
+
+    .package-table tbody tr:nth-child(odd) {
+        @apply bg-gray-50;
+    }
+
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div id="cover-spin"></div><!-- Headernya -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6">
+      <h1 class="text-3xl font-bold">XL OTP LOGIN SOLUTION</h1>
+      <!--<p class="text-xl text-gray-600">Solusi Mudah Login XL Tanpa Antre OTP ke Seller</p>-->
+    </div>
+  </header><!-- Infonya -->
+  <section id="about" class="container mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-4">Tinggalkan Login Anda!</h2>
+    <p class="text-lg text-gray-700">Sesi login kamu/pelanggan kamu
+    akan muncul di metode login: <b>Login dengan Akses
+    Sebelumnya</b></p><!--<p class="text-lg text-gray-700">Setelah meninggalkan Login nomor XL kamu, seller akan memproses paket sesuai yang kamu beli!<br>-->
+    <!--<b>Cara:</b><br>
+        <ol>
+            <li>Inputkan kode seller dan nomor XL kamu ke kolom isian Msisdn/Nomor XL.</li>
+            <li>Klik tombol Minta Kode OTP</li>
+            <li>Periksa kode OTP yang masuk di SMS nomor XL kamu, lalu masukkan ke kolom isian Kode OTP dan klik LOGIN OTP.</li>
+            <li>Konfirmasi ke seller agar permintaan paket Anda diproses!</li>
+        </ol>-->
+  </section><!-- Ini Formnya -->
+  <section id="contact" class="container mx-auto px-4 py-10" style=
+  "margin-top: -40px;">
+    <h2 class="text-2xl font-bold mb-4">LOGIN</h2>
+    <form action="" method="post">
+      <div class="mb-4" style="display: none;">
+        <label for="seller_code" class=
+        "block text-lg font-medium text-gray-700">Kode Seller (jika
+        tidak tahu, tanyakan ke seller Anda)</label> <input type=
+        "text" id="seller_code" name="seller_code" class=
+        "mt-1 p-2 border border-gray-300 rounded-md w-full"
+        placeholder="Contoh: BosamStoreKizaOpaOpa" value=
+        "532989b6215a64c1ccca2d04c89f4fd2" required=""><br>
+      </div>
+      <div class="mb-4">
+        <label for="msisdn" class=
+        "block text-lg font-medium text-gray-700">Msisdn/Nomor
+        XL</label> <input type="number" id="msisdn" name="msisdn"
+        class="mt-1 p-2 border border-gray-300 rounded-md w-full"
+        placeholder="Contoh: 628xxx/08xxx" value="" required=
+        ""><br>
+      </div>
+      <div class="mb-4">
+        <label for="otp" class=
+        "block text-lg font-medium text-gray-700">Kode OTP</label>
+        <input type="text" id="otp" name="otp" class=
+        "mt-1 p-2 border border-gray-300 rounded-md w-full"
+        placeholder="Contoh: 123456" value="" required="">
+      </div><input type="hidden" id="auth_id" name="auth_id" value=
+      ""> <input type="hidden" id="access_token_temp" name=
+      "access_token_temp" value=""> <button type="button" class=
+      "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" id=
+      "checkVerOTP">CHECK STATUS VERIFIKASI</button><br>
+      <br>
+      <button type="button" class=
+      "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" id=
+      "reqOTP">MINTA KODE OTP</button> <button type="button" class=
+      "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" id=
+      "verOTP">LOGIN OTP</button>
+      <div id="checkQuotaSection" style="display: none;">
+        <br>
+        <button type="button" class=
+        "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+        id="checkQuota">CEK KUOTA</button>
+      </div>
+      <div id="hasilPaket" style="display: none;">
+        <br>
+        <h2>Package/Quota Information</h2>
+        <p id="textKuota" style="text-align: justify;"></p>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nama Paket</th>
+              <th>Expired</th>
+              <th>Benefits</th>
+            </tr>
+          </thead>
+          <tbody id="packageTableBody"></tbody>
+        </table>
+      </div><br>
+      <br>
+      <p><b>LOG RESPONSE:</b></p>
+      <textarea class=
+      "w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      id="logResponse"></textarea>
+    </form>
+  </section><!-- Footernya -->
+  <!--<footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 XL OTP Login Solution.</p>
+        </div>
+    </footer>-->
+  <script>
+  var jsonData = {};
+
+  $(document).ready(function(){
+    $('#reqOTP').click(function(){
+        $.ajax({
+        type:'POST',
+        crossDomain: true,
+        url: "https://nomorxlku.my.id/api/req_otp.php",
+        data:{msisdn:$('#msisdn').val(), seller_code: $('#seller_code').val()},
+        dataType:'JSON',
+        'contentType': 'application/x-www-form-urlencoded',
+        error:function(xhr, ajaxOptions, thrownError){
+        //error
+        $('#auth_id').val('');
+        $('#otp').val('');
+        $('#logResponse').html('Terjadi kesalahan, silakan coba lagi!');
+        $('#cover-spin').hide();
+        },
+        cache:false,
+        beforeSend:function(request){
+        //sebelum kirim
+        $('#logResponse').html('');
+        $('#cover-spin').show(0);
+        },
+        success:function(s){
+          //console.log(s);
+
+          $('#cover-spin').hide();
+
+          if(s['status'] == false)
+          {
+            $('#otp').val('');
+            $('#auth_id').val('');
+            $('#logResponse').html(s['message']);
+          }
+
+          if(s['status'] == true)
+          {
+            $('#otp').val('');
+            $('#auth_id').val(s['data']['auth_id']);
+            $('#logResponse').html(s['message']);
+          }
+        }
+      });
+    });
+
+    $('#verOTP').click(function(){
+        $.ajax({
+        type:'POST',
+        crossDomain: true,
+        url: "https://nomorxlku.my.id/api/ver_otp.php",
+        data:{msisdn:$('#msisdn').val(), auth_id:$('#auth_id').val(), otp:$('#otp').val()},
+        dataType:'JSON',
+        'contentType': 'application/x-www-form-urlencoded',
+        error:function(xhr, ajaxOptions, thrownError){
+        //error
+        $('#access_token_temp').val('');
+        $('#checkQuotaSection').attr('style', 'display: none;');
+        $('#logResponse').html('Terjadi kesalahan, silakan coba lagi!');
+        $('#cover-spin').hide();
+        },
+        cache:false,
+        beforeSend:function(request){
+        //sebelum kirim
+        $('#logResponse').html('');
+        $('#cover-spin').show(0);
+        },
+        success:function(s){
+          //console.log(s);
+
+          $('#cover-spin').hide();
+
+          if(s['status'] == false)
+          {
+            $('#access_token_temp').val('');
+            $('#checkQuotaSection').attr('style', 'display: none;');
+            $('#logResponse').html(s['message']);
+          }
+
+          if(s['status'] == true)
+          {
+            $('#auth_id').val('');
+            $('#otp').val('');
+            $('#logResponse').html(s['message']);
+
+            $('#access_token_temp').val(s['data']['access_token']);
+            $('#checkQuotaSection').attr('style', 'display: block;');
+          }
+        }
+      });
+    });
+
+    $('#checkVerOTP').click(function(){
+        $.ajax({
+        type:'POST',
+        crossDomain: true,
+        url: "https://nomorxlku.my.id/api/check_ver_otp.php",
+        data:{username:$('#seller_code').val(),msisdn:$('#msisdn').val()},
+        dataType:'JSON',
+        'contentType': 'application/x-www-form-urlencoded',
+        error:function(xhr, ajaxOptions, thrownError){
+        //error
+        $('#logResponse').html('Terjadi kesalahan, silakan coba lagi!');
+        $('#cover-spin').hide();
+        },
+        cache:false,
+        beforeSend:function(request){
+        //sebelum kirim
+        $('#logResponse').html('');
+        $('#cover-spin').show(0);
+        },
+        success:function(s){
+          //console.log(s);
+
+          $('#cover-spin').hide();
+
+          if(s['status'] == false)
+          {
+            $('#logResponse').html(s['message']);
+          }
+
+          if(s['status'] == true)
+          {
+            $('#logResponse').html(s['message']);
+          }
+        }
+      });
+    });
+
+    $('#checkQuota').click(function(){
+        $.ajax({
+        type:'POST',
+        crossDomain: true,
+        url: "https://nomorxlku.my.id/api/check_quota.php",
+        data:{access_token:$('#access_token_temp').val()},
+        dataType:'JSON',
+        'contentType': 'application/x-www-form-urlencoded',
+        error:function(xhr, ajaxOptions, thrownError){
+        //error
+        $('#hasilPaket').hide();
+        $('#logResponse').html('Terjadi kesalahan, silakan coba lagi!');
+        $('#cover-spin').hide();
+        },
+        cache:false,
+        beforeSend:function(request){
+        //sebelum kirim
+        $('#logResponse').html('');
+        $('#cover-spin').show(0);
+        },
+        success:function(s){
+          //console.log(s);
+
+          $('#cover-spin').hide();
+
+          if(s['status'] == false)
+          {
+            $('#hasilPaket').hide();
+          }
+
+          if(s['status'] == true)
+          {
+            jsonData = {};
+            jsonData = s;
+            populateTable();
+            $('#hasilPaket').show();
+          }
+        }
+      });
+    });
+  });
+
+  function populateTable()
+  {
+        var tableBody = document.getElementById("packageTableBody");
+        $('#packageTableBody').html('');
+
+        jsonData.data.quotas.forEach(function(quota) {
+            var benefitsHtml = "";
+            quota.benefits.forEach(function(benefit) {
+                benefitsHtml += `<p>${benefit.name}: ${benefit.quota} ( ${benefit.remaining_quota} remaining )</p>`;
+            });
+
+            var row = `
+                <tr>
+                    <td>${quota.name}</td>
+                    <td>${quota.expired_at}</td>
+                    <td>${benefitsHtml}</td>
+                </tr>
+            `;
+
+            tableBody.innerHTML += row;
+        });
+  }
+  </script>
+</body>
+</html>
