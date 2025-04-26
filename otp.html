@@ -106,12 +106,11 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
   <div id="cover-spin"></div><!-- Headernya -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-6">
-      <h1 class="text-3xl font-bold">XL OTP LOGIN SOLUTION</h1>
-      <!--<p class="text-xl text-gray-600">Solusi Mudah Login XL Tanpa Antre OTP ke Seller</p>-->
+<header class="gradient-header shadow-lg">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-white">XL OTP LOGIN SOLUTION</h1>
     </div>
-  </header><!-- Infonya -->
+</header><!-- Infonya -->
   <section id="about" class="container mx-auto px-4 py-10">
     <h2 class="text-2xl font-bold mb-4">Tinggalkan Login Anda!</h2>
     <p class="text-lg text-gray-700">Sesi login kamu/pelanggan kamu
@@ -141,10 +140,13 @@
       <div class="mb-4">
         <label for="msisdn" class=
         "block text-lg font-medium text-gray-700">Msisdn/Nomor
-        XL</label> <input type="number" id="msisdn" name="msisdn"
-        class="mt-1 p-2 border border-gray-300 rounded-md w-full"
-        placeholder="Contoh: 628xxx/08xxx" value="" required=
-        ""><br>
+        XL</label> <input type="number" id="msisdn" name="msisdn" 
+       class="form-input" 
+       placeholder="Contoh: 628xxx/08xxx">
+
+<!-- Tombol -->
+
+<br>
       </div>
       <div class="mb-4">
         <label for="otp" class=
@@ -158,11 +160,11 @@
       "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" id=
       "checkVerOTP">CHECK STATUS VERIFIKASI</button><br>
       <br>
-      <button type="button" class=
-      "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" id=
-      "reqOTP">MINTA KODE OTP</button> <button type="button" class=
-      "bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600" id=
-      "verOTP">LOGIN OTP</button>
+      <button type="button" class="btn-primary" id="reqOTP">
+    MINTA KODE OTP
+</button> <button type="button" class="btn-secondary" id="verOTP">
+    LOGIN OTP
+</button>
       <div id="checkQuotaSection" style="display: none;">
         <br>
         <button type="button" class=
