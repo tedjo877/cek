@@ -1,3 +1,5 @@
-Error checking 94.142.137.72:443: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=94.142.137.72:443 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
-Error checking 81.31.245.122:443: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=81.31.245.122:443 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
-Error checking 109.176.244.233:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=109.176.244.233:2053
+Error checking 220.87.229.22:37865: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=220.87.229.22:37865
+Error checking 121.172.5.248:18583: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=121.172.5.248:18583
+Error checking 213.176.94.82:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=213.176.94.82:443
+Error checking 118.40.49.176:21441: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=118.40.49.176:21441
+Error checking 37.128.253.213:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=37.128.253.213:2053
