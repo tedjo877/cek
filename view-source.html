@@ -150,7 +150,7 @@
                     pattern="https?://.+"
                     oninput="validateUrl()"
                 >
-                <div class="error-message" id="errorMsg">URL harus diawali dengan http:// atau https://</div>
+
             </div>
             
             <div class="button-group">
@@ -167,8 +167,10 @@
         <p>© 2024 Source Viewer - Untuk Edukasi</p>
     </footer>
 
-    <script>
-    let sourceData = '';
+    
+        
+        <script>
+        let sourceData = '';
 
     // Auto init saat halaman pertama dimuat
     document.addEventListener('DOMContentLoaded', () => {
@@ -180,16 +182,18 @@
         // Auto jalankan fetch
         fetchSource();
     });
+    
+        async function fetchSource() {
+            const urlInput = document.getElementById('urlInput');
+            let url = urlInput.value.trim();
+            
+            // Tambahkan protokol jika tidak ada
+            if(!/^https?:\/\//i.test(url)) {
+                url = 'https://' + url;  // Default ke HTTPS, bisa diubah ke HTTP
+            }
 
-    async function fetchSource() {
-        const urlInput = document.getElementById('urlInput');
-        const output = document.getElementById('output');
-        const downloadBtn = document.getElementById('downloadBtn');
-        const loader = document.getElementById('loader');
-        
-        try {
-            // Validasi manual
-            if(!urlInput.checkValidity()) {
+            try {
+                if(!urlInput.checkValidity()) {
                 urlInput.reportValidity();
                 return;
             }
@@ -200,19 +204,27 @@
             downloadBtn.style.display = 'none';
 
             const proxy = "https://api.codetabs.com/v1/proxy/?quest=";
-            const response = await fetch(proxy + encodeURIComponent(urlInput.value));
             
-            sourceData = await response.text();
+                const response = await fetch(proxy + encodeURIComponent(url));
+                sourceData = await response.text();
             output.textContent = sourceData;
-        } catch(error) {
-            output.textContent = "Error: " + error.message;
-        } finally {
+        
+            } catch(error) {
+                // Coba dengan HTTP jika HTTPS gagal
+                if(url.startsWith('https://')) {
+                    console.log('Coba dengan HTTP...');
+                    url = url.replace('https://', 'http://');
+                    await fetchSource();  // Rekursi
+                    return;
+                }
+                output.textContent = `🚨 Error: ${error.message}`;
+            } finally {
             loader.style.display = 'none';
             downloadBtn.style.display = sourceData ? 'block' : 'none';
         }
-    }
-        
-    function downloadSource() {
+        }
+
+function downloadSource() {
         if(!sourceData) return alert('Tidak ada data untuk didownload!');
         
         const blob = new Blob([sourceData], { type: 'text/html' });
@@ -227,7 +239,6 @@
         
         window.URL.revokeObjectURL(url);
     }
-    // ... (fungsi validateUrl dan downloadSource tetap sama) ...
     </script>
 </body>
 </html>
