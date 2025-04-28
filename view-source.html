@@ -140,21 +140,24 @@
     </header>
 
     <div class="container">
-        <div class="input-group">
-            <input 
-    type="url" 
-    id="urlInput" 
-    placeholder="https://example.com"
-    value="https://example.com"
-    required
-    pattern="https?://.+"
-    oninput="validateUrl()"
-></div>
-        
-        <div class="button-group">
-            <button id="viewBtn" onclick="fetchSource()">Lihat Source</button>
-            <button id="downloadBtn" onclick="downloadSource()">Download</button>
-        </div>
+        <form id="urlForm" onsubmit="event.preventDefault(); fetchSource()">
+            <div class="input-group">
+                <input 
+                    type="url" 
+                    id="urlInput" 
+                    placeholder="https://example.com"
+                    required
+                    pattern="https?://.+"
+                    oninput="validateUrl()"
+                >
+                <div class="error-message" id="errorMsg">URL harus diawali dengan http:// atau https://</div>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" id="viewBtn">Lihat Source</button>
+                <button type="button" id="downloadBtn" onclick="downloadSource()">Download</button>
+            </div>
+        </form>
         
         <div class="loader" id="loader"></div>
         <pre id="output"></pre>
@@ -164,38 +167,51 @@
         <p>© 2024 Source Viewer - Untuk Edukasi</p>
     </footer>
 
-
     <script>
     let sourceData = '';
 
+    // Auto init saat halaman pertama dimuat
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlInput = document.getElementById('urlInput');
+        
+        // Set nilai default
+        urlInput.value = 'https://example.com';
+        
+        // Auto jalankan fetch
+        fetchSource();
+    });
+
     async function fetchSource() {
-        const url = document.getElementById('urlInput').value;
+        const urlInput = document.getElementById('urlInput');
         const output = document.getElementById('output');
         const downloadBtn = document.getElementById('downloadBtn');
         const loader = document.getElementById('loader');
         
-        if(!url) return alert('Masukkan URL!');
-        
         try {
+            // Validasi manual
+            if(!urlInput.checkValidity()) {
+                urlInput.reportValidity();
+                return;
+            }
+            
             // Tampilkan loading
             loader.style.display = 'block';
             output.textContent = '';
             downloadBtn.style.display = 'none';
 
             const proxy = "https://api.codetabs.com/v1/proxy/?quest=";
-            const response = await fetch(proxy + encodeURIComponent(url));
+            const response = await fetch(proxy + encodeURIComponent(urlInput.value));
             
             sourceData = await response.text();
             output.textContent = sourceData;
         } catch(error) {
             output.textContent = "Error: " + error.message;
         } finally {
-            // Sembunyikan loading
             loader.style.display = 'none';
             downloadBtn.style.display = sourceData ? 'block' : 'none';
         }
     }
-
+        
     function downloadSource() {
         if(!sourceData) return alert('Tidak ada data untuk didownload!');
         
@@ -211,6 +227,7 @@
         
         window.URL.revokeObjectURL(url);
     }
+    // ... (fungsi validateUrl dan downloadSource tetap sama) ...
     </script>
 </body>
 </html>
