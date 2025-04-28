@@ -141,8 +141,15 @@
 
     <div class="container">
         <div class="input-group">
-            <input type="url" id="urlInput" placeholder="https://example.com">
-        </div>
+            <input 
+    type="url" 
+    id="urlInput" 
+    placeholder="https://example.com"
+    value="https://example.com"
+    required
+    pattern="https?://.+"
+    oninput="validateUrl()"
+></div>
         
         <div class="button-group">
             <button id="viewBtn" onclick="fetchSource()">Lihat Source</button>
