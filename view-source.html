@@ -1,78 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Source Code Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Source Viewer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f0f0f0;
+            margin: 0;
+            padding: 10px;
+            font-family: sans-serif;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        input[type="text"] {
-            width: 70%;
-            padding: 8px;
-            margin-right: 10px;
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
         }
         button {
-            padding: 8px 20px;
-            background-color: #4CAF50;
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
             color: white;
             border: none;
+            border-radius: 8px;
             cursor: pointer;
         }
-        button:hover {
-            background-color: #45a049;
-        }
-        textarea {
-            width: 100%;
-            height: 500px;
-            margin-top: 20px;
+        pre {
+            overflow-x: auto;
+            background: #f8f9fa;
             padding: 10px;
-            font-family: Consolas, monospace;
-            white-space: pre;
-            overflow-wrap: normal;
-            overflow-x: scroll;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Simple Source Viewer</h1>
-        <input type="text" id="urlInput" placeholder="Masukkan URL (contoh: https://example.com)">
-        <button onclick="fetchSource()">View Source</button>
-        <textarea id="sourceOutput" readonly></textarea>
-    </div>
+    <input type="url" id="urlInput" placeholder="https://example.com">
+    <button onclick="fetchSource()">Lihat Source</button>
+    <pre id="output"></pre>
 
     <script>
-        async function fetchSource() {
-            const urlInput = document.getElementById('urlInput').value;
-            const output = document.getElementById('sourceOutput');
+    async function fetchSource() {
+        const url = document.getElementById('urlInput').value;
+        const output = document.getElementById('output');
+        
+        if(!url) return alert('Masukkan URL!');
+        
+        try {
+            // Pakai proxy alternatif
+            const proxy = "https://api.codetabs.com/v1/proxy/?quest=";
+            const response = await fetch(proxy + encodeURIComponent(url));
             
-            if (!urlInput) {
-                alert('Masukkan URL terlebih dahulu!');
-                return;
-            }
-
-            try {
-                // Menggunakan CORS proxy untuk menghindari pemblokiran CORS
-                const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-                const encodedUrl = encodeURIComponent(urlInput);
-                const response = await fetch(proxyUrl + urlInput);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                const sourceCode = await response.text();
-                output.value = sourceCode;
-            } catch (error) {
-                output.value = `Error: ${error.message}`;
-            }
+            output.textContent = await response.text();
+        } catch(error) {
+            output.textContent = "Error: " + error.message;
         }
+    }
     </script>
 </body>
 </html>
