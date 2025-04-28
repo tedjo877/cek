@@ -19,7 +19,6 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: relative;
             margin-top: 20px;
             font-size: 0.9em;
         }
@@ -38,24 +37,45 @@
             padding: 15px;
         }
 
+        .input-group {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr auto;
+        }
+
         input {
             width: 100%;
             padding: 12px;
-            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 8px;
             box-sizing: border-box;
         }
 
+        .button-group {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 10px;
+        }
+
         button {
-            width: 100%;
             padding: 12px;
-            background: #007bff;
-            color: white;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
+            transition: 0.3s;
+        }
+
+        #viewBtn {
+            background: #007bff;
+            color: white;
+        }
+
+        #downloadBtn {
+            background: #28a745;
+            color: white;
+            display: none;
         }
 
         pre {
@@ -73,19 +93,29 @@
     </header>
 
     <div class="container">
-        <input type="url" id="urlInput" placeholder="https://example.com">
-        <button onclick="fetchSource()">Lihat Source</button>
+        <div class="input-group">
+            <input type="url" id="urlInput" placeholder="https://example.com">
+        </div>
+        
+        <div class="button-group">
+            <button id="viewBtn" onclick="fetchSource()">Lihat Source</button>
+            <button id="downloadBtn" onclick="downloadSource()">Download</button>
+        </div>
+        
         <pre id="output"></pre>
     </div>
 
     <footer>
-        <p>© 2024 Simple Source Viewer - Untuk Edukasi</p>
+        <p>© 2024 Source Viewer - Untuk Edukasi</p>
     </footer>
 
     <script>
+    let sourceData = '';
+
     async function fetchSource() {
         const url = document.getElementById('urlInput').value;
         const output = document.getElementById('output');
+        const downloadBtn = document.getElementById('downloadBtn');
         
         if(!url) return alert('Masukkan URL!');
         
@@ -93,10 +123,29 @@
             const proxy = "https://api.codetabs.com/v1/proxy/?quest=";
             const response = await fetch(proxy + encodeURIComponent(url));
             
-            output.textContent = await response.text();
+            sourceData = await response.text();
+            output.textContent = sourceData;
+            downloadBtn.style.display = 'block';
         } catch(error) {
             output.textContent = "Error: " + error.message;
+            downloadBtn.style.display = 'none';
         }
+    }
+
+    function downloadSource() {
+        if(!sourceData) return alert('Tidak ada data untuk didownload!');
+        
+        const blob = new Blob([sourceData], { type: 'text/html' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        
+        // Membuat nama file berdasarkan domain
+        const domain = new URL(document.getElementById('urlInput').value).hostname;
+        a.download = `${domain}_source.html`;
+        a.href = url;
+        a.click();
+        
+        window.URL.revokeObjectURL(url);
     }
     </script>
 </body>
