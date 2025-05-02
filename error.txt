@@ -1,8 +1,8 @@
-Error checking 45.85.93.96:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=45.85.93.96:443
-Error checking 93.183.94.78:6379: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=93.183.94.78:6379
-Error checking 80.251.219.120:14105: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=80.251.219.120:14105
-Error checking 139.64.247.35:37163: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=139.64.247.35:37163 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
-Error checking 47.92.245.88:443: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=47.92.245.88:443 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
-Error checking 193.222.97.28:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 51.91.150.23:443: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=51.91.150.23:443 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
-Error checking 185.174.136.23:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=185.174.136.23:8443
+Error checking 195.54.175.79:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 46.8.232.217:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=46.8.232.217:443
+Error checking 141.95.117.99:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=141.95.117.99:8443
+Error checking 82.117.245.210:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 141.95.40.194:2053: 500 Server Error: Internal Server Error for url: https://proxy.ndeso.xyz/check?ip=141.95.40.194:2053
+Error checking 57.128.177.191:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=57.128.177.191:443
+Error checking 57.128.62.84:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=57.128.62.84:443
+Error checking 43.207.78.212:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
