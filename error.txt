@@ -1,6 +1,4 @@
-Error checking 74.120.170.56:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 139.162.33.248:587: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=139.162.33.248:587
-Error checking 67.226.223.84:80: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=67.226.223.84:80
-Error checking 89.235.116.107:2087: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=89.235.116.107:2087
-Error checking 46.226.161.125:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 172.177.248.69:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 216.24.189.68:42031: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 171.22.120.156:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 5.182.86.150:20264: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 220.144.212.45:31399: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=220.144.212.45:31399
