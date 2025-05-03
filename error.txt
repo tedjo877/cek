@@ -1,10 +1,6 @@
-Error checking 194.0.194.145:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=194.0.194.145:443
-Error checking 193.33.153.240:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=193.33.153.240:443
-Error checking 91.108.241.5:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=91.108.241.5:2053
-Error checking 5.61.31.250:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.61.31.250:8443
-Error checking 198.168.101.245:31460: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=198.168.101.245:31460
-Error checking 146.235.18.248:45137: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=146.235.18.248:45137
-Error checking 221.161.58.134:35972: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=221.161.58.134:35972
-Error checking 217.144.188.32:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=217.144.188.32:2053
-Error checking 91.219.237.49:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=91.219.237.49:443
-Error checking 64.225.68.70:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 74.120.170.56:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 139.162.33.248:587: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=139.162.33.248:587
+Error checking 67.226.223.84:80: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=67.226.223.84:80
+Error checking 89.235.116.107:2087: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=89.235.116.107:2087
+Error checking 46.226.161.125:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 172.177.248.69:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
