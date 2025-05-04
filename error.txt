@@ -1,12 +1,4 @@
-Error checking 51.83.40.171:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=51.83.40.171:8443
-Error checking 65.109.206.151:2096: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=65.109.206.151:2096
-Error checking 172.201.76.19:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=172.201.76.19:443
-Error checking 5.182.37.121:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.182.37.121:2053
-Error checking 156.255.90.175:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 182.213.59.227:10414: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=182.213.59.227:10414
-Error checking 174.138.100.139:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=174.138.100.139:8443
-Error checking 89.19.44.18:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 109.176.244.249:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=109.176.244.249:2053
-Error checking 156.254.114.186:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 195.54.175.116:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 45.149.63.84:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 199.48.102.83:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 121.171.82.130:50000: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 150.242.90.235:30890: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=150.242.90.235:30890
+Error checking 195.26.225.41:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=195.26.225.41:443
