@@ -1,5 +1,11 @@
-Error checking 51.250.15.177:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 161.35.215.201:443: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=161.35.215.201:443 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
-Error checking 31.57.241.156:443: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=31.57.241.156:443 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
-Error checking 51.210.136.88:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=51.210.136.88:8443
-Error checking 54.38.142.118:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 116.203.195.158:445: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=116.203.195.158:445
+Error checking 77.81.138.107:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=77.81.138.107:2053
+Error checking 5.182.87.6:53109: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.182.87.6:53109
+Error checking 212.113.106.234:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=212.113.106.234:2053
+Error checking 147.45.74.190:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 107.175.254.239:39128: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=107.175.254.239:39128
+Error checking 5.178.106.77:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.178.106.77:2053
+Error checking 89.19.44.54:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=89.19.44.54:2053
+Error checking 146.59.228.153:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=146.59.228.153:2053
+Error checking 194.246.114.73:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=194.246.114.73:2053
+Error checking 104.234.50.151:2053: 500 Server Error: Internal Server Error for url: https://proxy.ndeso.xyz/check?ip=104.234.50.151:2053
