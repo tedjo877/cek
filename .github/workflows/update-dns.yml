@@ -10,9 +10,9 @@ jobs:
   update-dns:
     runs-on: ubuntu-latest
     env:
-      ZONE_NAME: dns-sgdo.xhamster.biz.id
-      CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-      CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+      ZONE_NAME: sg-chers.c-bnn.xyz
+      CF_API_TOKEN: ${{ secrets.CF1_API_TOKEN }}
+      CF_ZONE_ID: ${{ secrets.CF1_ZONE_ID }}
 
     steps:
       - name: Checkout Repository
@@ -38,7 +38,7 @@ jobs:
             echo "Processing $RELATIVE_NAME ($RECORD_TYPE) -> $VALUE"
 
             RECORD_ID=$(curl -s -X GET "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/dns_records?type=$RECORD_TYPE&name=$RELATIVE_NAME.$ZONE_NAME" \
-              -H "Authorization: Bearer $CF_API_TOKEN" \
+              -H "Authorization: Bearer $CF1_API_TOKEN" \
               -H "Content-Type: application/json" | jq -r '.result[0].id')
 
             if [[ "$RECORD_ID" != "null" && -n "$RECORD_ID" ]]; then
