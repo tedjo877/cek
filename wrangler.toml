@@ -1,7 +1,12 @@
 name = "cf-bot" # todo
 main = "js/_worker.js"
+type = "javascript"
 workers_dev = true
 compatibility_date = "2024-03-20"
+
+kv_namespaces = [
+  { binding = "URLS", id = "d3e299aaf6624e76bc4f9bae9dee4377" }
+]
 
 [[routes]]
 pattern = "dns-cloudproxyip.c-bnn.xyz"
