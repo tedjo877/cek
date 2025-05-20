@@ -12,6 +12,6 @@ kv_namespaces = [
 pattern = "dns-cloudproxyip.c-bnn.xyz"
 custom_domain = true
 [[routes]]
-pattern = "resellr.c-bnn.xyz"
+pattern = "reseller.c-bnn.xyz"
 custom_domain = true
 
