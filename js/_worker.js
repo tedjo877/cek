@@ -60,6 +60,7 @@ function htmlPage(origin) {
     button { cursor: pointer; }
     #result { margin-top: 16px; }
     a { color: blue; }
+    .copy-btn { margin-top: 8px; background: #eee; border: none; }
   </style>
 </head>
 <body>
@@ -71,6 +72,9 @@ function htmlPage(origin) {
   </form>
   <div id="result"></div>
   <script>
+    const form = document.getElementById("form");
+    const result = document.getElementById("result");
+
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const url = document.getElementById("url").value;
@@ -81,10 +85,26 @@ function htmlPage(origin) {
         body: JSON.stringify({ url, slug })
       });
       const data = await res.json();
-      result.innerHTML = res.ok
-        ? '<p><strong>Short URL:</strong> <a href="' + data.short + '" target="_blank">' + data.short + '</a></p>'
-        : '<p style="color:red;">' + (data.error || res.statusText) + '</p>';
+      if (res.ok) {
+        result.innerHTML = \`
+          <p><strong>Short URL:</strong> 
+            <a href="\${data.short}" target="_blank" id="short-url">\${data.short}</a>
+          </p>
+          <button class="copy-btn" onclick="copyToClipboard()">Salin</button>
+        \`;
+      } else {
+        result.innerHTML = '<p style="color:red;">' + (data.error || res.statusText) + '</p>';
+      }
     });
+
+    function copyToClipboard() {
+      const shortUrl = document.getElementById("short-url").textContent;
+      navigator.clipboard.writeText(shortUrl).then(() => {
+        alert("Link disalin!");
+      }, () => {
+        alert("Gagal menyalin.");
+      });
+    }
   </script>
 </body>
 </html>
