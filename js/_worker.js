@@ -1,51 +1,51 @@
 export default {
   async fetch(request, env) {
-    const { URLS } = env
-    const url = new URL(request.url)
+    const { URLS } = env;
+    const url = new URL(request.url);
 
     if (request.method === "POST" && url.pathname === "/create") {
-      const body = await request.json()
-      const longUrl = body.url
-      const customSlug = body.slug
+      const body = await request.json();
+      const longUrl = body.url;
+      const customSlug = body.slug;
 
       if (!longUrl) {
         return new Response(JSON.stringify({ error: "Missing URL" }), {
           status: 400,
           headers: { "Content-Type": "application/json" },
-        })
+        });
       }
 
-      const slug = customSlug || Math.random().toString(36).substring(2, 8)
-      const exists = await URLS.get(slug)
+      const slug = customSlug || Math.random().toString(36).substring(2, 8);
+      const exists = await URLS.get(slug);
       if (exists && !customSlug) {
         return new Response(JSON.stringify({ error: "Slug already exists" }), {
           status: 409,
           headers: { "Content-Type": "application/json" },
-        })
+        });
       }
 
-      await URLS.put(slug, longUrl)
+      await URLS.put(slug, longUrl);
       return new Response(JSON.stringify({ short: `${url.origin}/${slug}` }), {
         headers: { "Content-Type": "application/json" },
-      })
+      });
     }
 
     if (request.method === "GET" && url.pathname === "/") {
       return new Response(htmlPage(url.origin), {
         headers: { "Content-Type": "text/html" },
-      })
+      });
     }
 
-    const path = url.pathname.slice(1)
+    const path = url.pathname.slice(1);
     if (path) {
-      const longUrl = await URLS.get(path)
-      if (longUrl) return Response.redirect(longUrl, 302)
-      return new Response("Short URL not found", { status: 404 })
+      const longUrl = await URLS.get(path);
+      if (longUrl) return Response.redirect(longUrl, 302);
+      return new Response("Short URL not found", { status: 404 });
     }
 
-    return new Response("Invalid request", { status: 400 })
+    return new Response("Invalid request", { status: 400 });
   },
-}
+};
 
 function htmlPage(origin) {
   return `
@@ -60,7 +60,7 @@ function htmlPage(origin) {
     button { cursor: pointer; }
     #result { margin-top: 16px; }
     a { color: blue; }
-    .copy-btn { margin-top: 8px; background: #eee; border: none; }
+    .copy-btn { margin-top: 8px; background: #eee; border: none; padding: 8px; }
   </style>
 </head>
 <body>
@@ -71,40 +71,43 @@ function htmlPage(origin) {
     <button type="submit">Shorten</button>
   </form>
   <div id="result"></div>
+
   <script>
-    const form = document.getElementById("form");
-    const result = document.getElementById("result");
+    window.onload = () => {
+      const form = document.getElementById("form");
+      const result = document.getElementById("result");
 
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const url = document.getElementById("url").value;
-      const slug = document.getElementById("slug").value;
-      const res = await fetch("/create", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url, slug })
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const url = document.getElementById("url").value;
+        const slug = document.getElementById("slug").value;
+        const res = await fetch("/create", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ url, slug })
+        });
+        const data = await res.json();
+        if (res.ok) {
+          result.innerHTML = \`
+            <p><strong>Short URL:</strong> 
+              <a href="\${data.short}" target="_blank" id="short-url">\${data.short}</a>
+            </p>
+            <button class="copy-btn" onclick="copyToClipboard()">Salin</button>
+          \`;
+        } else {
+          result.innerHTML = '<p style="color:red;">' + (data.error || res.statusText) + '</p>';
+        }
       });
-      const data = await res.json();
-      if (res.ok) {
-        result.innerHTML = \`
-          <p><strong>Short URL:</strong> 
-            <a href="\${data.short}" target="_blank" id="short-url">\${data.short}</a>
-          </p>
-          <button class="copy-btn" onclick="copyToClipboard()">Salin</button>
-        \`;
-      } else {
-        result.innerHTML = '<p style="color:red;">' + (data.error || res.statusText) + '</p>';
-      }
-    });
 
-    function copyToClipboard() {
-      const shortUrl = document.getElementById("short-url").textContent;
-      navigator.clipboard.writeText(shortUrl).then(() => {
-        alert("Link disalin!");
-      }, () => {
-        alert("Gagal menyalin.");
-      });
-    }
+      window.copyToClipboard = () => {
+        const shortUrl = document.getElementById("short-url").textContent;
+        navigator.clipboard.writeText(shortUrl).then(() => {
+          alert("Link disalin!");
+        }, () => {
+          alert("Gagal menyalin.");
+        });
+      };
+    };
   </script>
 </body>
 </html>
