@@ -9,9 +9,9 @@ kv_namespaces = [
 ]
 
 [[routes]]
-pattern = "dns-cloudproxyip.c-bnn.xyz"
+pattern = "one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "reseller.c-bnn.xyz"
+pattern = "seller.k-chers.xyz"
 custom_domain = true
 
