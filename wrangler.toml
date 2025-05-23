@@ -135,5 +135,5 @@ custom_domain = true
 pattern = "stripchat.page.sgdo-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ganecadigital.com.sgdo-one.k-chers.xyzk-chers.xyz"
+pattern = "ganecadigital.com.sgdo-one.k-chers.xyz"
 custom_domain = true
