@@ -9,7 +9,7 @@ kv_namespaces = [
 ]
 
 [[routes]]
-pattern = "one.k-chers.xyz"
+pattern = "sgdo-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
 pattern = "seller.k-chers.xyz"
