@@ -10,7 +10,7 @@ jobs:
   update-dns:
     runs-on: ubuntu-latest
     env:
-      ZONE_NAME: c-bnn.xyz
+      ZONE_NAME: k-chers.xyz
       CF_API_TOKEN: ${{ secrets.CF1_API_TOKEN }}
       CF_ZONE_ID: ${{ secrets.CF1_ZONE_ID }}
 
