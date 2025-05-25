@@ -15,4 +15,99 @@ custom_domain = true
 pattern = "reseller.c-bnn.xyz"
 custom_domain = true
 
-
+[[routes]]
+pattern = "live.iflix.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "support.zoom.us.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zoomcares.zoom.us.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "partner.zoom.us.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zoomgov.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "gomarketplacecontent-cf.zoom.us.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ava.game.naver.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "blog.webex.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "graph.instagram.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investors.spotify.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investors.fb.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zaintest.vuclip.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cache.netflix.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.vidio.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.staging.vidio.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.int.vidio.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "bimbel.ruangguru.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "edu.ruangguru.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "io.ruangguru.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.midtrans.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.blibli.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "bakrie.ac.id.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "unnes.ac.id.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "fikom.esaunggul.ac.id.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "app.gopay.co.id.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "chat.sociomile.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.quipper.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investor.fb.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ads.ruangguru.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ganecadigital.com.sg-freemium.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "stripchat.page.sg-freemium.c-bnn.xyz"
+custom_domain = true
