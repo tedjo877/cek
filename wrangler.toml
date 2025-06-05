@@ -1,4 +1,4 @@
-name = "cf-bot" # todo
+name = "cf-bot" 
 main = "js/_worker.js"
 type = "javascript"
 workers_dev = true
@@ -18,99 +18,99 @@ custom_domain = true
 pattern = "seller.c-bnn.xyz"
 custom_domain = true
 
-#[[routes]]
-#pattern = "live.iflix.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "support.zoom.us.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "zoomcares.zoom.us.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "partner.zoom.us.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "zoomgov.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "gomarketplacecontent-cf.zoom.us.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "ava.game.naver.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "blog.webex.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "graph.instagram.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "investors.spotify.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "investors.fb.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "zaintest.vuclip.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "cache.netflix.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "quiz.vidio.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "quiz.staging.vidio.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "quiz.int.vidio.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "bimbel.ruangguru.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "edu.ruangguru.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "io.ruangguru.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "api.midtrans.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "api.blibli.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "bakrie.ac.id.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "unnes.ac.id.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "fikom.esaunggul.ac.id.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "app.gopay.co.id.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "chat.sociomile.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "api.quipper.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "investor.fb.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "ads.ruangguru.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "ganecadigital.com.sg-backup.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "stripchat.page.sg-backup.c-bnn.xyz"
-#custom_domain = true
+[[routes]]
+pattern = "live.iflix.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "support.zoom.us.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zoomcares.zoom.us.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "partner.zoom.us.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zoomgov.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "gomarketplacecontent-cf.zoom.us.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ava.game.naver.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "blog.webex.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "graph.instagram.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investors.spotify.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investors.fb.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zaintest.vuclip.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cache.netflix.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.vidio.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.staging.vidio.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.int.vidio.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "bimbel.ruangguru.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "edu.ruangguru.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "io.ruangguru.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.midtrans.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.blibli.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "bakrie.ac.id.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "unnes.ac.id.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "fikom.esaunggul.ac.id.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "app.gopay.co.id.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "chat.sociomile.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.quipper.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investor.fb.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ads.ruangguru.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ganecadigital.com.sg-backup.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "stripchat.page.sg-backup.c-bnn.xyz"
+custom_domain = true
