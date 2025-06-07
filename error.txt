@@ -1,5 +1,11 @@
-Error checking 77.91.86.98:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 112.170.112.178:36702: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=112.170.112.178:36702
-Error checking 5.178.110.28:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 165.232.44.143:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=165.232.44.143:8443
-Error checking 176.58.115.170:587: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 109.176.244.135:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=109.176.244.135:2053
+Error checking 45.82.255.27:12023: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 45.142.214.162:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 107.172.103.195:16083: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=107.172.103.195:16083
+Error checking 45.76.95.89:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=45.76.95.89:8443
+Error checking 5.75.195.112:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 57.129.47.36:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=57.129.47.36:8443
+Error checking 5.101.181.138:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.101.181.138:443
+Error checking 65.108.55.130:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=65.108.55.130:443
+Error checking 146.103.49.182:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 188.165.24.25:587: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=188.165.24.25:587
