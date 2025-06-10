@@ -1,5 +1,18 @@
-Error checking 103.102.228.113:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=103.102.228.113:443
-Error checking 212.111.88.212:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=212.111.88.212:443
-Error checking 77.91.70.242:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=77.91.70.242:2053
-Error checking 31.128.37.116:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 5.34.214.5:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.34.214.5:443
+Error checking 45.144.48.52:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=45.144.48.52:2053
+Error checking 49.13.133.138:49444: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=49.13.133.138:49444
+Error checking 51.145.238.40:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=51.145.238.40:2053
+Error checking 5.78.59.22:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.78.59.22:443
+Error checking 36.50.90.241:47790: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=36.50.90.241:47790
+Error checking 5.202.6.21:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.202.6.21:2053
+Error checking 57.129.63.133:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=57.129.63.133:8443
+Error checking 89.19.44.174:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=89.19.44.174:2053
+Error checking 195.170.172.108:16208: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=195.170.172.108:16208
+Error checking 146.59.233.3:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=146.59.233.3:8443
+Error checking 152.228.135.170:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=152.228.135.170:8443
+Error checking 152.228.135.95:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=152.228.135.95:8443
+Error checking 77.91.69.238:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=77.91.69.238:2053
+Error checking 193.168.173.55:443: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=193.168.173.55:443
+Error checking 175.207.220.139:10909: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=175.207.220.139:10909
+Error checking 45.67.231.117:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=45.67.231.117:2053
+Error checking 89.110.108.189:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=89.110.108.189:8443
+Error checking 172.234.22.237:587: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=172.234.22.237:587
