@@ -1,3 +1,5 @@
-Error checking 147.45.76.171:56036: 409 Client Error: Conflict for url: https://proxy.ndeso.xyz/check?ip=147.45.76.171:56036
-Error checking 86.110.56.239:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=86.110.56.239:2053
-Error checking 103.196.20.13:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=103.196.20.13:443
+Error checking 92.246.139.175:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=92.246.139.175:2053
+Error checking 91.184.240.238:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=91.184.240.238:2053
+Error checking 62.60.249.88:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 51.38.140.109:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 59.22.107.57:50004: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=59.22.107.57:50004
