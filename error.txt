@@ -1,5 +1,11 @@
-Error checking 92.246.139.175:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=92.246.139.175:2053
-Error checking 91.184.240.238:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=91.184.240.238:2053
-Error checking 62.60.249.88:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 51.38.140.109:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 59.22.107.57:50004: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=59.22.107.57:50004
+Error checking 5.39.249.146:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.39.249.146:443
+Error checking 3.76.154.119:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=3.76.154.119:443
+Error checking 139.60.162.153:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=139.60.162.153:443
+Error checking 5.144.181.227:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.144.181.227:2053
+Error checking 95.169.162.206:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=95.169.162.206:2053
+Error checking 95.169.162.196:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=95.169.162.196:2053
+Error checking 95.169.162.194:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=95.169.162.194:2053
+Error checking 95.169.162.166:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=95.169.162.166:2053
+Error checking 95.169.162.12:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=95.169.162.12:2053
+Error checking 95.169.162.193:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=95.169.162.193:2053
+Error checking 95.169.162.141:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=95.169.162.141:2053
