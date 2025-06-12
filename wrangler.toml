@@ -11,129 +11,129 @@ kv_namespaces = [
 [[routes]]
 pattern = "sorten.k-chers.xyz"
 custom_domain = true
-[[routes]]
-pattern = "sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "cyphers.game.naver.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "gamebulletin.nexon.game.naver.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "app-stg.gopay.co.id.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "app.gopay.co.id.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "www.langitmusik.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "Web.poe.garena.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "udemy.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "backdoor.farlight84miraclegames.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "Blog.x.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "www.sushiroll.co.id.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "ads.ruangguru.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "investor.fb.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "live.iflix.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "support.zoom.us.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "zoomcares.zoom.us.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "partner.zoom.us.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "zoomgov.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "gomarketplacecontent-cf.zoom.us.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "ava.game.naver.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "blog.webex.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "graph.instagram.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "investors.spotify.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "investors.fb.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "zaintest.vuclip.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "cache.netflix.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "quiz.vidio.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "quiz.staging.vidio.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "quiz.int.vidio.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "bimbel.ruangguru.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "edu.ruangguru.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "io.ruangguru.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "api.midtrans.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "api.blibli.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "bakrie.ac.id.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "unnes.ac.id.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "fikom.esaunggul.ac.id.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "chat.sociomile.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "api.quipper.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "stripchat.page.sgdo8-one.k-chers.xyz"
-custom_domain = true
-[[routes]]
-pattern = "ganecadigital.com.sgdo8-one.k-chers.xyz"
-custom_domain = true
+#[[routes]]
+#pattern = "sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "cyphers.game.naver.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "gamebulletin.nexon.game.naver.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "app-stg.gopay.co.id.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "app.gopay.co.id.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "www.langitmusik.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "Web.poe.garena.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "udemy.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "backdoor.farlight84miraclegames.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "Blog.x.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "www.sushiroll.co.id.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "ads.ruangguru.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "investor.fb.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "live.iflix.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "support.zoom.us.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "zoomcares.zoom.us.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "partner.zoom.us.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "zoomgov.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "gomarketplacecontent-cf.zoom.us.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "ava.game.naver.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "blog.webex.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "graph.instagram.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "investors.spotify.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "investors.fb.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "zaintest.vuclip.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "cache.netflix.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "quiz.vidio.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "quiz.staging.vidio.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "quiz.int.vidio.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "bimbel.ruangguru.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "edu.ruangguru.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "io.ruangguru.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "api.midtrans.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "api.blibli.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "bakrie.ac.id.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "unnes.ac.id.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "fikom.esaunggul.ac.id.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "chat.sociomile.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "api.quipper.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "stripchat.page.sgdo8-one.k-chers.xyz"
+#custom_domain = true
+#[[routes]]
+#pattern = "ganecadigital.com.sgdo8-one.k-chers.xyz"
+#custom_domain = true
