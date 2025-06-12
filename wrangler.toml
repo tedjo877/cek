@@ -1,4 +1,4 @@
-name = "pointing"  todo
+name = "pointing" 
 main = "js/_worker.js"
 type = "javascript"
 workers_dev = true
