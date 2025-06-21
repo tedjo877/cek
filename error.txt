@@ -1,10 +1,7 @@
-Error checking 147.45.69.39:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=147.45.69.39:443
-Error checking 141.94.223.220:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=141.94.223.220:2053
-Error checking 151.80.57.196:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=151.80.57.196:2053
-Error checking 77.238.246.45:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=77.238.246.45:443
-Error checking 91.184.242.129:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=91.184.242.129:8443
-Error checking 94.158.219.198:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=94.158.219.198:443
-Error checking 87.239.251.30:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=87.239.251.30:8443
-Error checking 38.22.233.225:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=38.22.233.225:443
-Error checking 51.77.108.240:443: 500 Server Error: Internal Server Error for url: https://proxy.ndeso.xyz/check?ip=51.77.108.240:443
-Error checking 194.5.177.114:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=194.5.177.114:443
+Error checking 89.169.55.60:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=89.169.55.60:443
+Error checking 5.144.182.79:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.144.182.79:2053
+Error checking 91.199.32.156:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 185.228.235.67:2096: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=185.228.235.67:2096
+Error checking 74.48.145.79:52593: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=74.48.145.79:52593
+Error checking 57.129.137.59:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=57.129.137.59:443
+Error checking 91.200.148.120:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
