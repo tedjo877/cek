@@ -1,4 +1,1 @@
-Error checking 94.177.8.8:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=94.177.8.8:443
-Error checking 185.130.225.64:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=185.130.225.64:443
-Error checking 62.60.251.180:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 158.180.14.48:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 57.129.137.205:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=57.129.137.205:8443
