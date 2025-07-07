@@ -1,1 +1,1 @@
-Error checking 65.109.207.234:8738: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=65.109.207.234:8738
+Error checking 45.140.167.225:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=45.140.167.225:8443
