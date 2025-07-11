@@ -1,3 +1,13 @@
-Error checking 139.162.86.209:18836: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=139.162.86.209:18836
-Error checking 179.43.156.21:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=179.43.156.21:2053
-Error checking 178.32.173.111:8443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=178.32.173.111:8443
+Error checking 147.45.42.100:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=147.45.42.100:2053
+Error checking 77.91.77.149:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=77.91.77.149:2053
+Error checking 135.125.209.239:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=135.125.209.239:2053
+Error checking 151.80.121.68:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=151.80.121.68:2053
+Error checking 147.135.183.68:8443: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=147.135.183.68:8443
+Error checking 147.135.199.37:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=147.135.199.37:2053
+Error checking 147.135.198.53:8443: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=147.135.198.53:8443
+Error checking 151.80.121.68:8443: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=151.80.121.68:8443
+Error checking 146.59.64.145:8443: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=146.59.64.145:8443
+Error checking 146.59.72.35:8443: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=146.59.72.35:8443
+Error checking 210.222.151.5:18993: 500 Server Error: Internal Server Error for url: https://proxy.ndeso.xyz/check?ip=210.222.151.5:18993
+Error checking 221.156.34.64:39548: 500 Server Error: Internal Server Error for url: https://proxy.ndeso.xyz/check?ip=221.156.34.64:39548
+Error checking 188.166.132.105:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
