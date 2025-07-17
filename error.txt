@@ -1,2 +1,2 @@
-Error checking 213.218.238.11:2053: 503 Server Error: Service Temporarily Unavailable for url: https://proxy.ndeso.xyz/check?ip=213.218.238.11:2053
-Error checking 93.185.167.53:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=93.185.167.53:443
+Error checking 5.178.106.135:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=5.178.106.135:443
+Error checking 213.176.67.3:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=213.176.67.3:443
