@@ -1,3 +1,13 @@
-Error checking 65.109.179.159:2083: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=65.109.179.159:2083
-Error checking 195.154.184.21:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 213.176.67.146:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 91.103.140.221:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=91.103.140.221:2053
+Error checking 137.74.150.126:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=137.74.150.126:2053
+Error checking 146.103.49.75:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 51.83.228.230:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 72.18.80.229:7676: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=72.18.80.229:7676
+Error checking 93.127.181.233:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 147.45.42.226:2093: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 18.156.153.248:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 77.81.138.50:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=77.81.138.50:2053
+Error checking 137.74.151.3:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=137.74.151.3:2053
+Error checking 57.129.137.87:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=57.129.137.87:443
+Error checking 175.123.155.93:50005: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=175.123.155.93:50005
+Error checking 66.103.198.145:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
