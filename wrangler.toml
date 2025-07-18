@@ -18,99 +18,99 @@ custom_domain = true
 pattern = "seller.c-bnn.xyz"
 custom_domain = true
 
-#[[routes]]
-#pattern = "live.iflix.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "support.zoom.us.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "zoomcares.zoom.us.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "partner.zoom.us.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "zoomgov.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "gomarketplacecontent-cf.zoom.us.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "ava.game.naver.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "blog.webex.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "graph.instagram.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "investors.spotify.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "investors.fb.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "zaintest.vuclip.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "cache.netflix.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "quiz.vidio.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "quiz.staging.vidio.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "quiz.int.vidio.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "bimbel.ruangguru.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "edu.ruangguru.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "io.ruangguru.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "api.midtrans.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "api.blibli.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "bakrie.ac.id.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "unnes.ac.id.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "fikom.esaunggul.ac.id.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "app.gopay.co.id.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "chat.sociomile.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "api.quipper.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "investor.fb.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "ads.ruangguru.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "ganecadigital.com.lembok.c-bnn.xyz"
-#custom_domain = true
-#[[routes]]
-#pattern = "stripchat.page.lembok.c-bnn.xyz"
-#custom_domain = true
+[[routes]]
+pattern = "live.iflix.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "support.zoom.us.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zoomcares.zoom.us.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "partner.zoom.us.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zoomgov.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "gomarketplacecontent-cf.zoom.us.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ava.game.naver.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "blog.webex.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "graph.instagram.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investors.spotify.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investors.fb.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zaintest.vuclip.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cache.netflix.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.vidio.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.staging.vidio.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "quiz.int.vidio.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "bimbel.ruangguru.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "edu.ruangguru.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "io.ruangguru.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.midtrans.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.blibli.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "bakrie.ac.id.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "unnes.ac.id.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "fikom.esaunggul.ac.id.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "app.gopay.co.id.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "chat.sociomile.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "api.quipper.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investor.fb.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ads.ruangguru.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ganecadigital.com.kacers.c-bnn.xyz"
+custom_domain = true
+[[routes]]
+pattern = "stripchat.page.kacers.c-bnn.xyz"
+custom_domain = true
