@@ -1,2 +1,3 @@
-Error checking 2.56.206.114:8443: 500 Server Error: Internal Server Error for url: https://proxy.ndeso.xyz/check?ip=2.56.206.114:8443
-Error checking 20.220.29.122:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 95.217.195.186:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 188.253.16.102:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 57.128.200.120:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=57.128.200.120:2053
