@@ -12,128 +12,128 @@ kv_namespaces = [
 pattern = "sorten.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "sg-vip.k-chers.xyz"
+pattern = "sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cyphers.game.naver.com.sg-vip.k-chers.xyz"
+pattern = "cyphers.game.naver.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "gamebulletin.nexon.game.naver.com.sg-vip.k-chers.xyz"
+pattern = "gamebulletin.nexon.game.naver.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "app-stg.gopay.co.id.sg-vip.k-chers.xyz"
+pattern = "app-stg.gopay.co.id.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "app.gopay.co.id.sg-vip.k-chers.xyz"
+pattern = "app.gopay.co.id.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.langitmusik.com.sg-vip.k-chers.xyz"
+pattern = "www.langitmusik.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "Web.poe.garena.com.sg-vip.k-chers.xyz"
+pattern = "Web.poe.garena.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.udemy.com.sg-vip.k-chers.xyz"
+pattern = "www.udemy.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "backdoor.farlight84miraclegames.com.sg-vip.k-chers.xyz"
+pattern = "backdoor.farlight84miraclegames.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "Blog.x.com.sg-vip.k-chers.xyz"
+pattern = "Blog.x.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.sushiroll.co.id.sg-vip.k-chers.xyz"
+pattern = "www.sushiroll.co.id.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ads.ruangguru.com.sg-vip.k-chers.xyz"
+pattern = "ads.ruangguru.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.sg-vip.k-chers.xyz"
+pattern = "investor.fb.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.sg-vip.k-chers.xyz"
+pattern = "live.iflix.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.sg-vip.k-chers.xyz"
+pattern = "support.zoom.us.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zoomcares.zoom.us.sg-vip.k-chers.xyz"
+pattern = "zoomcares.zoom.us.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "partner.zoom.us.sg-vip.k-chers.xyz"
+pattern = "partner.zoom.us.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zoomgov.com.sg-vip.k-chers.xyz"
+pattern = "zoomgov.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "gomarketplacecontent-cf.zoom.us.sg-vip.k-chers.xyz"
+pattern = "gomarketplacecontent-cf.zoom.us.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.sg-vip.k-chers.xyz"
+pattern = "ava.game.naver.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.sg-vip.k-chers.xyz"
+pattern = "blog.webex.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.sg-vip.k-chers.xyz"
+pattern = "graph.instagram.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.sg-vip.k-chers.xyz"
+pattern = "investors.spotify.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investors.fb.com.sg-vip.k-chers.xyz"
+pattern = "investors.fb.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.sg-vip.k-chers.xyz"
+pattern = "zaintest.vuclip.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.sg-vip.k-chers.xyz"
+pattern = "cache.netflix.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.com.sg-vip.k-chers.xyz"
+pattern = "quiz.vidio.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.sg-vip.k-chers.xyz"
+pattern = "quiz.staging.vidio.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.sg-vip.k-chers.xyz"
+pattern = "quiz.int.vidio.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "bimbel.ruangguru.com.sg-vip.k-chers.xyz"
+pattern = "bimbel.ruangguru.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "edu.ruangguru.com.sg-vip.k-chers.xyz"
+pattern = "edu.ruangguru.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.sg-vip.k-chers.xyz"
+pattern = "io.ruangguru.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.sg-vip.k-chers.xyz"
+pattern = "cf.shopee.co.id.sea-sw.swiftserve.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.midtrans.com.sg-vip.k-chers.xyz"
+pattern = "api.midtrans.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.blibli.com.sg-vip.k-chers.xyz"
+pattern = "api.blibli.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "bakrie.ac.id.sg-vip.k-chers.xyz"
+pattern = "bakrie.ac.id.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "unnes.ac.id.sg-vip.k-chers.xyz"
+pattern = "unnes.ac.id.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "fikom.esaunggul.ac.id.sg-vip.k-chers.xyz"
+pattern = "fikom.esaunggul.ac.id.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "chat.sociomile.com.sg-vip.k-chers.xyz"
+pattern = "chat.sociomile.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.quipper.com.sg-vip.k-chers.xyz"
+pattern = "api.quipper.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "stripchat.page.sg-vip.k-chers.xyz"
+pattern = "stripchat.page.sgdo7-one.k-chers.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ganecadigital.com.sg-vip.k-chers.xyz"
+pattern = "ganecadigital.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
