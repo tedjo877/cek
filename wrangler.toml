@@ -11,9 +11,7 @@ kv_namespaces = [
 [[routes]]
 pattern = "sorten.k-chers.xyz"
 custom_domain = true
-[[routes]]
-pattern = "sgdo7-one.k-chers.xyz"
-custom_domain = true
+
 [[routes]]
 pattern = "cyphers.game.naver.com.sgdo7-one.k-chers.xyz"
 custom_domain = true
