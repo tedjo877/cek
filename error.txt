@@ -1,1 +1,3 @@
-Error checking 185.142.157.65:8075: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 135.125.169.80:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 45.112.195.238:2053: 409 Client Error: Conflict for url: https://proxy.ndeso.xyz/check?ip=45.112.195.238:2053
+Error checking 80.210.58.100:8880: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=80.210.58.100:8880
