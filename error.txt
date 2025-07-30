@@ -1,2 +1,2 @@
-Error checking 51.89.23.134:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 121.165.4.166:50000: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 51.75.56.247:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 27.113.61.158:23114: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Read timed out. (read timeout=180)
