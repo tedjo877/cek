@@ -1,1 +1,1 @@
-Error checking 188.253.16.131:443: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=188.253.16.131:443 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+Error checking 91.107.151.202:1001: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
