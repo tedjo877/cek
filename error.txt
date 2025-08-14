@@ -1,2 +1,1 @@
-Error checking 165.232.118.209:8880: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 91.134.66.119:443: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=91.134.66.119:443
+Error checking 42.145.10.210:20328: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
