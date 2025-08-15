@@ -1,5 +1,1 @@
-Error checking 190.103.177.131:443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 119.197.255.195:50000: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 112.185.95.169:50004: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 89.39.120.45:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 77.221.137.18:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 88.218.76.189:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
