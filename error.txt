@@ -1,2 +1,2 @@
-Error checking 146.59.233.202:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
-Error checking 51.75.21.32:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 193.42.243.54:10144: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 107.172.103.195:16097: 500 Server Error: Internal Server Error for url: https://proxy.ndeso.xyz/check?ip=107.172.103.195:16097
