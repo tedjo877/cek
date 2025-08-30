@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi V2Ray/VLESS/Trojan → Sing-box Converter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+    pre {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    
+    /* Notification styles */
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 15px 25px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+      transform: translateX(100%);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .notification.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+    .notification.success {
+      background: linear-gradient(135deg, #4ade80, #22c55e);
+    }
+    
+    .notification.error {
+      background: linear-gradient(135deg, #f87171, #ef4444);
+    }
+    
+    .notification.info {
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center mb-4 md:mb-0">
+          <i class="fas fa-server text-3xl mr-3"></i>
+          <h1 class="text-2xl md:text-3xl font-bold">Sing-box Converter</h1>
+        </div>
+        <nav class="flex space-x-4">
+          <a href="#" class="hover:underline py-2">Home</a>
+          <a href="#" class="hover:underline py-2">Tools</a>
+          <a href="#" class="hover:underline py-2">Guide</a>
+          <a href="#" class="hover:underline py-2">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow container mx-auto px-4 py-8 max-w-5xl">
+    <!-- Intro Section -->
+    <section class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Multi Config Converter</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Konversi beberapa konfigurasi V2Ray, VLESS, dan Trojan sekaligus ke format Sing-box. 
+        Cukup paste semua config Anda dan biarkan tool ini melakukan sisanya.
+      </p>
+    </section>
+
+    <!-- Converter Card -->
+    <div class="bg-white shadow-lg rounded-2xl overflow-hidden card-hover mb-8">
+      <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-4 text-white">
+        <h2 class="text-xl font-bold"><i class="fas fa-sync-alt mr-2"></i> Konversi Config</h2>
+      </div>
+      <div class="p-6">
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">Paste konfigurasi (satu per baris):</label>
+          <textarea id="input" class="w-full p-4 border rounded-lg h-56 font-mono text-sm" 
+                    placeholder="Paste configs (satu per baris) atau link vmess:// vless:// trojan://
+Contoh:
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkV4YW1wbGUiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMTIzNDU2Nzg5MC1hYmNkLWUxMjMtNDU2NyIsDQogICJhaWQiOiAiMCIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiZXhhbXBsZS5jb20iLA0KICAicGF0aCI6ICIvd3MiLA0KICAidGxzIjogInRscyINCn0="></textarea>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-between">
+          <button onclick="convert()" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg mb-3 sm:mb-0 w-full sm:w-auto transition-colors">
+            <i class="fas fa-sync-alt mr-2"></i>Convert All
+          </button>
+          <span class="text-gray-500 text-sm" id="configCount">0 configs detected</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result Card -->
+    <div id="outputBox" class="hidden bg-white shadow-lg rounded-2xl overflow-hidden card-hover">
+      <div class="bg-gradient-to-r from-green-500 to-teal-600 p-4 text-white">
+        <div class="flex justify-between items-center">
+          <h2 class="text-xl font-bold"><i class="fas fa-code mr-2"></i> Hasil Konversi Sing-box</h2>
+          <span class="bg-white text-green-800 text-xs px-3 py-1 rounded-full font-medium" id="outboundCount">0 outbounds</span>
+        </div>
+      </div>
+      <div class="p-6">
+        <pre id="output" class="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto text-sm"></pre>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <button onclick="copyConfig()" class="bg-green-600 hover:bg-green-700 text-white font-medium px-5 py-2.5 rounded-lg flex items-center transition-colors">
+            <i class="fas fa-copy mr-2"></i>Copy Config
+          </button>
+          <button onclick="downloadConfig()" class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-5 py-2.5 rounded-lg flex items-center transition-colors">
+            <i class="fas fa-download mr-2"></i>Download
+          </button>
+          <button onclick="clearAll()" class="bg-gray-500 hover:bg-gray-600 text-white font-medium px-5 py-2.5 rounded-lg flex items-center transition-colors">
+            <i class="fas fa-trash-alt mr-2"></i>Clear All
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md text-center">
+        <div class="text-blue-500 text-3xl mb-4">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Konversi Multi Config</h3>
+        <p class="text-gray-600">Dukung beberapa konfigurasi sekaligus dalam satu operasi</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-xl shadow-md text-center">
+        <div class="text-green-500 text-3xl mb-4">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Privasi Terjaga</h3>
+        <p class="text-gray-600">Semua proses konversi dilakukan di browser Anda</p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-xl shadow-md text-center">
+        <div class="text-purple-500 text-3xl mb-4">
+          <i class="fas fa-plug"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Multi Protokol</h3>
+        <p class="text-gray-600">Mendukung VMess, VLESS, dan Trojan</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-10 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Sing-box Converter</h3>
+          <p class="text-gray-400">Alat untuk mengonversi beberapa konfigurasi V2Ray, VLESS, dan Trojan ke format Sing-box sekaligus.</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">GitHub</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-4">Kontak</h3>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fab fa-twitter"></i></a>
+          </div>
+          <p class="text-gray-400">© 2023 Sing-box Converter. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Container -->
+  <div id="notification" class="notification"></div>
+
+  <script>
+    function baseTemplate() {
+      return {
+        log: { level: "info" },
+        dns: {
+          servers: [
+            { tag: "remote-dns", address: "https://family.cloudflare-dns.com/dns-query", address_resolver: "direct-dns", strategy: "ipv4_only" },
+            { tag: "direct-dns", address: "local", strategy: "ipv4_only" },
+            { tag: "dns-final", address: "local", address_resolver: "dns-local", strategy: "ipv4_only" },
+            { tag: "dns-local", address: "local" },
+            { tag: "dns-block", address: "rcode://success" }
+          ],
+          rules: [
+            { domain: ["family.cloudflare-dns.com"], server: "direct-dns" }
+          ],
+          final: "dns-final",
+          independent_cache: true
+        },
+        inbounds: [
+          {
+            type: "tun",
+            mtu: 1400,
+            inet4_address: "172.19.0.1/30",
+            inet6_address: "fdfe:dcba:9876::1/126",
+            auto_route: true,
+            strict_route: true,
+            endpoint_independent_nat: true,
+            stack: "mixed",
+            sniff: true
+          }
+        ],
+        outbounds: [
+          { tag: "Internet", type: "selector", outbounds: ["Best Latency", "Proxy", "direct"] },
+          { type: "urltest", tag: "Best Latency", outbounds: [], url: "https://ping.wildcrd.us.kg", interval: "30s" },
+          { type: "direct", tag: "direct" },
+          { type: "direct", tag: "bypass" },
+          { type: "block", tag: "block" },
+          { type: "dns", tag: "dns-out" }
+        ],
+        route: {
+          rules: [
+            { port: 53, outbound: "dns-out" },
+            { inbound: "dns-in", outbound: "dns-out" },
+            { network: "udp", port: 443, outbound: "block" },
+            { source_ip_cidr: ["224.0.0.0/3", "ff00::/8"], ip_cidr: ["224.0.0.0/3", "ff00::/8"], outbound: "block" }
+          ],
+          auto_detect_interface: true
+        },
+        experimental: {
+          cache_file: { enabled: false },
+          clash_api: {
+            external_controller: "127.0.0.1:9090",
+            external_ui: "ui",
+            external_ui_download_url: "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip",
+            external_ui_download_detour: "Internet",
+            secret: "WONGKERE",
+            default_mode: "rule"
+          }
+        }
+      };
+    }
+
+    function parseMultipleConfigs(input) {
+      const lines = input.trim().split('\n').filter(line => line.trim() !== '');
+      const configs = [];
+      
+      for (const line of lines) {
+        try {
+          const trimmedLine = line.trim();
+          
+          // Skip empty lines
+          if (!trimmedLine) continue;
+          
+          // case: vmess:// (base64)
+          if (trimmedLine.startsWith("vmess://")) {
+            const decoded = atob(trimmedLine.slice(8));
+            configs.push({ ...JSON.parse(decoded), type: "vmess" });
+            continue;
+          }
+
+          // case: vless:// or trojan://
+          if (trimmedLine.startsWith("vless://") || trimmedLine.startsWith("trojan://")) {
+            const url = new URL(trimmedLine);
+            const protocol = trimmedLine.startsWith("vless://") ? "vless" : "trojan";
+            configs.push({
+              type: protocol,
+              id: url.username,
+              password: url.username,
+              add: url.hostname,
+              port: url.port,
+              host: url.searchParams.get("sni") || url.hostname,
+              path: url.searchParams.get("path") || "/",
+              flow: url.searchParams.get("flow"),
+            });
+            continue;
+          }
+
+          // case: JSON langsung
+          try {
+            const jsonConfig = JSON.parse(trimmedLine);
+            configs.push(jsonConfig);
+          } catch (e) {
+            console.error("Failed to parse as JSON:", e);
+          }
+        } catch (e) {
+          console.error("Error parsing config:", e);
+        }
+      }
+      
+      return configs;
+    }
+
+    function buildOutbound(config, index) {
+      const protocol = (config.type || config.protocol || "vmess").toLowerCase();
+      const tag = `Proxy-${index + 1}`;
+
+      if (protocol === "vmess") {
+        return {
+          type: "vmess",
+          tag: tag,
+          server: config.add,
+          server_port: Number(config.port) || 443,
+          uuid: config.id,
+          security: "auto",
+          alter_id: 0,
+          transport: {
+            type: "ws",
+            path: config.path || "/",
+            headers: { Host: config.host || config.add }
+          },
+          tls: {
+            enabled: true,
+            insecure: true,
+            server_name: config.host || config.add
+          }
+        };
+      }
+
+      if (protocol === "vless") {
+        return {
+          type: "vless",
+          tag: tag,
+          server: config.add,
+          server_port: Number(config.port) || 443,
+          uuid: config.id,
+          flow: config.flow || "xtls-rprx-vision",
+          transport: {
+            type: "ws",
+            path: config.path || "/",
+            headers: { Host: config.host || config.add }
+          },
+          tls: {
+            enabled: true,
+            insecure: true,
+            server_name: config.host || config.add
+          }
+        };
+      }
+
+      if (protocol === "trojan") {
+        return {
+          type: "trojan",
+          tag: tag,
+          server: config.add,
+          server_port: Number(config.port) || 443,
+          password: config.password,
+          tls: {
+            enabled: true,
+            insecure: true,
+            server_name: config.host || config.add
+          }
+        };
+      }
+
+      return null;
+    }
+
+    function updateConfigCount() {
+      const input = document.getElementById("input").value;
+      const lines = input.trim().split('\n').filter(line => line.trim() !== '');
+      document.getElementById("configCount").textContent = `${lines.length} configs detected`;
+    }
+
+    function convert() {
+      const input = document.getElementById("input").value;
+      let result = "";
+      try {
+        const configs = parseMultipleConfigs(input);
+        if (configs.length === 0) {
+          throw new Error("No valid configs found");
+        }
+        
+        const config = baseTemplate();
+        const proxyOutbounds = [];
+        
+        // Build outbounds for each config
+        for (let i = 0; i < configs.length; i++) {
+          const outbound = buildOutbound(configs[i], i);
+          if (outbound) {
+            config.outbounds.push(outbound);
+            proxyOutbounds.push(outbound.tag);
+          }
+        }
+        
+        // Update the urltest outbound to include all proxies
+        const urltestOutbound = config.outbounds.find(o => o.tag === "Best Latency");
+        if (urltestOutbound) {
+          urltestOutbound.outbounds = proxyOutbounds.concat("direct");
+        }
+        
+        // Update the selector outbound to include all proxies
+        const selectorOutbound = config.outbounds.find(o => o.tag === "Internet");
+        if (selectorOutbound) {
+          selectorOutbound.outbounds = ["Best Latency"].concat(proxyOutbounds).concat("direct");
+        }
+        
+        result = JSON.stringify(config, null, 2);
+        document.getElementById("outboundCount").textContent = `${proxyOutbounds.length} outbounds created`;
+      } catch (e) {
+        result = "❌ Error: " + e.message;
+      }
+      document.getElementById("output").textContent = result;
+      document.getElementById("outputBox").classList.remove("hidden");
+      
+      // Scroll to results
+      document.getElementById("outputBox").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Show notification function
+    function showNotification(message, type = 'success') {
+      const notification = document.getElementById('notification');
+      notification.textContent = message;
+      notification.className = `notification ${type} show`;
+      
+      // Hide after 3 seconds
+      setTimeout(() => {
+        notification.classList.remove('show');
+      }, 3000);
+    }
+
+    function copyConfig() {
+      const text = document.getElementById("output").textContent;
+      
+      // Check if there's any content to copy
+      if (!text || text.includes('❌ Error:')) {
+        showNotification('❌ Tidak ada konfigurasi yang valid untuk disalin!', 'error');
+        return;
+      }
+      
+      navigator.clipboard.writeText(text).then(() => {
+        // Show success notification
+        showNotification('✅ Konfigurasi berhasil disalin ke clipboard!');
+        
+        // Also update button temporarily
+        const button = event.currentTarget;
+        const originalText = button.innerHTML;
+        button.innerHTML = '<i class="fas fa-check mr-2"></i>Copied!';
+        button.classList.remove('bg-green-600');
+        button.classList.add('bg-green-700');
+        
+        setTimeout(() => {
+          button.innerHTML = originalText;
+          button.classList.remove('bg-green-700');
+          button.classList.add('bg-green-600');
+        }, 2000);
+      }).catch(err => {
+        showNotification('✅ Konfigurasi berhasil disalin ke clipboard!');
+      });
+    }
+
+    function downloadConfig() {
+      const text = document.getElementById("output").textContent;
+      
+      // Check if there's any content to download
+      if (!text || text.includes('❌ Error:')) {
+        showNotification('❌ Tidak ada konfigurasi yang valid untuk diunduh!', 'error');
+        return;
+      }
+      
+      const blob = new Blob([text], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "sing-box-config.json";
+      a.click();
+      URL.revokeObjectURL(url);
+      
+      showNotification('📥 Konfigurasi berhasil diunduh!');
+    }
+
+    function clearAll() {
+      document.getElementById("input").value = "";
+      document.getElementById("output").textContent = "";
+      document.getElementById("outputBox").classList.add("hidden");
+      updateConfigCount();
+      showNotification('🧹 Semua input dan output telah dibersihkan', 'info');
+    }
+
+    // Initialize
+    document.getElementById("input").addEventListener("input", updateConfigCount);
+    
+    // Add example on load
+    document.addEventListener("DOMContentLoaded", function() {
+      const exampleConfig = `vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkV4YW1wbGUgVk1lc3MiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMTIzNDU2Nzg5MC1hYmNkLWUxMjMtNDU2NyIsDQogICJhaWQiOiAiMCIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiZXhhbXBsZS5jb20iLA0KICAicGF0aCI6ICIvd3MiLA0KICAidGxzIjogInRscyINCn0=`;
+      document.getElementById("input").value = exampleConfig;
+      updateConfigCount();
+    });
+  </script>
+</body>
+</html>
