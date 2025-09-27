@@ -1,3 +1,1 @@
-Error checking 212.192.31.239:443: 409 Client Error: Conflict for url: https://proxy.ndeso.xyz/check?ip=212.192.31.239:443
-Error checking 151.80.121.68:2053: 502 Server Error: Bad Gateway for url: https://proxy.ndeso.xyz/check?ip=151.80.121.68:2053
-Error checking 58.79.238.150:50005: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 195.206.242.24:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
