@@ -12,9 +12,9 @@ kv_namespaces = [
 pattern = "sorten.k-chers.xyz"
 custom_domain = true
 
-[[routes]]
-pattern = "live.iflix.com.sgdo7-one.k-chers.xyz"
-custom_domain = true
+#[[routes]]
+#pattern = "live.iflix.com.sgdo7-one.k-chers.xyz"
+#custom_domain = true
 [[routes]]
 pattern = "support.zoom.us.sgdo7-one.k-chers.xyz"
 custom_domain = true
