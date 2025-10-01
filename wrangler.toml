@@ -12,9 +12,9 @@ kv_namespaces = [
 hostname = "sorten.k-chers.xyz"
 override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "live.iflix.com.sgdo7-one.k-chers.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "live.iflix.com.sgdo7-one.k-chers.xyz"
+#override_existing_dns_record = true
 
 [[custom_domains]]
 hostname = "support.zoom.us.sgdo7-one.k-chers.xyz"
