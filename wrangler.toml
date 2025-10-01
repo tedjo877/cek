@@ -12,130 +12,130 @@ kv_namespaces = [
 hostname = "sorten.k-chers.xyz"
 override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "live.iflix.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "live.iflix.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "support.zoom.us.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "support.zoom.us.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "zoomcares.zoom.us.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "zoomcares.zoom.us.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "partner.zoom.us.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "partner.zoom.us.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "zoomgov.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "zoomgov.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "gomarketplacecontent-cf.zoom.us.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "gomarketplacecontent-cf.zoom.us.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "ava.game.naver.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "ava.game.naver.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "blog.webex.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "blog.webex.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "graph.instagram.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "graph.instagram.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "investors.spotify.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "investors.spotify.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "investors.fb.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "investors.fb.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "zaintest.vuclip.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "zaintest.vuclip.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "cache.netflix.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "cache.netflix.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "quiz.vidio.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "quiz.vidio.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "quiz.staging.vidio.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "quiz.staging.vidio.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "quiz.int.vidio.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "quiz.int.vidio.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "bimbel.ruangguru.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "bimbel.ruangguru.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "edu.ruangguru.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "edu.ruangguru.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "io.ruangguru.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "io.ruangguru.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "cf.shopee.co.id.sea-sw.swiftserve.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "cf.shopee.co.id.sea-sw.swiftserve.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "api.midtrans.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "api.midtrans.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "api.blibli.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "api.blibli.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "bakrie.ac.id.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "bakrie.ac.id.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "unnes.ac.id.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "unnes.ac.id.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "fikom.esaunggul.ac.id.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "fikom.esaunggul.ac.id.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "app.gopay.co.id.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "app.gopay.co.id.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "chat.sociomile.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "chat.sociomile.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "api.quipper.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "api.quipper.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "investor.fb.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "investor.fb.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "ads.ruangguru.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "ads.ruangguru.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "ganecadigital.com.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "ganecadigital.com.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "stripchat.page.sgdo7-one.k-chers.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "stripchat.page.sgdo7-one.k-chers.xyz"
+override_existing_dns_record = true
