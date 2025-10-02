@@ -9,7 +9,7 @@ kv_namespaces = [
 
 
 [[custom_domains]]
-hostname = "sorten.k-chers.xyz"
+hostname = "sorten.ndeso-online.xyz"
 override_existing_dns_record = true
 
 #[[custom_domains]]
