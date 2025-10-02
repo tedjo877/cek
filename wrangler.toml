@@ -7,134 +7,135 @@ kv_namespaces = [
   { binding = "URLS", id = "c086767c204d4d7a8b5a549bc1c8e196" }
 ]
 
+
 [[custom_domains]]
 hostname = "sorten.ndeso-online.xyz"
 override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "live.iflix.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "live.iflix.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "support.zoom.us.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "support.zoom.us.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "zoomcares.zoom.us.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "zoomcares.zoom.us.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "partner.zoom.us.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "partner.zoom.us.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "zoomgov.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "zoomgov.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "gomarketplacecontent-cf.zoom.us.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "gomarketplacecontent-cf.zoom.us.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "ava.game.naver.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "ava.game.naver.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "blog.webex.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "blog.webex.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "graph.instagram.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "graph.instagram.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "investors.spotify.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "investors.spotify.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "investors.fb.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "investors.fb.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "zaintest.vuclip.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "zaintest.vuclip.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "cache.netflix.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "cache.netflix.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "quiz.vidio.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "quiz.vidio.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "quiz.staging.vidio.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "quiz.staging.vidio.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "quiz.int.vidio.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "quiz.int.vidio.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "bimbel.ruangguru.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "bimbel.ruangguru.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "edu.ruangguru.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "edu.ruangguru.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "io.ruangguru.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "io.ruangguru.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "cf.shopee.co.id.sea-sw.swiftserve.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "cf.shopee.co.id.sea-sw.swiftserve.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "api.midtrans.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "api.midtrans.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "api.blibli.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "api.blibli.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "bakrie.ac.id.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "bakrie.ac.id.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "unnes.ac.id.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "unnes.ac.id.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "fikom.esaunggul.ac.id.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "fikom.esaunggul.ac.id.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "app.gopay.co.id.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "app.gopay.co.id.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "chat.sociomile.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "chat.sociomile.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "api.quipper.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "api.quipper.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "investor.fb.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "investor.fb.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "ads.ruangguru.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "ads.ruangguru.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "ganecadigital.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "ganecadigital.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "stripchat.page.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "stripchat.page.super.ndeso-online.xyz"
+#override_existing_dns_record = true
