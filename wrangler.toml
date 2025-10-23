@@ -16,9 +16,9 @@ override_existing_dns_record = true
 #hostname = "live.iflix.com.super.ndeso-online.xyz"
 #override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "support.zoom.us.super.ndeso-online.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "support.zoom.us.super.ndeso-online.xyz"
+override_existing_dns_record = true
 
 #[[custom_domains]]
 #hostname = "zoomcares.zoom.us.super.ndeso-online.xyz"
@@ -36,9 +36,9 @@ override_existing_dns_record = true
 #hostname = "gomarketplacecontent-cf.zoom.us.super.ndeso-online.xyz"
 #override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "ava.game.naver.com.super.ndeso-online.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "ava.game.naver.com.super.ndeso-online.xyz"
+override_existing_dns_record = true
 
 #[[custom_domains]]
 #hostname = "blog.webex.com.super.ndeso-online.xyz"
@@ -48,9 +48,9 @@ override_existing_dns_record = true
 #hostname = "graph.instagram.com.super.ndeso-online.xyz"
 #override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "investors.spotify.com.super.ndeso-online.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "investors.spotify.com.super.ndeso-online.xyz"
+override_existing_dns_record = true
 
 #[[custom_domains]]
 #hostname = "investors.fb.com.super.ndeso-online.xyz"
