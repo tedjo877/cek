@@ -1,2 +1,1 @@
-Error checking 57.128.183.108:443: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-Error checking 183.108.114.118:20141: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 149.202.137.222:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
