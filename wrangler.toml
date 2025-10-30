@@ -116,9 +116,9 @@ override_existing_dns_record = true
 #hostname = "app.gopay.co.id.super.ndeso-online.xyz"
 #override_existing_dns_record = true
 
-#[[custom_domains]]
-#hostname = "chat.sociomile.com.super.ndeso-online.xyz"
-#override_existing_dns_record = true
+[[custom_domains]]
+hostname = "chat.sociomile.com.super.ndeso-online.xyz"
+override_existing_dns_record = true
 
 #[[custom_domains]]
 #hostname = "api.quipper.com.super.ndeso-online.xyz"
