@@ -17,7 +17,7 @@ override_existing_dns_record = true
 #override_existing_dns_record = true
 
 [[custom_domains]]
-hostname = "support.zoom.us.super.ndeso-online.xyz"
+hostname = "support.zoom.us.super-vip.ndeso-online.xyz"
 override_existing_dns_record = true
 
 #[[custom_domains]]
@@ -37,7 +37,7 @@ override_existing_dns_record = true
 #override_existing_dns_record = true
 
 [[custom_domains]]
-hostname = "ava.game.naver.com.super.ndeso-online.xyz"
+hostname = "ava.game.naver.com.super-vip.ndeso-online.xyz"
 override_existing_dns_record = true
 
 #[[custom_domains]]
@@ -49,7 +49,7 @@ override_existing_dns_record = true
 #override_existing_dns_record = true
 
 [[custom_domains]]
-hostname = "investors.spotify.com.super.ndeso-online.xyz"
+hostname = "investors.spotify.com.super-vip.ndeso-online.xyz"
 override_existing_dns_record = true
 
 #[[custom_domains]]
@@ -116,9 +116,9 @@ override_existing_dns_record = true
 #hostname = "app.gopay.co.id.super.ndeso-online.xyz"
 #override_existing_dns_record = true
 
-[[custom_domains]]
-hostname = "chat.sociomile.com.super.ndeso-online.xyz"
-override_existing_dns_record = true
+#[[custom_domains]]
+#hostname = "chat.sociomile.com.super.ndeso-online.xyz"
+#override_existing_dns_record = true
 
 #[[custom_domains]]
 #hostname = "api.quipper.com.super.ndeso-online.xyz"
