@@ -1,1 +1,2 @@
-Error checking 115.40.56.17:12993: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 166.88.61.56:17818: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=166.88.61.56:17818 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1077)')))
+Error checking 14.49.219.235:33263: HTTPSConnectionPool(host='proxy.ndeso.xyz', port=443): Max retries exceeded with url: /check?ip=14.49.219.235:33263 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1077)')))
