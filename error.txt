@@ -1,1 +1,1 @@
-Error checking 67.226.221.24:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=67.226.221.24:443
+Error checking 51.75.18.234:8443: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
