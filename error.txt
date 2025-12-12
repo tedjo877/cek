@@ -1,1 +1,4 @@
-Error checking 45.95.233.239:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 38.76.145.30:10086: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=38.76.145.30:10086
+Error checking 5.161.141.133:7304: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=5.161.141.133:7304
+Error checking 65.75.192.67:42930: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=65.75.192.67:42930
+Error checking 74.48.175.8:29678: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=74.48.175.8:29678
