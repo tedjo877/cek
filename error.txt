@@ -1,22 +1,2 @@
-Error checking 172.234.43.149:587: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=172.234.43.149:587
-Error checking 172.235.56.42:587: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=172.235.56.42:587
-Error checking 173.249.209.140:36806: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=173.249.209.140:36806
-Error checking 198.160.7.51:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=198.160.7.51:443
-Error checking 204.110.220.30:80: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=204.110.220.30:80
-Error checking 204.110.222.6:80: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=204.110.222.6:80
-Error checking 204.110.223.17:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=204.110.223.17:443
-Error checking 207.246.100.180:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=207.246.100.180:443
-Error checking 34.227.133.207:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=34.227.133.207:443
-Error checking 38.76.148.198:49240: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=38.76.148.198:49240
-Error checking 38.79.112.228:44752: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=38.79.112.228:44752
-Error checking 63.143.57.119:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=63.143.57.119:443
-Error checking 64.181.227.82:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=64.181.227.82:443
-Error checking 66.112.212.95:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=66.112.212.95:443
-Error checking 67.226.221.179:80: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=67.226.221.179:80
-Error checking 67.226.221.214:80: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=67.226.221.214:80
-Error checking 67.226.221.215:80: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=67.226.221.215:80
-Error checking 67.226.222.191:80: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=67.226.222.191:80
-Error checking 67.226.222.8:80: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=67.226.222.8:80
-Error checking 85.209.154.146:2053: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=85.209.154.146:2053
-Error checking 89.208.244.223:443: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=89.208.244.223:443
-Error checking 98.82.153.6:2096: 429 Client Error: Too Many Requests for url: https://proxy.ndeso.xyz/check?ip=98.82.153.6:2096
+Error checking 45.112.195.147:2053: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error checking 175.202.58.36:10402: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
